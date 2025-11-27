@@ -12,3 +12,4 @@ gallery/**/*.pdf
 !.github/
 #!_freeze/ not yet...
 /.quarto/
+!_processing/
