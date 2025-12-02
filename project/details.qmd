@@ -5,7 +5,7 @@ listing:
    - id: py-example-proj
      contents: ../gallery/Python/26Summer/example_project/example_project.qmd
    - id: r-example-proj
-     contents: ../gallery/r/26Summer/example_project/example_project.qmd
+     contents: ../gallery/R/26Summer/example_project/example_project.qmd
 ---
 
 The best way to learn is by doing. That's why, over the these three days, **you are tasked with analysing, visualising and reporting on a set of data!**

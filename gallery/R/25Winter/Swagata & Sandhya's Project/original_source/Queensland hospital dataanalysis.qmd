@@ -4,7 +4,6 @@ author: "Swagata & Sandhya"
 format: html
 date: 17 July 2025
 # editor: visual
-categories: [R, 2025 Winter]
 ---
 
 ## Quarto uses Markdown

@@ -10,7 +10,6 @@ categories: [Python, 25Winter, "data: gapminder.csv"]
 Markdown is a **markup language**
 * we can create test, heading, and graphs for relationship between variables
 
-```
 ## gapminder data
 let's visualise life expectancy by gdp per captial:
 ``` {python}
@@ -21,7 +20,7 @@ let's visualise life expectancy by gdp per captial:
 import pandas as pd
 df = pd.read_csv("data/gapminder.csv")
 import seaborn as sns
-sns. relplot(data = df, x= "gdpPercap", y = "lifeExp")
+sns.relplot(data = df, x= "gdpPercap", y = "lifeExp")
 ```
 ##Effect of population size on GDP
 let's visualise effect of populationy on gdp per captial:
@@ -33,7 +32,7 @@ let's visualise effect of populationy on gdp per captial:
 import pandas as pd
 df = pd.read_csv("data/gapminder.csv")
 import seaborn as sns
-sns. relplot(data = df, x= "pop", y = "gdpPercap")
+sns.relplot(data = df, x= "pop", y = "gdpPercap")
 ```
 
 ##Effect of population size on lie expectancy
@@ -46,7 +45,7 @@ let's visualise effect of populationy on life expectancy:
 import pandas as pd
 df = pd.read_csv("data/gapminder.csv")
 import seaborn as sns
-sns. relplot(data = df, x= "pop", y = "lifeExp")
+sns.relplot(data = df, x= "pop", y = "lifeExp")
 ```
 
 ```{python}

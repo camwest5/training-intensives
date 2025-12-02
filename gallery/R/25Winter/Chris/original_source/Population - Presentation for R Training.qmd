@@ -3,7 +3,6 @@ title: "Population: Presentation for R training"
 format: html
 editor: visual
 date: 2025/7/16
-categories: [R, 2025 Winter]
 ---
 
 ## Population: the data set
@@ -21,7 +20,7 @@ First, I imported the data set and libraries.
 ```{r}
 #| warning: false
 # import csv
-population <-read.csv("data/population.csv")
+population <-read.csv("../../data_sources/population.csv")
 
 library(dplyr)
 library(ggplot2)

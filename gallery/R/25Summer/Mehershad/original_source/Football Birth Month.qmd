@@ -2,11 +2,10 @@
 title: "Impact of Birth Month on Football careers"
 author: "Mehershad Wadia"
 format: dashboard
-date: Jan-2025
+date: today
 warning: false
 error: false
 image: tb.png
-categories: [R, 2025 Summer]
 ---
 
 ```{R}
@@ -43,7 +42,7 @@ ggplot(data=playersmonth, aes(x=birth_month, group=positions, fill=positions)) +
   scale_x_continuous(breaks = scales::pretty_breaks(n = 12)) +
   labs(x= "Birth Month", y = "Density", fill = "Position")
 
-# ggsave("tb.png")
+ggsave("tb.png")
 ```
 ```{R}
 #| title: Impact of birth month more prominent for Goalkeepers

@@ -2,7 +2,7 @@
 title: "Coffee"
 author: "Warren"
 format: dashboard
-date: Jan-2025
+date: Jan-25
 message: false
 categories: [R, 25Summer, "data: coffee_survey.csv"]
 ---

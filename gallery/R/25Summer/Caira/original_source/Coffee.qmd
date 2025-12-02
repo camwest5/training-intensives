@@ -2,13 +2,12 @@
 title: "Coffee"
 author: "Caira Loo"
 format: dashboard
-date: Jan-2025
+date-modified: today
 
-categories: [R, 2025 Summer]
 ---
 
 ```{r}
-coffee_survey <- read.csv("data/coffee_survey.csv")
+coffee_survey <- read.csv("../../data_sources/coffee_survey.csv")
 ```
 
 ```{r}

@@ -2,15 +2,13 @@
 title: "QLD Fuel"
 format: html
 Authors: Emman & Claudine
-categories: [R, 2025 Winter]
-date: Jul-2025
 ---
 
 ## Import the dataset & load packages
 
 ```{r}
 #| warning: false
-fuel <- read.csv("data/qld_fuel.csv")
+fuel <- read.csv("../../data_sources/qld_fuel.csv")
 library(ggplot2)
 library(dplyr)
 ```

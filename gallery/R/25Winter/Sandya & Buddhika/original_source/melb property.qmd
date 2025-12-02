@@ -4,7 +4,6 @@ author: "Sandya & Buddhika"
 format: html
 editor: visual
 date: 2025-07-17
-categories: [R, 2025 Winter]
 ---
 
 ## Melbourne Housing Snapshot
@@ -16,7 +15,7 @@ Quarto enables you to weave together content and executable code into a finished
 When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
 
 ```{r}
-melb_data <- read.csv("data/melb_data.csv")
+melb_data <- read.csv("../../data_sources/melb_data.csv")
 ```
 
 You can add options to executable code like this

@@ -4,7 +4,6 @@ format: html
 author: Casey Atkins & Jess
 date: Jul-25
 categories: [R, 25Winter, "data: hospital_data.csv"]
-date: Jul-2025
 ---
 
 ## Hospital Wait Time Report

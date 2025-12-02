@@ -4,6 +4,6 @@ subtitle: View all projects from all intensives, or choose a particular subset o
 listing:
   categories: true
   sort: "date desc"
-  contents: "*/*/*/*.qmd"
+  contents: "/*/*/*/*.qmd"
   type: grid
 ---

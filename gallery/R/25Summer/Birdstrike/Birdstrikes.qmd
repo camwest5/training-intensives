@@ -1,7 +1,7 @@
 ---
 title: "BirdStrikes"
 format: dashboard
-date: Jan-2025
+date: Jan-25
 authors: "Nafisa, Alex, Adiana & Selina"
 warning: FALSE
 error: FALSE
@@ -62,7 +62,7 @@ plot1 <- ggplot(summary_data2, aes(x = time_of_day, y = phase_of_flt, fill = cou
        x = "Time of Day", y = "Phase of Flight", fill = "Count of Bird Strikes")
 ggplotly(p = plot1, 
          tooltip = c("number of strikes"))  
-# ggsave("bs.png")
+ggsave("bs.png")
 ```
 
 ## Figures {height=40%}

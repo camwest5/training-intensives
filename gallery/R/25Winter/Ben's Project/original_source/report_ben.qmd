@@ -2,8 +2,6 @@
 title: "Report_ben"
 format: html
 editor: visual
-categories: [R, 2025 Winter]
-date: Jul-2025
 ---
 
 ## The goal: To find out the worst book(in English) published in the last 20 years based on Goodreads data set.

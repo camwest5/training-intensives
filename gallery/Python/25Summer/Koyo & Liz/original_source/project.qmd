@@ -1,11 +1,10 @@
 ---
  title: Bird Strikes and Aeroplane Damages in the U.S. (1990-1999)
  author: Liz & Koyo
- date: 2025-01-16
+ Date: 2025-01-16
  format: 
    dashboard: 
     theme: sandstone
- categories: [Python, 2025 Summer]
 ---
 
 ```{python}
@@ -16,7 +15,7 @@ import seaborn as sns  # simple to make visualisations
 import matplotlib.pyplot as plt
 import plotly.express as px
 
-df_raw = pd.read_csv("data/birds_strikes.csv")
+df_raw = pd.read_csv("birds_strikes.csv")
 
 # copy the data
 df = df_raw.copy()

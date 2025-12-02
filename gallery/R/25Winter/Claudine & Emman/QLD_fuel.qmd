@@ -2,8 +2,8 @@
 title: "QLD Fuel"
 format: html
 Authors: Emman & Claudine
+date: Jul-25
 categories: [R, 25Winter, "data: qld_fuel.csv"]
-date: Jul-2025
 ---
 
 ## Import the dataset & load packages

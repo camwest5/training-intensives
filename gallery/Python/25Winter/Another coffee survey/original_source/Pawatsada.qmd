@@ -10,7 +10,6 @@ format:
     code-fold: true
     code-summary: "Show code"
     code-tools: true
-categories: [Python, 2025 Winter]
 ---
 
 ## 1.Introduction
@@ -22,7 +21,7 @@ import pandas as pd
 import plotly.express as px
 import seaborn as sns
 
-df = pd.read_csv("data/coffee_survey.csv")
+df = pd.read_csv("../../data_sources/coffee_survey.csv")
 ```
 **1.2 Data Exploration**
 ```{python}

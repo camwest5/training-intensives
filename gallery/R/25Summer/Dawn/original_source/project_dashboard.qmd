@@ -2,9 +2,8 @@
 title: "📝 Coffee vs Employment status"
 author: "Dawn"
 format: dashboard
-date: Jan-2025
+date: today
 echo: false
-categories: [R, 2025 Summer]
 ---
 
 <!-- ## Import -->
@@ -12,7 +11,7 @@ categories: [R, 2025 Summer]
 ```{r}
 library(dplyr)
 library(ggplot2)
-coffee <- read.csv("data/coffee_survey.csv")
+coffee <- read.csv("../../data_sources/coffee_survey.csv")
 #coffee <- read.csv("data/coffee_survey.csv") 
 ```
 

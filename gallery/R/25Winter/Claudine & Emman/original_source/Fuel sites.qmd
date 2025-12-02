@@ -5,14 +5,12 @@ editor: visual
 Authors: Claudine and Emman
 #bibliography: UQ Vision.bib
 #csl: elsevier-vancouver.csl
-categories: [R, 2025 Winter]
-date: Jul-2025
 ---
 
 ## Import data
 
 ```{r}
-fuel <- read.csv("data/qld_fuel.csv")
+fuel <- read.csv("../../data_sources/qld_fuel.csv")
 ```
 
 ### Install packages

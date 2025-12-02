@@ -3,8 +3,7 @@ title: "My Report"
 author: "Cathy"
 format: html
 editor: visual
-date: Jul-2025
-categories: [R, 2025 Winter]
+date: today
 ---
 
 ## Books dataset with Quarto
@@ -22,7 +21,7 @@ library(dplyr)
 ## Loading the packages
 
 ```{r}
-books <-  read.csv("data/books.csv")
+books <-  read.csv("../../data_sources/books.csv")
 ```
 
 ## The books dataset includes the following fields

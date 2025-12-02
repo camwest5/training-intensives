@@ -1,9 +1,9 @@
 ---
 title: "Bird Strike Dashboard"
 author: Ediana
-date: Jan-2025
 format: dashboard
 # runtime: shiny # (turned of because no server context used in chunks)
+date: Jan-25
 categories: [R, 25Summer, "data: birds_strikes.csv"]
 ---  
 
@@ -15,7 +15,7 @@ library(DT)
 library(plotly)
 
 # Load the dataset
-birds_strikes <- read.csv("data/birds_strikes.csv")
+birds_strikes <- read.csv("gallery/R/25Summer/Toasted/birds_strikes.csv")
 
 #| echo: false
 ```

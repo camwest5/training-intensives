@@ -6,7 +6,6 @@
     dashboard: 
            theme: solar 
            scrolling: true
- categories: [Python, 2025 Summer]
 ---
 
 ```{python}
@@ -22,7 +21,7 @@ import plotly.io as pio
 
 ```{python}
 
-book_raw = pd.read_csv("data/books.csv")
+book_raw = pd.read_csv("../../data_sources/books.csv")
 
 book = book_raw.copy() 
 

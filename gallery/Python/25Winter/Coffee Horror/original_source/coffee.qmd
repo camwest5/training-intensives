@@ -4,14 +4,13 @@ author: Kim, Janine, Sera & Akansha
 date: 9-Jul-25
 format: html
 warning: false
-categories: [Python, 2025 Winter]
 ---
 
 ## Comparing personal preferences and bitterness for **CoffeeC**
 
 ```{python}
 import pandas as pd
-df = pd.read_csv("data/coffee_survey.csv")
+df = pd.read_csv("../../data_sources/coffee_survey.csv")
 import matplotlib.pyplot as plt
 import seaborn as sns
 sns.catplot (data = df, 

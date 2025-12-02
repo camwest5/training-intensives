@@ -2,9 +2,9 @@
 title: "COFFEE"
 format: dashboard
 author: Adelia
-date: Jan-2025
 warning: false
 error: false
+date: Jan-25
 categories: [R, 25Summer, "data: coffee_survey.csv"]
 ---
 

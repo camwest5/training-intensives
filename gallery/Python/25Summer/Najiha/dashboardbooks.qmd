@@ -12,7 +12,7 @@ categories: [Python, 25Summer, "data: books.csv"]
 ```{python}
 
 import pandas as pd
-df = pd.read_csv("data/books.csv")
+df = pd.read_csv("gallery/Python/25Summer/Najiha/books.csv")
 
 
 

@@ -2,8 +2,7 @@
 title: "Workshop Project Report"
 author: "Andrew"
 format: html
-date: Jul-2025
-categories: [R, 2025 Winter]
+date: today
 ---
 
 ## Analysing a dataset in R
@@ -67,7 +66,7 @@ This graph uses the latitude and longitude attributes of the dataset to produce 
 We can overlay this graph on a map of melbourne to show how the areas relate to the real world by taking a map of Melbourne from google and using it as a background image for the graph. This is read in using the png library, and limits are set on the x,y coords of graph to fit image:
 
 ```{r}
-map_img <- png::readPNG("gallery/R/25Winter/Andrew Proj/data/map_desaturated.png")
+map_img <- png::readPNG("data/map_desaturated.png")
 
 plot_map + background_image(map_img) + geom_point((mapping = aes(colour = 
               YearBuilt))) + theme_classic() + scale_color_viridis_c() + 

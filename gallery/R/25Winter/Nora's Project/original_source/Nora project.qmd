@@ -2,8 +2,6 @@
 title: "Nora project"
 author: "Nora"
 # format: pdf
-categories: [R, 2025 Winter]
-date: Jul-2025
 ---
 
 ## Quarto
@@ -15,7 +13,7 @@ Quarto enables you to weave together content and executable code into a finished
 When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
 
 ```{r}
-melbh <- read.csv("data/melb_data.csv")
+melbh <- read.csv("../../data_sources/melb_data.csv")
 names(melbh)
 str(melbh)
 summary(melbh)

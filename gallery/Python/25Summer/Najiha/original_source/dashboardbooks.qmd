@@ -6,13 +6,12 @@ warning: false
 format:
    dashboard:
        theme: quartz
-categories: [Python, 2025 Summer]
 ---
 
 ```{python}
 
 import pandas as pd
-df = pd.read_csv("data/books.csv")
+df = pd.read_csv("books.csv")
 
 
 

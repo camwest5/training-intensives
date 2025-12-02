@@ -5,8 +5,8 @@ editor: visual
 Authors: Claudine and Emman
 #bibliography: UQ Vision.bib
 #csl: elsevier-vancouver.csl
+date: Jul-25
 categories: [R, 25Winter, "data: qld_fuel.csv"]
-date: Jul-2025
 ---
 
 ## Import data

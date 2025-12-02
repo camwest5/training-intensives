@@ -3,17 +3,16 @@ title: "Goodreads books published in 2006"
 author: "Brittnee, Cleo, & David"
 logo: goodreads.jpg
 format: dashboard
-date: Jan-2025 
+date: today 
 warning: false
 theme: sketchy
-categories: [R, 2025 Summer]
 ---
 # Word cloud
 
 ## Row {height=50%}
 
 ```{r}
-books <- read.csv("data/books.csv")
+books <- read.csv("books.csv")
 
 custom_stop_words <- data.frame(
   word = c("the", "a", "an", "el", "la", "los", "las", "un", "una", "unos", "unas", "le", "les", "une", "des", "der", "die", "das", "ein", "eine"),

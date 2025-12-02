@@ -2,8 +2,8 @@
 title: "Nora project"
 author: "Nora"
 # format: pdf
+date: Jul-25
 categories: [R, 25Winter, "data: melb_data.csv"]
-date: Jul-2025
 ---
 
 ## Quarto

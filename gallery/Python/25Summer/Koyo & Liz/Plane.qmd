@@ -14,7 +14,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import plotly.express as px
 
-df = pd.read_csv("data/birds_strikes.csv")
+df = pd.read_csv("gallery/Python/25Summer/Koyo & Liz/birds_strikes.csv")
 
 # Make a copy of raw data
 df1 = df.copy()

@@ -1,6 +1,6 @@
 ---
 title: "Melbourne Housing"
-date: Jan-2025
+date: Jan-25
 format: dashboard
 warning: false
 categories: [R, 25Summer, "data: melb_data.csv"]
@@ -45,7 +45,7 @@ library(patchwork)
 library(ggplot2)
 library(plotly)
 
-housing <- read.csv("data/melb_data.csv")
+housing <- read.csv("gallery/R/25Summer/Karunarathna/Tables/melb_data.csv")
 
 housing$Suburb<-as.factor(housing$Suburb)
 housing$Rooms_1<-as.factor(housing$Rooms)

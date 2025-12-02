@@ -1,9 +1,8 @@
 ---
 title: "Melbourne Housing"
-date: Jan-2025
+date: today
 format: dashboard
 warning: false
-categories: [R, 2025 Summer]
 ---
 ##
 <div style="text-align:center;">
@@ -22,7 +21,7 @@ No of records	             :  13580
 #| warning: false
 #| width: 30%
 library(knitr)
-table1 <- read.csv("gallery/R/25Summer/Karunarathna/Tables/tables1_1.csv")
+table1 <- read.csv("Tables/tables1_1.csv")
 kable(table1)
 ```
 
@@ -31,7 +30,7 @@ kable(table1)
 #| warning: false
 #| width: 70%
 # library(magick)
-table2 <- read.csv("gallery/R/25Summer/Karunarathna/Tables/table2.csv")
+table2 <- read.csv("Tables/table2.csv")
 kable(table2)
 ```
 
@@ -45,7 +44,7 @@ library(patchwork)
 library(ggplot2)
 library(plotly)
 
-housing <- read.csv("data/melb_data.csv")
+housing <- read.csv("Tables/melb_data.csv")
 
 housing$Suburb<-as.factor(housing$Suburb)
 housing$Rooms_1<-as.factor(housing$Rooms)
@@ -110,7 +109,7 @@ ggplotly(plt1ly1)
 #| warning: false
 #| width: 30%
 # library(magick)
-table3 <- read.csv("gallery/R/25Summer/Karunarathna/Tables/table3.csv")
+table3 <- read.csv("Tables/table3.csv")
 kable(table3)
 ```
 

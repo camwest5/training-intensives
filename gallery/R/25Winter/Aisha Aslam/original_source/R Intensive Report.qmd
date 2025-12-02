@@ -6,9 +6,8 @@ code-fold: true
 code-summary: "Show code"
 code-tools: true
 #editor: visual
-date: Jul-2025
+date: today
 warning: false
-categories: [R, 2025 Winter]
 ---
 
 ## Introduction
@@ -40,7 +39,7 @@ library("knitr")
 **A Sneak-peak into the dataset**
 
 ```{r}
-goodreadsdata <- read.csv("data/books.csv")
+goodreadsdata <- read.csv("../../data_sources/books.csv")
 
 kable(head(goodreadsdata))
 ```

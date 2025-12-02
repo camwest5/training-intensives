@@ -50,7 +50,8 @@ library(dplyr)
 |----|----|----|----|----|----|----|----|
 | 1075684 | 639310.7 | 85000 | 9e+06 | 558.4161 | 3990.669 | 0 | 433014 |
 
-```{melb_data |>}
+```{r}
+melb_data |>  
   summarise(
     mean_price = mean(Price, na.rm = TRUE),
     sd_price = sd(Price, na.rm = TRUE),

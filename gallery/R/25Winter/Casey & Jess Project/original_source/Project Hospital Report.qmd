@@ -3,8 +3,6 @@ title: "Project Hospital Report"
 format: html
 author: Casey Atkins & Jess
 Date: today
-categories: [R, 2025 Winter]
-date: Jul-2025
 ---
 
 ## Hospital Wait Time Report
@@ -21,7 +19,7 @@ To do this we:
 First: loaded our data 
 
 ```{r}
-dataset <- read.csv("data/hospital_data.csv")
+dataset <- read.csv("../../data_sources/hospital_data.csv")
 ```
 
 Second: viewed the column names of our data 

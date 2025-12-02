@@ -5,14 +5,13 @@
  format: 
    dashboard:
        theme: journal
- categories: [Python, 2025 Summer]
 ---
 
 
 ```{python}
 import pandas as pd
 
-df = pd.read_csv("gallery/Python/25Summer/Edison/data/data/filtered_fuel.csv")
+df = pd.read_csv("data/data/filtered_fuel.csv")
 
 ```
 

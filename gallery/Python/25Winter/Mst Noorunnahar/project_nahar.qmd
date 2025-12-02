@@ -7,7 +7,6 @@ warning: false
 echo: false
 execute:
     eval: false # Data not available, need to fix...
-categories: [Python, 2025 Winter]
 ---
 
 
@@ -32,7 +31,7 @@ outbreaks within the geographic regions of Bangladesh.
 ## Dengue Cases data of Bangladesh
 ```{python}
 import pandas as pd
-df = pd.read_csv('gallery/Python/25Winter/Mst Noorunnahar/data/data_DENV.csv')
+df = pd.read_csv('data/data_DENV.csv')
 df
 df.head()
 ```
