@@ -7,6 +7,7 @@ project:
     - /gallery/*/*/*/*.qmd
     - project/*
     - python/*
+    - qgis/*
     - r/*
 
   execute-dir: project
@@ -18,6 +19,8 @@ website:
     left:
       - text: "R with RStudio"
         href: r/setup.md
+      - text: "QGIS"
+        href: qgis/setup.md
       - text: "Python for Data Analysis"
         href: python/setup.md
       - text: "The Project"
@@ -35,6 +38,11 @@ website:
         - r/setup.md
         - auto: "r/Essentials"
         - auto: "r/Advanced topics"
+
+    - title: "QGIS"
+      collapse-level: 2
+      contents:
+        - qgis/setup.md
 
     - title: "Python for Data Analysis"
       collapse-level: 2
