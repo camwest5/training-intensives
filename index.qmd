@@ -1,6 +1,16 @@
+---
+toc: false
+---
+
+::: {style="text-align: center;"}
+
 # UQ Library Training Intensives
 
-Welcome to our training intensives' website! Here you can find all the material for our three-day intensives, which run twice a year. The next batch will be in late Jan / early Feb 2026.
+Welcome to our training intensives! 
+
+Here you can find all the material for our three-day intensives, which run twice a year. 
+
+The next batch will be in late Jan / early Feb 2026.
 
 [R with RStudio\
 Training Intensive \
@@ -14,3 +24,4 @@ Training Intensive \
 Training Intensive \
 \
 10<sup>th</sup> to 12<sup>th</sup> Feb 2026](qgis/setup.md){.btn .btn-outline-primary}
+:::
