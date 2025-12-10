@@ -10,6 +10,6 @@ gallery/**/*.pdf
 
 # ...except
 !.github/
-#!_freeze/ not yet...
+!_freeze/
 /.quarto/
 !_processing/
