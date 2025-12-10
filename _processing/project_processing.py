@@ -184,7 +184,7 @@ def run_checker(dev: bool = False, clear_log: bool = False) -> None:
     if not os.path.exists("_quarto.yml"):
         raise EnvironmentError("Not in quarto project dir.")
 
-    if sys.prefix == sys.base_prefix:
+    if os.getenv("IGNORE_VENV_REQ") != "true" and sys.prefix == sys.base_prefix:
         raise EnvironmentError(
             "Not in a virtual environment, required for testing Python imports.\n\nHave you activated? Run source .venv/bin/activate"
         )
