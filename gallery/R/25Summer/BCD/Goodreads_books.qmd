@@ -13,7 +13,7 @@ categories: [R, 25Summer, "data: books.csv"]
 ## Row {height=50%}
 
 ```{r}
-books <- read.csv("gallery/R/25Summer/BCD/books.csv")
+books <- read.csv("./books.csv")
 
 custom_stop_words <- data.frame(
   word = c("the", "a", "an", "el", "la", "los", "las", "un", "una", "unos", "unas", "le", "les", "une", "des", "der", "die", "das", "ein", "eine"),

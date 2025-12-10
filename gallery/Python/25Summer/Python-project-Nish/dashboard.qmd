@@ -24,7 +24,7 @@
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-hs= pd.read_csv("data/melb_data.csv")
+hs= pd.read_csv("./melb_data.csv")
 
 ```
 
@@ -109,7 +109,7 @@ import streamlit as st
 from PIL import Image
 
 # Load the saved figure
-figure_path = "gallery/Python/25Summer/Python-project-Nish/inf.png"
+figure_path = "./inf.png"
 image = Image.open(figure_path)
 image
 # Display the figure in the dashboard

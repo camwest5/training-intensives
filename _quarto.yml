@@ -4,25 +4,25 @@ project:
   render: 
     - index.qmd
     - gallery/project_gallery.qmd
-    - /gallery/*/*/*/*.qmd
+    - gallery/*/*/*/*.qmd
     - project/*
     - python/*
     - qgis/*
     - r/*
-
-  execute-dir: project
 
 website:
   title: "UQ Library Training Intensives"
   navbar:
     search: true
     left:
-      - text: "R with RStudio"
-        href: r/setup.md
-      - text: "QGIS"
-        href: qgis/setup.md
-      - text: "Python for Data Analysis"
-        href: python/setup.md
+      - text: "Content"
+        menu:
+        - text: "R with RStudio"
+          href: r/setup.md
+        - text: "QGIS"
+          href: qgis/setup.md
+        - text: "Python for Data Analysis"
+          href: python/setup.md
       - text: "The Project"
         href: project/details.qmd
       - text: "Project Gallery"

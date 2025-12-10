@@ -13,7 +13,7 @@ library(dplyr)
 # library(quarto)
 library(ggplot2)
 
-hospital_data <- read.csv("gallery/R/25Summer/Krystie/hospital_data.csv")
+hospital_data <- read.csv("./hospital_data.csv")
 
 hospital_data <- hospital_data %>%   
   group_by(Facility.HHS.Desc) %>% 

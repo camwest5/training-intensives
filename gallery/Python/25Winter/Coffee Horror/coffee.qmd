@@ -11,7 +11,7 @@ categories: [Python, 25Winter, "data: coffee_survey.csv"]
 
 ```{python}
 import pandas as pd
-df = pd.read_csv("data/coffee_survey.csv")
+df = pd.read_csv("../../../../data/coffee_survey.csv")
 import matplotlib.pyplot as plt
 import seaborn as sns
 sns.catplot (data = df, 

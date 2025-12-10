@@ -10,7 +10,7 @@ categories: [R, 25Winter, "data: qld_fuel.csv"]
 
 ```{r}
 #| warning: false
-fuel <- read.csv("data/qld_fuel.csv")
+fuel <- read.csv("../../../../data/qld_fuel.csv")
 library(ggplot2)
 library(dplyr)
 ```

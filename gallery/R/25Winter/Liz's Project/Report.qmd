@@ -23,13 +23,13 @@ library(dplyr)
 Then we told R to look at our dataset
 ```{r}
 #| eval: false
-read.csv("data/books.csv")
+read.csv("../../../../data/books.csv")
 ```
 
 Then we asked R to make an object called Books
 
 ```{r} 
-Books <- read.csv("data/books.csv")
+Books <- read.csv("../../../../data/books.csv")
 ```
 
 Next we asked a series of questions about the data:

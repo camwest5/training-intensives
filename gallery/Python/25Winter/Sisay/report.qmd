@@ -18,7 +18,7 @@ let's visualise life expectancy by gdp per captial:
 #| fig-cap: "GDP per caspita would affect life expectancy"
 #| fig-alt: "A scatterplot of the relationsship life expectancy and GDP per capital"
 import pandas as pd
-df = pd.read_csv("data/gapminder.csv")
+df = pd.read_csv("./Data/gapminder.csv")
 import seaborn as sns
 sns.relplot(data = df, x= "gdpPercap", y = "lifeExp")
 ```
@@ -30,7 +30,7 @@ let's visualise effect of populationy on gdp per captial:
 #| fig-cap: "population size could affect GDP per capital"
 #| fig-alt: "A scatterplot of the relationsship between population and GDP per capital"
 import pandas as pd
-df = pd.read_csv("data/gapminder.csv")
+df = pd.read_csv("./Data/gapminder.csv")
 import seaborn as sns
 sns.relplot(data = df, x= "pop", y = "gdpPercap")
 ```
@@ -43,7 +43,7 @@ let's visualise effect of populationy on life expectancy:
 #| fig-cap: "population size could affect life expectancy"
 #| fig-alt: "A scatterplot of the relationsship between population and life expectancy"
 import pandas as pd
-df = pd.read_csv("data/gapminder.csv")
+df = pd.read_csv("./Data/gapminder.csv")
 import seaborn as sns
 sns.relplot(data = df, x= "pop", y = "lifeExp")
 ```
@@ -54,7 +54,7 @@ sns.relplot(data = df, x= "pop", y = "lifeExp")
 #| fig-cap: "continent could affect life expectancy"
 #| fig-alt: "A scatterplot of the relationsship between continent and life expectancy"
 import pandas as pd
-df = pd.read_csv("data/gapminder.csv")
+df = pd.read_csv("./Data/gapminder.csv")
 sns.relplot(data = df, x = "continent", y = "lifeExp")
 ```
 ```{python}
@@ -63,7 +63,7 @@ sns.relplot(data = df, x = "continent", y = "lifeExp")
 #| fig-cap: "continent could affect life expectancy"
 #| fig-alt: "A scatterplot of the relationsship between continent and life expectancy"
 import pandas as pd
-df = pd.read_csv("data/gapminder.csv")
+df = pd.read_csv("./Data/gapminder.csv")
 sns.relplot(data = df, x = "continent", y = "lifeExp")
 ```
 ```{python}
@@ -71,6 +71,6 @@ sns.relplot(data = df, x = "continent", y = "lifeExp")
 #| echo: false
 #| fig-cap: "population distribution by continent"
 #| fig-alt: "A scatterplot of population dstribution bt continent"
-df = pd.read_csv("data/gapminder.csv")
+df = pd.read_csv("./Data/gapminder.csv")
 sns.relplot(data = df, x = "continent", y = "pop")
 ```

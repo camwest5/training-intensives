@@ -66,7 +66,7 @@ Let’s import and explore the gapminder data again.
 1.  use the `read.csv()` command to bring it into R:
 
 ```r
-gapminder <- read.csv("data/gapminder.csv")
+gapminder <- read.csv("../../data/gapminder.csv")
 ```
 
 > Remember you can use <kbd>Ctrl</kbd>+<kbd>shift</kbd> to execute a

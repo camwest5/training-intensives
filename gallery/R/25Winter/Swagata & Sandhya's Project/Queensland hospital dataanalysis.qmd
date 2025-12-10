@@ -23,7 +23,7 @@ library("ggplot2")
 library("plotly")
 library("tidyverse")
 
-hospital_data <- read.csv('data/hospital_data.csv')
+hospital_data <- read.csv('../../../../data/hospital_data.csv')
 
 
 # Aggregate data per hospital (mean if multiple entries per hospital)

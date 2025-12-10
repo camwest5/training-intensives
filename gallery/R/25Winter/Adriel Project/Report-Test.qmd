@@ -23,7 +23,7 @@ library(dplyr)
 
 ```{r, fig.cap="Table.1 FC Barcelona Player Season 2023-2024", fig.align='center'}
 
-dataset <- read.csv("data/Players2024.csv")
+dataset <- read.csv("../../../../data/Players2024.csv")
 subset <- dataset |> filter(club=="Futbol Club Barcelona")
 subset <- subset |> select(-club)
 

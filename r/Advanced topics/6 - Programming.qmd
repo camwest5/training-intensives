@@ -253,13 +253,13 @@ Let's use the same data as in the statistics session:
 
 ```{r eval=FALSE}
 library(dplyr)
-players <- read.csv("data/Players2024.csv")
+players <- read.csv("../../data/Players2024.csv")
 players <- players %>% filter(positions != "Missing", height_cm > 100)
 ```
 
 ```{r echo=FALSE}
 library(dplyr)
-players <- read.csv("../data_sources/Players2024.csv")
+players <- read.csv("../../data/Players2024.csv")
 players <- players %>% filter(positions != "Missing", height_cm > 100)
 ```
 

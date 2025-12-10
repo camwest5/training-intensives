@@ -5,7 +5,7 @@ format: dashboard
 date: Jan-25
 warning: false
 error: false
-image: gallery/R/25Summer/Mehershad/tb.png
+#image: gallery/R/25Summer/Mehershad/tb.png
 categories: [R, 25Summer, "data: Players2024.csv"]
 ---
 

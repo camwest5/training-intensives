@@ -20,7 +20,7 @@ To do this we:
 First: loaded our data 
 
 ```{r}
-dataset <- read.csv("data/hospital_data.csv")
+dataset <- read.csv("../../../../data/hospital_data.csv")
 ```
 
 Second: viewed the column names of our data 

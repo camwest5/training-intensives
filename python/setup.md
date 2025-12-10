@@ -1,5 +1,5 @@
 ---
-title: Introduction and setup
+title: Python for Data Analysis
 ---
 
 :::{.callout-tip}

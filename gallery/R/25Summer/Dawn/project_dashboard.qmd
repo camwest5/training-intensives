@@ -12,8 +12,8 @@ categories: [R, 25Summer, "data: coffee_survey.csv"]
 ```{r}
 library(dplyr)
 library(ggplot2)
-coffee <- read.csv("data/coffee_survey.csv")
-#coffee <- read.csv("data/coffee_survey.csv") 
+coffee <- read.csv("../../../../data/coffee_survey.csv")
+#coffee <- read.csv("../../../../data/coffee_survey.csv") 
 ```
 
 

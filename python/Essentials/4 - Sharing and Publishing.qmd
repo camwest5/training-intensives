@@ -303,7 +303,7 @@ Let's import the packages and data
 import pandas as pd
 import seaborn as sns
 
-df = pd.read_csv("data/Players2024.csv")
+df = pd.read_csv("../../data/Players2024.csv")
 ```
 ````
 
@@ -440,7 +440,7 @@ As a starting point, copy the current script across to a new script called `dash
 
 # %%
 import pandas as pd
-df = pd.read_csv("data/Players2024.csv")
+df = pd.read_csv("../../data/Players2024.csv")
 
 # %% [markdown]
 """

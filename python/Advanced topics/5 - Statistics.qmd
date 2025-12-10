@@ -44,7 +44,7 @@ We'll be working from our "Players2024" dataset again. To bring it in and clean 
 ```{python}
 import pandas as pd
 
-df = pd.read_csv("data/Players2024.csv")
+df = pd.read_csv("../../data/Players2024.csv")
 df = df[df["positions"] != "Missing"]
 df = df[df["height_cm"] > 100]
 ```

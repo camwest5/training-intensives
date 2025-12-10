@@ -1,5 +1,5 @@
 ---
-title: Introduction and setup
+title: QGIS
 ---
 
 :::{.callout-tip}

@@ -3,7 +3,7 @@ title: Goalkeepers and their heights
 author: Cameron West and Stéphane Guillou
 date: Jan-26
 warning: false
-image: gallery/R/26Summer/example_project/tb.png
+#image: gallery/R/26Summer/example_project/tb.png
 format:
   html:
     code-fold: true
@@ -19,7 +19,7 @@ library(dplyr)
 library(plotly)
 library(knitr)
 
-players_raw <- read.csv("data/Players2024.csv")
+players_raw <- read.csv("../../../../data/Players2024.csv")
 ```
 
 ## A glimpse at the dataset

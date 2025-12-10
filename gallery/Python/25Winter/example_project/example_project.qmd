@@ -19,7 +19,7 @@ import pandas as pd
 import plotly.express as px
 import seaborn as sns
 
-df_raw = pd.read_csv("data/Players2024.csv")
+df_raw = pd.read_csv("../../../../data/Players2024.csv")
 ```
 
 ## A glimpse at the dataset

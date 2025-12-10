@@ -363,7 +363,7 @@ Now, let's import some data to get ready for the next session.
 1. Use the function `pd.read_csv()` to load the data:
 
 ```{python}
-df = pd.read_csv("data/Players2024.csv")
+df = pd.read_csv("../../data/Players2024.csv")
 ```
 
 You'll see that it's now in your variable explorer. You can double-click on a dataframe in the Variable explorer to explore it in a separate window.

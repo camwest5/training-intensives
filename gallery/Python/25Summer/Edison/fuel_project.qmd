@@ -10,7 +10,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv("gallery/Python/25Summer/Edison/data/data/qld_fuel.csv")
+df = pd.read_csv("./data/data/qld_fuel.csv")
 print(df)
 
 
@@ -70,7 +70,7 @@ df = df[ (500 < df["Price"]) & (df["Price"] < 4000)]
 
 df["unit_price"] = df["Price"] / 1000
 
-df.to_csv("gallery/Python/25Summer/Edison/data/filtered_fuel.csv")
+df.to_csv("./data/filtered_fuel.csv")
 
 sns.catplot(data = df, x = "Fuel_Type", y = "Price")
 plt.show()
@@ -106,7 +106,7 @@ plt.show()
 ```{python}
 
 import pandas as pd
-fuel = pd.read_csv("gallery/Python/25Summer/Edison/data/data/qld_fuel.csv")
+fuel = pd.read_csv("./data/data/qld_fuel.csv")
 import geopandas 
 fuel_geo = geopandas.GeoDataFrame(fuel, geometry = geopandas.points_from_xy(x = fuel.Site_Longitude, y = fuel.Site_Latitude)) 
 fuel_geo.plot()
@@ -128,7 +128,7 @@ figure.write_html("fuel.html")
 #| title: "Location of stations"
 #| color: primary
 import pandas as pd
-fuel = pd.read_csv("gallery/Python/25Summer/Edison/data/data/qld_fuel.csv")
+fuel = pd.read_csv("./data/data/qld_fuel.csv")
 import geopandas 
 fuel_geo = geopandas.GeoDataFrame(fuel, geometry = geopandas.points_from_xy(x = fuel.Site_Longitude, y = fuel.Site_Latitude)) 
 fuel_geo.plot()

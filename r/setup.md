@@ -1,5 +1,5 @@
 ---
-title: Introduction and setup
+title: R with RStudio
 ---
 
 :::{.callout-tip}

@@ -5,7 +5,7 @@ date: Jan-25
 authors: "Nafisa, Alex, Adiana & Selina"
 warning: FALSE
 error: FALSE
-image: gallery/R/25Summer/Birdstrike/bs.png
+#image: gallery/R/25Summer/Birdstrike/bs.png
 categories: [R, 25Summer, "data: birds_strikes.csv"]
 ---
 

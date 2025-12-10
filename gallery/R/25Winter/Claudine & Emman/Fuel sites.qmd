@@ -12,7 +12,7 @@ categories: [R, 25Winter, "data: qld_fuel.csv"]
 ## Import data
 
 ```{r}
-fuel <- read.csv("data/qld_fuel.csv")
+fuel <- read.csv("../../../../data/qld_fuel.csv")
 ```
 
 ### Install packages

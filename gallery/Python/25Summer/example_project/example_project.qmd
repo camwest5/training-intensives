@@ -5,13 +5,13 @@
  warning: false
  error: false
  format: dashboard
- image: gallery/Python/25Summer/example_project/tb.png
+ #image: gallery/Python/25Summer/example_project/tb.png
  categories: [Python, 25Summer, "data: Players2024.csv"]
 ---
 
 ```{python}
 import pandas as pd
-df = pd.read_csv("data/Players2024.csv")
+df = pd.read_csv("../../../../data/Players2024.csv")
 
 # Remove missing position
 df = df[df["positions"] != "Missing"]

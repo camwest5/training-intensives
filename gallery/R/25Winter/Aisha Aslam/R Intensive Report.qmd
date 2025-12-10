@@ -40,7 +40,7 @@ library("knitr")
 **A Sneak-peak into the dataset**
 
 ```{r}
-goodreadsdata <- read.csv("data/books.csv")
+goodreadsdata <- read.csv("../../../../data/books.csv")
 
 kable(head(goodreadsdata))
 ```

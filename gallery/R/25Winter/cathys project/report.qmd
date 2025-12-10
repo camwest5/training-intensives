@@ -22,7 +22,7 @@ library(dplyr)
 ## Loading the packages
 
 ```{r}
-books <-  read.csv("data/books.csv")
+books <-  read.csv("../../../../data/books.csv")
 ```
 
 ## The books dataset includes the following fields

@@ -21,7 +21,7 @@ First, I imported the data set and libraries.
 ```{r}
 #| warning: false
 # import csv
-population <-read.csv("data/population.csv")
+population <-read.csv("../../../../data/population.csv")
 
 library(dplyr)
 library(ggplot2)
@@ -84,7 +84,9 @@ aes (x = Year,  y = TotalPop)) +
 geom_point() +
   labs (caption = "Total Population over time", x = "Year", y = "Population")
 ```
-A comparison of males (blue) and females (pink) shows that the male population was more strongly affected and has yet to recover. While we would typically expect some skewing in the number of men based on female biased gender ratios (global pattern), Cambodia's gender ratio is outside of usual ranges, due to the gendered impact of civil war and genocide on men (NIS 2019).   
+
+A comparison of males (blue) and females (pink) shows that the male population was more strongly affected and has yet to recover. While we would typically expect some skewing in the number of men based on female biased gender ratios (global pattern), Cambodia's gender ratio is outside of usual ranges, due to the gendered impact of civil war and genocide on men (NIS 2019).
+
 ```{r}
 ggplot (Population_cam,
 aes (x = Year,  y = TotalPop)) +
@@ -96,9 +98,9 @@ geom_point(aes(y = Females), colour = "pink") +
 
 ### Average age over time
 
-Given the total population changes, we would expect that average ages would change around the years of decline and incline in population, to reflect births / deaths and their impact on the age structure of the population. 
+Given the total population changes, we would expect that average ages would change around the years of decline and incline in population, to reflect births / deaths and their impact on the age structure of the population.
 
-This scatterplot was drawn to investigate. It illustrates the expected dip in average age during the civil war and genocide in the 1970s (which adversly affected older generations). However, it also illustrates a significant decline in age in the mid-1990s. This, with reasonably stable population change could mean either both a jump in deaths of older people and a jump in birth rate, or alternatively, a massive influx of younger migrants. If neither are true, then there is a data error in the base data set. 
+This scatterplot was drawn to investigate. It illustrates the expected dip in average age during the civil war and genocide in the 1970s (which adversly affected older generations). However, it also illustrates a significant decline in age in the mid-1990s. This, with reasonably stable population change could mean either both a jump in deaths of older people and a jump in birth rate, or alternatively, a massive influx of younger migrants. If neither are true, then there is a data error in the base data set.
 
 ```{r}
 ggplot (Population_cam,
@@ -106,8 +108,6 @@ aes (x = Year,  y = Age)) +
 geom_point()+
   labs (caption = "Average age by year", x = "Year", y = "Age")
 ```
-
-
 
 This analysis indicates unusual patterns in the orange line - migrants - driving the age changes seen in the 1990s
 
@@ -121,19 +121,21 @@ geom_point(aes(y = Dead_women), colour = "pink") +
   labs (caption = "Population over time, by births (green), male deaths (blue), female deaths (pink), and migrants (orange)", x = "Year", y = "Population")
 ```
 
-Its next worth checking the average age of migrants to see if this might be the case - we can check summary (where we see the average number is low), and then by age, where we see emmigration (negative migration in the graph) is older people, and higher levels of immigration (positive migration) likely to cause the blip are younger people <5 years of age. In reality, it is highly unlikely that a sudden influx of infants without adults occured.
+Its next worth checking the average age of migrants to see if this might be the case - we can check summary (where we see the average number is low), and then by age, where we see emmigration (negative migration in the graph) is older people, and higher levels of immigration (positive migration) likely to cause the blip are younger people \<5 years of age. In reality, it is highly unlikely that a sudden influx of infants without adults occured.
 
 ```{r}
 summary (Population_cam$Migrants)
 
 ```
+
 ```{r}
 ggplot(Population_cam,
        aes(x = Migrants, y = Age)) + 
   geom_point()+
   labs (caption = "Migrant ages, all years")
 ```
-We could also run an linear model to see the extent to which variation in the population over time correlates with each of migration, male deaths, female deaths, and births. 
+
+We could also run an linear model to see the extent to which variation in the population over time correlates with each of migration, male deaths, female deaths, and births.
 
 Migrants - poor explanation
 
@@ -143,6 +145,7 @@ LM_Migr <-lm("TotalPop ~ Migrants", Population_cam)
 
 summary(LM_Migr)$r.squared
 ```
+
 Births - explains significantly more
 
 ```{r}
@@ -151,28 +154,36 @@ LM_Births <-lm("TotalPop ~ Births", Population_cam)
 
 summary(LM_Births)$r.squared
 ```
+
 Male deaths - poor explanation
+
 ```{r}
 #| echo: false
 LM_MD <-lm("TotalPop ~ Dead_men", Population_cam)
 
 summary(LM_MD)$r.squared
 ```
+
 Female deaths - poor explanation
+
 ```{r}
 #| echo: false
 LM_MD <-lm("TotalPop ~ Dead_women", Population_cam)
 
 summary(LM_MD)$r.squared
 ```
+
 A covariance shows strong correlation.
+
 ```{r}
 
 cov (Population_cam$Year, Population_cam$TotalPop)
 
 
 ```
+
 ### Conclusion
+
 In this dataset, it appears that Births are a better predicter of total population than any other factor.
 
-This analysis has identified what appears to be an issue with the migrant age data for some years, given a lack of reasoning for why large numbers of young people would be comming across the border; this is most likely a data recording issue for age of migrants.  
+This analysis has identified what appears to be an issue with the migrant age data for some years, given a lack of reasoning for why large numbers of young people would be comming across the border; this is most likely a data recording issue for age of migrants.

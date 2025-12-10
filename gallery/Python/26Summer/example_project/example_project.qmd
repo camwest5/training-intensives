@@ -19,7 +19,7 @@ import pandas as pd
 import plotly.express as px
 import seaborn as sns
 
-df_raw = pd.read_csv("data/Players2024.csv")
+df_raw = pd.read_csv("../../../../data/Players2024.csv")
 ```
 
 ## A glimpse at the dataset
@@ -72,7 +72,7 @@ After cleaning the data we can now analyse the players' heights to see if there'
 sns.catplot(data = df, x = "positions", y = "height_cm", kind = "box", order = ["Goalkeeper", "Defender", "Midfield", "Attack"])
 plt.xlabel("Position")
 plt.ylabel("Height (cm)")
-plt.savefig("gallery/Python/26Summer/example_project/tb.png")
+plt.savefig("./tb.png")
 plt.show()
 ```
 
