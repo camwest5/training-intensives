@@ -45,12 +45,20 @@ jobs:
         with:
           cache-version: 1
 
-      - name: Install Python and Dependencies
+      - name: Install Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
           cache: 'pip'
-      - run: pip install -r requirements.txt
+
+      - name: Initialise venv
+        run: python -m venv .venv
+
+      - name: Activate venv
+        run: source .venv/bin/activate
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
