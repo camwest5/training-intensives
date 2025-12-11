@@ -29,6 +29,10 @@ As we set up, there's a few things to do, if you haven't already
 ## Software
 ...
 
+  ## Setting up
+  
+This tutorial is designed for **QGIS 3.40**. If you need to install it on your computer, go to the [QGIS website](https://qgis.org/download/).
+
 ## Workshops
 ...
 
