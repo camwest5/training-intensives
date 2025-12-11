@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2025-12-11">
+
+<title>Visualisation – UQ Library Training Intensives</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-d58b9a2750f78c4ba5585652ef45bd1c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link href="../../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="../../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="../../site_libs/plotly-binding-4.10.4/plotly.js"></script>
+<script src="../../site_libs/typedarray-0.1/typedarray.min.js"></script>
+<script src="../../site_libs/jquery-3.5.1/jquery.min.js"></script>
+<link href="../../site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+<script src="../../site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+<link href="../../site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="../../site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">UQ Library Training Intensives</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-content" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Content</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-content">    
+        <li>
+    <a class="dropdown-item" href="../../r/setup.html">
+ <span class="dropdown-text">R with RStudio</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../qgis/setup.html">
+ <span class="dropdown-text">QGIS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../python/setup.html">
+ <span class="dropdown-text">Python for Data Analysis</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../project/details.html"> 
+<span class="menu-text">The Project</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../gallery/project_gallery.html"> 
+<span class="menu-text">Project Gallery</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://uqlibrary.github.io/technology-training"> 
+<span class="menu-text">UQ Library Technology Training</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#installing-ggplot2" id="toc-installing-ggplot2" class="nav-link active" data-scroll-target="#installing-ggplot2">Installing ggplot2</a></li>
+  <li><a href="#finding-help" id="toc-finding-help" class="nav-link" data-scroll-target="#finding-help">Finding help</a>
+  <ul class="collapse">
+  <li><a href="#introducing-ggplot2" id="toc-introducing-ggplot2" class="nav-link" data-scroll-target="#introducing-ggplot2">Introducing ggplot2</a></li>
+  </ul></li>
+  <li><a href="#the-components-of-the-grammar-of-graphics" id="toc-the-components-of-the-grammar-of-graphics" class="nav-link" data-scroll-target="#the-components-of-the-grammar-of-graphics">The components of the Grammar of Graphics</a></li>
+  <li><a href="#ggplot2s-three-essential-components" id="toc-ggplot2s-three-essential-components" class="nav-link" data-scroll-target="#ggplot2s-three-essential-components">ggplot2’s three essential components</a></li>
+  <li><a href="#line-plots" id="toc-line-plots" class="nav-link" data-scroll-target="#line-plots">Line plots</a></li>
+  <li><a href="#scatterplots" id="toc-scatterplots" class="nav-link" data-scroll-target="#scatterplots">Scatterplots</a></li>
+  <li><a href="#adding-aesthetics" id="toc-adding-aesthetics" class="nav-link" data-scroll-target="#adding-aesthetics">Adding aesthetics</a></li>
+  <li><a href="#trend-lines" id="toc-trend-lines" class="nav-link" data-scroll-target="#trend-lines">Trend lines</a></li>
+  <li><a href="#layering" id="toc-layering" class="nav-link" data-scroll-target="#layering">Layering</a></li>
+  <li><a href="#the-colour-aesthetic" id="toc-the-colour-aesthetic" class="nav-link" data-scroll-target="#the-colour-aesthetic">The <code>colour</code> aesthetic</a></li>
+  <li><a href="#saving-a-plot" id="toc-saving-a-plot" class="nav-link" data-scroll-target="#saving-a-plot">Saving a plot</a></li>
+  <li><a href="#bar-charts-and-ordered-factors" id="toc-bar-charts-and-ordered-factors" class="nav-link" data-scroll-target="#bar-charts-and-ordered-factors">Bar charts and ordered factors</a>
+  <ul class="collapse">
+  <li><a href="#customising-a-plot" id="toc-customising-a-plot" class="nav-link" data-scroll-target="#customising-a-plot">Customising a plot</a></li>
+  <li><a href="#change-labels" id="toc-change-labels" class="nav-link" data-scroll-target="#change-labels">Change labels</a></li>
+  <li><a href="#horizontal-bar-charts" id="toc-horizontal-bar-charts" class="nav-link" data-scroll-target="#horizontal-bar-charts">Horizontal bar charts</a></li>
+  <li><a href="#built-in-themes" id="toc-built-in-themes" class="nav-link" data-scroll-target="#built-in-themes">Built-in themes</a></li>
+  </ul></li>
+  <li><a href="#interactive-visualisations" id="toc-interactive-visualisations" class="nav-link" data-scroll-target="#interactive-visualisations">Interactive visualisations</a></li>
+  <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further resources</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Visualisation</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 11, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>During this session, you will:</p>
+<ul>
+<li>Have a visualisation package installed (ggplot2)</li>
+<li>Learn how to explore data visually</li>
+<li>Learn about the 3 essential ggplot2 components</li>
+<li>Use different kinds of visualisations</li>
+<li>Layer several visualisations</li>
+<li>Learn how to customise a plot with colours, labels and themes.</li>
+</ul>
+<section id="installing-ggplot2" class="level2">
+<h2 class="anchored" data-anchor-id="installing-ggplot2">Installing ggplot2</h2>
+<p>We first need to make sure we have the <strong>ggplot2 package</strong> available on our computer. We can use the “Install” button in the “Packages” pane, or we can execute this command in the console: <code>install.packages("ggplot2")</code></p>
+<p>You only need to install a package once, but you need to load it every time you start a new R session.</p>
+<p>We will write ggplot2 code more comfortably in a <strong>script</strong>. Feel free to continue using the script from previous sessions, or create a new one about visualisations.</p>
+<p>We can straight away <strong>load the package into the library</strong> by adding this command to our script and executing it:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="finding-help" class="level2">
+<h2 class="anchored" data-anchor-id="finding-help">Finding help</h2>
+<p>We are going to work with different datasets that come with the ggplot2 package. For any dataset or function doubts that you might have, don’t forget the three ways to bring up a help page:</p>
+<ol type="1">
+<li>the command: <code>?functionname</code></li>
+<li>the keyboard shortcut: press <kbd>F1</kbd> after writing a function name</li>
+<li>the search box in the Help pane</li>
+</ol>
+<section id="introducing-ggplot2" class="level3">
+<h3 class="anchored" data-anchor-id="introducing-ggplot2">Introducing ggplot2</h3>
+<p>The R package ggplot2 was developed by Hadley Wickham with the objective of creating a grammar of graphics for categorical data (in 2007). It is based on the book <em>The Grammar of Graphics</em> Developed by Leland Wilkinson (first edition published in 1999).</p>
+<p>It is now part of the group of data science packages called Tidyverse.</p>
+</section>
+</section>
+<section id="the-components-of-the-grammar-of-graphics" class="level2">
+<h2 class="anchored" data-anchor-id="the-components-of-the-grammar-of-graphics">The components of the Grammar of Graphics</h2>
+<p>The Grammar of Graphics is based on the idea that you can build every graph from the same few components.</p>
+<p>The components are:</p>
+<ul>
+<li>Data</li>
+<li>Mapping</li>
+<li>Statistics</li>
+<li>Scales</li>
+<li>Geometries</li>
+<li>Facets</li>
+<li>Coordinates</li>
+<li>Theme</li>
+</ul>
+<p>In this introductory session, we will mainly focus on the <strong>data</strong>, the <strong>mapping</strong>, the <strong>statistics</strong>, the <strong>geometries</strong> and the <strong>theme</strong>.</p>
+</section>
+<section id="ggplot2s-three-essential-components" class="level2">
+<h2 class="anchored" data-anchor-id="ggplot2s-three-essential-components">ggplot2’s three essential components</h2>
+<p>In ggplot2, the 3 main components that we usually have to provide are:</p>
+<ol type="1">
+<li>Where the <strong>data</strong> comes from,</li>
+<li>the <strong>aesthetic mappings</strong>, and</li>
+<li>a <strong>geometry</strong>.</li>
+</ol>
+<p>For our first example, let’s use the <code>msleep</code> dataset (from the ggplot2 package), which contains data about mammals’ sleeping patterns.</p>
+<blockquote class="blockquote">
+<p>You can find out about the dataset with <code>?msleep</code>.</p>
+</blockquote>
+<p>Let’s start with specifying where the <strong>data</strong> comes from in the <code>ggplot()</code> function:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> msleep)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="3---Data-Sources-and-Projections_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>This is not very interesting. We need to tell ggplot2 <em>what</em> we want to visualise, by <strong>mapping</strong> <em>aesthetic elements</em> (like our axes) to <em>variables</em> from the data. We want to visualise how common different conservations statuses are, so let’s associate the right variable to the x axis:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> msleep,</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> conservation))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="3---Data-Sources-and-Projections_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>ggplot2 has done what we asked it to do: the conservation variable is on the x axis. But nothing is shown on the plot area, because we haven’t defined <em>how</em> to represent the data, with a <code>geometry_*</code> function:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> msleep,</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> conservation)) <span class="sc">+</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="3---Data-Sources-and-Projections_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Now we have a useful plot: we can see that a lot of animals in this dataset don’t have a conservation status, and that “least concern” is the next most common value.</p>
+<p>We can see our three essential elements in the code:</p>
+<ol type="1">
+<li>the <strong>data</strong> comes from the <code>msleep</code> object;</li>
+<li>the variable <code>conservation</code> is <strong>mapped to the aesthetic</strong> <code>x</code> (i.e.&nbsp;the x axis);</li>
+<li>the <strong>geometry</strong> is <code>"bar"</code>, for “bar chart”.</li>
+</ol>
+<p>Here, we don’t need to specify what variable is associated to the y axis, as the “bar” geometry automatically does a count of the different values in the <code>conservation</code> variable. That is what <strong>statistics</strong> are applied automatically to the data.</p>
+<blockquote class="blockquote">
+<p>In ggplot2, each geometry has default statistics, so we often don’t need to specify which stats we want to use. We could use a <code>stat_*()</code> function instead of a <code>geom_*()</code> function, but most people start with the geometry (and let ggplot2 pick the default statistics that are applied).</p>
+</blockquote>
+</section>
+<section id="line-plots" class="level2">
+<h2 class="anchored" data-anchor-id="line-plots">Line plots</h2>
+<p>Let’s have a look at another dataset: the <code>economics</code> dataset from the US. Learn more about it with <code>?economics</code>, and have a peak at its structure with:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(economics)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>spc_tbl_ [574 × 6] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
+ $ date    : Date[1:574], format: "1967-07-01" "1967-08-01" ...
+ $ pce     : num [1:574] 507 510 516 512 517 ...
+ $ pop     : num [1:574] 198712 198911 199113 199311 199498 ...
+ $ psavert : num [1:574] 12.6 12.6 11.9 12.9 12.8 11.8 11.7 12.3 11.7 12.3 ...
+ $ uempmed : num [1:574] 4.5 4.7 4.6 4.9 4.7 4.8 5.1 4.5 4.1 4.6 ...
+ $ unemploy: num [1:574] 2944 2945 2958 3143 3066 ...</code></pre>
+</div>
+</div>
+<p>Do you think that unemployment is stable over the years? Let’s have a look with a line plot, often used to visualise time series:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> economics,</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> date,</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>                     <span class="at">y =</span> unemploy)) <span class="sc">+</span> </span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="3---Data-Sources-and-Projections_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Let’s go through our essential elements once more:</p>
+<ul>
+<li>The <code>ggplot()</code> function initialises a ggplot object. In it, we declare the <strong>input data frame</strong> and specify the set of plot aesthetics used throughout all layers of our plot;</li>
+<li>The <code>aes()</code> function groups our <strong>mappings of aesthetics to variables</strong>;</li>
+<li>The <code>geom_&lt;...&gt;()</code> function specifies what <strong>geometric element</strong> we want to use.</li>
+</ul>
+</section>
+<section id="scatterplots" class="level2">
+<h2 class="anchored" data-anchor-id="scatterplots">Scatterplots</h2>
+<p>Scatterplots are often used to look at the relationship between two variables. Let’s try it with a new dataset: <code>mpg</code> (which stands for “miles per gallon”), a dataset about fuel efficiency of different models of cars.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>?mpg</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(mpg)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Do you think that big engines use fuel more efficiently than small engines?</p>
+<p>We can focus on two variables:</p>
+<ul>
+<li><code>displ</code>: a car’s engine size, in litres.</li>
+<li><code>hwy</code>: a car’s fuel efficiency on the highway, in miles per gallon.</li>
+</ul>
+<p>For the geometry, we now have use “points”:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> mpg,</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> displ,</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>                     <span class="at">y =</span> hwy)) <span class="sc">+</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="3---Data-Sources-and-Projections_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Notice how the points seem to be aligned on a grid? That’s because the data was rounded. If we want to better visualise the density of points, we can use the “count” geometry, which makes the dots bigger when data points have the same <code>x</code> and <code>y</code> values:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> mpg,</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> displ,</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>                     <span class="at">y =</span> hwy)) <span class="sc">+</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_count</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="3---Data-Sources-and-Projections_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Alternatively, we can avoid overlapping of points by using the “jitter” geometry, which gives the points a little shake:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> mpg,</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> displ,</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>                     <span class="at">y =</span> hwy)) <span class="sc">+</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_jitter</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="3---Data-Sources-and-Projections_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Even though the position of the dots does not match exactly the original <code>x</code> and <code>y</code> values, it does help visualise densities better.</p>
+<p>The plot shows a negative relationship between engine size (<code>displ</code>) and fuel efficiency (<code>hwy</code>). In other words, cars with big engines use more fuel. Does this confirm or refute your hypothesis about fuel efficiency and engine size?</p>
+<p>However, we can see some outliers. We need to find out more about our data.</p>
+</section>
+<section id="adding-aesthetics" class="level2">
+<h2 class="anchored" data-anchor-id="adding-aesthetics">Adding aesthetics</h2>
+<p>We can highlight the “class” factor by adding a new aesthetic:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> mpg,</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> displ,</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>                     <span class="at">y =</span> hwy,</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>                     <span class="at">colour =</span> class)) <span class="sc">+</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_jitter</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="3---Data-Sources-and-Projections_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>It seems that two-seaters are more fuel efficient than other cars with a similar engine size, which can be explained by the lower weight of the car. The general trend starts to make more sense!</p>
+<p>We now know how to create a simple scatterplot, and how to visualise extra variables. But how can we better represent a correlation?</p>
+</section>
+<section id="trend-lines" class="level2">
+<h2 class="anchored" data-anchor-id="trend-lines">Trend lines</h2>
+<p>A trend line can be created with the <code>geom_smooth()</code> function:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(mpg,</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> displ,</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">y =</span> hwy)) <span class="sc">+</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_smooth</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using method = 'loess' and formula = 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="3---Data-Sources-and-Projections_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>We stopped using the argument names because we know in which order they appear: first the data, then the mapping of aesthetics. Let’s save ourselves some typing from now on!</p>
+</blockquote>
+<p>The console shows you what function / formula was used to draw the trend line. This is important information, as there are countless ways to do that. To better understand what happens in the background, open the function’s help page and notice that the default value for the <code>method</code> argument is “NULL”. Read up on how it automatically picks a suitable method depending on the sample size, in the “Arguments” section.</p>
+<p>Want a linear trend line instead? Add the argument <code>method = "lm"</code> to your function:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(mpg,</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> displ,</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">y =</span> hwy)) <span class="sc">+</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="3---Data-Sources-and-Projections_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="layering" class="level2">
+<h2 class="anchored" data-anchor-id="layering">Layering</h2>
+<p>A trend line is usually displayed on top of the scatterplot. How can we combine several layers? We can string them with the <code>+</code> operator:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(mpg,</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> displ,</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">y =</span> hwy)) <span class="sc">+</span> </span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_smooth</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="3---Data-Sources-and-Projections_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>The order of the functions matters: the points will be drawn before the trend line, which is probably what you’re after.</p>
+</blockquote>
+</section>
+<section id="the-colour-aesthetic" class="level2">
+<h2 class="anchored" data-anchor-id="the-colour-aesthetic">The <code>colour</code> aesthetic</h2>
+<p>We can once again add some information to our visualisation by mapping the <code>class</code> variable to the <code>colour</code> aesthetic:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(mpg,</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> displ,</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">y =</span> hwy)) <span class="sc">+</span> </span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">colour =</span> class)) <span class="sc">+</span> </span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_smooth</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="3---Data-Sources-and-Projections_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Challenge 1 – where should aesthetics be defined?</strong></p>
+<p>Take the last plot we created:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(mpg,</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> displ,</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">y =</span> hwy)) <span class="sc">+</span> </span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">colour =</span> class)) <span class="sc">+</span> </span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_smooth</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>What would happen if you moved the <code>colour = class</code> aesthetic from the geometry function to the <code>ggplot()</code> call?</p>
+<p>Different geometries can also have their own mappings that overwrite the defaults. If you place mappings in a <code>geom_*</code> function, ggplot2 will treat them as local mappings for the layer. It will use these mappings to extend or overwrite the global mappings for that layer only. This makes it possible to display different aesthetics in different layers.</p>
+</section>
+<section id="saving-a-plot" class="level2">
+<h2 class="anchored" data-anchor-id="saving-a-plot">Saving a plot</h2>
+<p>Like your visualisation? You can export it with the “Export” menu in the “Plots” pane.</p>
+<ul>
+<li>Building a document or a slideshow? You can copy it straight to your clipboard, and paste it into it.</li>
+<li>A PDF is a good, quick option to export an easily shareable file with vector graphics. Try for example the “A5” size, the “Landscape” orientation, and save it into your “plots” directory.</li>
+<li>More options are available in the “Save as image…” option. PNG is a good compressed format for graphics, but if you want to further customise your visualisation in a different program, use SVG or EPS, which are vector formats. (Try to open an SVG file in <a href="https://inkscape.org/">Inkscape</a> for example.)</li>
+</ul>
+<p>To save the last plot with a command, you can use the <code>ggsave()</code> function:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="at">filename =</span> <span class="st">"plots/fuel_efficiency.png"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>This is great to automate the export process for each plot in your script, but <code>ggsave()</code> also has extra options, like setting the DPI, which is useful for getting the right resolution for a specific use. For example, to export a plot for your presentation:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="at">filename =</span> <span class="st">"plots/fuel_efficiency.png"</span>, <span class="at">dpi =</span> <span class="st">"screen"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<blockquote class="blockquote">
+<p>Saving a .svg file with requires installing the svglite package. This packages seems so work best installing in a fresh R session (Session &gt; Restart R) from source <code>install.packages("svglite", type = "source")</code>. Then load the library <code>library(svglite)</code> rerun your code including loading previous libraries (<code>ggplot2</code> etc.) and now saving a plot with a .svg extension should work!</p>
+</blockquote>
+<p><strong>Challenge 2 – add a variable and a smooth line</strong></p>
+<p>Let’s use a similar approach to what we did with the <code>mpg</code> dataset.</p>
+<p>Take our previous unemployment visualisation, but represented with points this time:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(economics,</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> date,</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">y =</span> unemploy)) <span class="sc">+</span> </span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>How could we:</p>
+<ol type="1">
+<li>Add a smooth line for the number of unemployed people. Are there any interesting arguments that could make the smoother more useful?</li>
+<li>Colour the points according to the median duration of unemployment (see <code>?economics</code>)</li>
+</ol>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(economics,</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> date,</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">y =</span> unemploy)) <span class="sc">+</span> </span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">colour =</span> uempmed)) <span class="sc">+</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_smooth</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="3---Data-Sources-and-Projections_files/figure-html/unnamed-chunk-20-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>See how the legend changes depending on the type of data mapped to the <code>colour</code> aesthetic? (i.e.&nbsp;categorical vs continuous)</p>
+</blockquote>
+<p>This default “trend line” is not particularly useful. We could make it follow the data more closely by using the <code>span</code> argument. The closer to 0, the closer to the data the smoother will be:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(economics,</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> date,</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">y =</span> unemploy)) <span class="sc">+</span> </span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">colour =</span> uempmed)) <span class="sc">+</span></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_smooth</span>(<span class="at">span =</span> <span class="fl">0.1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="3---Data-Sources-and-Projections_files/figure-html/unnamed-chunk-21-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>You can now see why this is called a “smoother”: we can fit a smooth curve to data that varies a lot.</p>
+<p>To further refine our visualisation, we could visualise the unemployment rate rather than the number of unemployed people, by calculating it straight into our code:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(economics,</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> date,</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">y =</span> unemploy <span class="sc">/</span> pop)) <span class="sc">+</span> </span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">colour =</span> uempmed)) <span class="sc">+</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_smooth</span>(<span class="at">span =</span> <span class="fl">0.1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="3---Data-Sources-and-Projections_files/figure-html/unnamed-chunk-22-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The <a href="https://en.wikipedia.org/wiki/Early_1980s_recession">early 1980s recession</a> now seems to have had a more significant impact on unemployment than the <a href="https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%9308">Global Financial Crisis</a> of 2007-2008.</p>
+</section>
+<section id="bar-charts-and-ordered-factors" class="level2">
+<h2 class="anchored" data-anchor-id="bar-charts-and-ordered-factors">Bar charts and ordered factors</h2>
+<p>Let’s use the <code>diamonds</code> dataset now. The <code>diamonds</code> dataset comes with ggplot2 and contains information about ~54,000 diamonds, including the price, carat, colour, clarity, and cut quality of each diamond.</p>
+<p>Let’s have a look at the data:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>diamonds</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(diamonds)</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>?diamonds</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Back to bar charts. Consider a basic bar chart, as drawn with <code>geom_bar()</code>. The following chart displays the total number of diamonds in the <code>diamonds</code> dataset, grouped by cut:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(diamonds,</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> cut)) <span class="sc">+</span> </span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_bar</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="3---Data-Sources-and-Projections_files/figure-html/unnamed-chunk-24-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The chart shows that more diamonds are available with high quality cuts than with low quality cuts.</p>
+<p><code>cut</code> is an ordered factor, which you can confirm by printing it to the console:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(diamonds<span class="sc">$</span>cut)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] Ideal     Premium   Good      Premium   Good      Very Good
+Levels: Fair &lt; Good &lt; Very Good &lt; Premium &lt; Ideal</code></pre>
+</div>
+</div>
+<p>See how ggplot2 respects that order in the bar chart?</p>
+<section id="customising-a-plot" class="level3">
+<h3 class="anchored" data-anchor-id="customising-a-plot">Customising a plot</h3>
+<p>Let’s see how we can customise our bar chart’s look.</p>
+<section id="change-a-geometrys-default-colour" class="level4">
+<h4 class="anchored" data-anchor-id="change-a-geometrys-default-colour">Change a geometry’s default colour</h4>
+<p>First, we can pick our favourite colour in <code>geom_bar()</code>:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(diamonds,</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> cut)) <span class="sc">+</span> </span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="st">"tomato"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="3---Data-Sources-and-Projections_files/figure-html/unnamed-chunk-26-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>If you are curious about what colour names exist in R, you can use the <code>colours()</code> function. Alernatively, you can use any hex value like “#760daa”.</p>
+</section>
+</section>
+<section id="change-labels" class="level3">
+<h3 class="anchored" data-anchor-id="change-labels">Change labels</h3>
+<p>We can also modify labels with the <code>labs()</code> function to make our plot more self-explanatory:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(diamonds,</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> cut)) <span class="sc">+</span> </span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="st">"tomato"</span>) <span class="sc">+</span></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Where are the bad ones?"</span>,</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>         <span class="at">x =</span> <span class="st">"Quality of the cut"</span>,</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>         <span class="at">y =</span> <span class="st">"Number of diamonds"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="3---Data-Sources-and-Projections_files/figure-html/unnamed-chunk-27-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Let’s have a look at what <code>labs()</code> can do:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>?labs</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>It can edit the title, the subtitle, the x and y axes labels, and the caption.</p>
+<blockquote class="blockquote">
+<p>Remember that captions and titles are better sorted out in the publication itself, especially for accessibility reasons (e.g.&nbsp;to help with screen readers).</p>
+</blockquote>
+</section>
+<section id="horizontal-bar-charts" class="level3">
+<h3 class="anchored" data-anchor-id="horizontal-bar-charts">Horizontal bar charts</h3>
+<p>For a horizontal bar chart, we can map the <code>cut</code> variable to the <code>y</code> aesthetic instead of <code>x</code>. But remember to also change your labels around!</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(diamonds,</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">y =</span> cut)) <span class="sc">+</span> <span class="co"># switch here...</span></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="st">"tomato"</span>) <span class="sc">+</span></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Where are the bad ones?"</span>,</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Quality of the cut"</span>, <span class="co"># ...but also here!</span></span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Number of diamonds"</span>) <span class="co"># ...and here!</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="3---Data-Sources-and-Projections_files/figure-html/unnamed-chunk-29-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>This is particularly helpful when long category names overlap under the x axis.</p>
+</section>
+<section id="built-in-themes" class="level3">
+<h3 class="anchored" data-anchor-id="built-in-themes">Built-in themes</h3>
+<p>The <code>theme()</code> function allows us to really get into the details of our plot’s look, but some <code>theme_*()</code> functions make it easy to apply a built-in theme, like <code>theme_bw()</code>:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(diamonds,</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">y =</span> cut)) <span class="sc">+</span> </span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="st">"tomato"</span>) <span class="sc">+</span></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Where are the bad ones?"</span>,</span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Quality of the cut"</span>,</span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Number of diamonds"</span>) <span class="sc">+</span></span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="3---Data-Sources-and-Projections_files/figure-html/unnamed-chunk-30-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Try <code>theme_minimal()</code> as well, and if you want more options, install the <code>ggthemes</code> package!</p>
+</section>
+</section>
+<section id="interactive-visualisations" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-visualisations">Interactive visualisations</h2>
+<p>Plotly is a package that allows creating interactive visualisation. A nifty aspect of it is that it can directly convert most static ggplot2 visualisations to interactive HTML visualisations.</p>
+<p>After installing the package, you can convert our mpg visualisation by saving it as an object, and passing it to the <code>ggplotly()</code> function:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>static_plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(mpg,</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>                      <span class="fu">aes</span>(<span class="at">x =</span> displ,</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>                          <span class="at">y =</span> hwy)) <span class="sc">+</span> </span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="fu">aes</span>(<span class="at">colour =</span> class)) <span class="sc">+</span> </span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>()</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplotly</span>(static_plot)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-6316649c69cc8cfba2f8" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-6316649c69cc8cfba2f8">{"x":{"data":[{"x":[5.6909510698914527,5.6965742611698804,6.2171642155013975,6.1786831930838524,7.0137836073711517],"y":[26.059595821425319,23.215019127726556,25.756198278069498,25.132404590211809,24.108890842832626],"text":["displ: 5.7<br />hwy: 26<br />class: 2seater","displ: 5.7<br />hwy: 23<br />class: 2seater","displ: 6.2<br />hwy: 26<br />class: 2seater","displ: 6.2<br />hwy: 25<br />class: 2seater","displ: 7.0<br />hwy: 24<br />class: 2seater"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(248,118,109,1)","opacity":1,"size":5.6692913385826778,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(248,118,109,1)"}},"hoveron":"points","name":"2seater","legendgroup":"2seater","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.8399634203501045,1.8345902925729751,1.9745539766177536,2.0229674221575258,2.8259688719920812,2.7659296319819986,3.1077270281687381,1.8223823152668774,1.7750425367988647,1.9680998192913832,1.9670229831337931,2.7753873204067347,2.7694318759627641,3.1257497870922091,3.0812530931644142,2.4308215950243173,2.4049149235151708,2.4787765661813319,2.4863774208724498,2.5214386049285529,2.4918490971811118,2.2053554805368187,2.2384346374683082,2.3924057172238826,2.4259931873902678,2.9794100695475936,3.0171731841750442,3.3104652745462952,1.8394179852306842,1.7610542286932471,1.7736099383607509,1.7680363055132331,1.7889900208823384,1.9951553397439421,1.9931577385030688,1.965257433075458,1.9964842397719622,2.7769231194257733,1.8908624412305652,1.9765877996198833,2.0249576726928353,1.9818082595244051,1.9719620022363962,2.469095734190196,2.4701903798617422,2.8156313205696639,2.7655399243347345],"y":[28.63645133189857,28.960101217404009,30.833134519495069,30.205117663554848,25.983637124858795,25.746606180071829,27.086490549705921,25.936298775859179,24.75633761435747,28.046669380739331,27.159010515920819,25.213739902339874,24.820905936509369,24.670675806328653,25.267001358605921,29.177352167479693,26.781313331611454,24.953070100210606,27.349773513898253,24.979402283392847,26.920436895079909,27.077702259831131,29.119621762447061,30.676169645041227,31.309405799023807,26.082841051742435,25.708383500203489,26.954461102746428,29.855308326333763,32.827287904918194,34.76703487876803,37.325657948851585,35.102162651717663,28.744631452299654,26.086460560560226,28.658134966902434,29.191954537853597,24.199054201692341,43.874712266772988,28.760746015422047,25.721622778847813,29.215004989132286,29.024292536452414,29.37496736627072,28.758471511304379,22.778898423165082,23.757784807868301],"text":["displ: 1.8<br />hwy: 29<br />class: compact","displ: 1.8<br />hwy: 29<br />class: compact","displ: 2.0<br />hwy: 31<br />class: compact","displ: 2.0<br />hwy: 30<br />class: compact","displ: 2.8<br />hwy: 26<br />class: compact","displ: 2.8<br />hwy: 26<br />class: compact","displ: 3.1<br />hwy: 27<br />class: compact","displ: 1.8<br />hwy: 26<br />class: compact","displ: 1.8<br />hwy: 25<br />class: compact","displ: 2.0<br />hwy: 28<br />class: compact","displ: 2.0<br />hwy: 27<br />class: compact","displ: 2.8<br />hwy: 25<br />class: compact","displ: 2.8<br />hwy: 25<br />class: compact","displ: 3.1<br />hwy: 25<br />class: compact","displ: 3.1<br />hwy: 25<br />class: compact","displ: 2.4<br />hwy: 29<br />class: compact","displ: 2.4<br />hwy: 27<br />class: compact","displ: 2.5<br />hwy: 25<br />class: compact","displ: 2.5<br />hwy: 27<br />class: compact","displ: 2.5<br />hwy: 25<br />class: compact","displ: 2.5<br />hwy: 27<br />class: compact","displ: 2.2<br />hwy: 27<br />class: compact","displ: 2.2<br />hwy: 29<br />class: compact","displ: 2.4<br />hwy: 31<br />class: compact","displ: 2.4<br />hwy: 31<br />class: compact","displ: 3.0<br />hwy: 26<br />class: compact","displ: 3.0<br />hwy: 26<br />class: compact","displ: 3.3<br />hwy: 27<br />class: compact","displ: 1.8<br />hwy: 30<br />class: compact","displ: 1.8<br />hwy: 33<br />class: compact","displ: 1.8<br />hwy: 35<br />class: compact","displ: 1.8<br />hwy: 37<br />class: compact","displ: 1.8<br />hwy: 35<br />class: compact","displ: 2.0<br />hwy: 29<br />class: compact","displ: 2.0<br />hwy: 26<br />class: compact","displ: 2.0<br />hwy: 29<br />class: compact","displ: 2.0<br />hwy: 29<br />class: compact","displ: 2.8<br />hwy: 24<br />class: compact","displ: 1.9<br />hwy: 44<br />class: compact","displ: 2.0<br />hwy: 29<br />class: compact","displ: 2.0<br />hwy: 26<br />class: compact","displ: 2.0<br />hwy: 29<br />class: compact","displ: 2.0<br />hwy: 29<br />class: compact","displ: 2.5<br />hwy: 29<br />class: compact","displ: 2.5<br />hwy: 29<br />class: compact","displ: 2.8<br />hwy: 23<br />class: compact","displ: 2.8<br />hwy: 24<br />class: compact"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(196,154,0,1)","opacity":1,"size":5.6692913385826778,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(196,154,0,1)"}},"hoveron":"points","name":"compact","legendgroup":"compact","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.8053885171934962,3.1385340165160596,4.2288736519403756,2.4054271100461482,2.4280647473968564,3.1355292458459734,3.5279602078720926,3.5990140078216792,2.366530711930245,2.4346598906256256,2.4377547645755109,2.3769812867231668,2.461869728770107,2.4722761213593185,3.3108034734427925,2.5291569681838153,2.494364406745881,3.4838462859019637,3.4788550103455784,3.0148695932514964,2.9822701071947813,3.5226512353494761,3.1222731475532055,3.7637901578284798,3.7840560807846484,3.8043035694025455,5.2749929554015393,2.1928607579134405,2.1914104893058539,2.4077004585415125,2.4225888509489595,3.0031053300388155,3.006798857618123,3.4725499919056895,1.786403085347265,1.8294662739522756,1.9756108107976615,1.9679234307818116,2.8350111727230249,2.7906510577164587,3.5808803498744965],"y":[24.207047608494758,24.687939974851908,22.796583727374674,26.626048217713834,29.688759066723286,25.655181934684514,28.929991658218206,26.300641730427742,26.322329129278661,26.968407677300274,30.141387504525483,31.142959677986802,25.758924661017954,25.825797501206399,27.655438317358495,30.660866660624741,32.176623293012383,27.204103352874519,26.324675754830242,26.269317824766041,24.782674231566489,24.745646897889674,26.147135056741536,25.802825182303785,27.381362930685281,28.222135535813869,25.163299717754125,28.668592534773051,27.347933567501606,30.88216464240104,30.86345736514777,26.281684938631951,25.927566146291792,27.820617113821207,29.040935000963508,28.914071115478873,27.790449884720147,28.753412024490537,26.235079673863947,25.814394970051943,26.277525145374238],"text":["displ: 2.8<br />hwy: 24<br />class: midsize","displ: 3.1<br />hwy: 25<br />class: midsize","displ: 4.2<br />hwy: 23<br />class: midsize","displ: 2.4<br />hwy: 27<br />class: midsize","displ: 2.4<br />hwy: 30<br />class: midsize","displ: 3.1<br />hwy: 26<br />class: midsize","displ: 3.5<br />hwy: 29<br />class: midsize","displ: 3.6<br />hwy: 26<br />class: midsize","displ: 2.4<br />hwy: 26<br />class: midsize","displ: 2.4<br />hwy: 27<br />class: midsize","displ: 2.4<br />hwy: 30<br />class: midsize","displ: 2.4<br />hwy: 31<br />class: midsize","displ: 2.5<br />hwy: 26<br />class: midsize","displ: 2.5<br />hwy: 26<br />class: midsize","displ: 3.3<br />hwy: 28<br />class: midsize","displ: 2.5<br />hwy: 31<br />class: midsize","displ: 2.5<br />hwy: 32<br />class: midsize","displ: 3.5<br />hwy: 27<br />class: midsize","displ: 3.5<br />hwy: 26<br />class: midsize","displ: 3.0<br />hwy: 26<br />class: midsize","displ: 3.0<br />hwy: 25<br />class: midsize","displ: 3.5<br />hwy: 25<br />class: midsize","displ: 3.1<br />hwy: 26<br />class: midsize","displ: 3.8<br />hwy: 26<br />class: midsize","displ: 3.8<br />hwy: 27<br />class: midsize","displ: 3.8<br />hwy: 28<br />class: midsize","displ: 5.3<br />hwy: 25<br />class: midsize","displ: 2.2<br />hwy: 29<br />class: midsize","displ: 2.2<br />hwy: 27<br />class: midsize","displ: 2.4<br />hwy: 31<br />class: midsize","displ: 2.4<br />hwy: 31<br />class: midsize","displ: 3.0<br />hwy: 26<br />class: midsize","displ: 3.0<br />hwy: 26<br />class: midsize","displ: 3.5<br />hwy: 28<br />class: midsize","displ: 1.8<br />hwy: 29<br />class: midsize","displ: 1.8<br />hwy: 29<br />class: midsize","displ: 2.0<br />hwy: 28<br />class: midsize","displ: 2.0<br />hwy: 29<br />class: midsize","displ: 2.8<br />hwy: 26<br />class: midsize","displ: 2.8<br />hwy: 26<br />class: midsize","displ: 3.6<br />hwy: 26<br />class: midsize"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(83,180,0,1)","opacity":1,"size":5.6692913385826778,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(83,180,0,1)"}},"hoveron":"points","name":"midsize","legendgroup":"midsize","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.4286123914830386,2.9947950389981268,3.3267635059356686,3.2635178751684726,3.307440339140594,3.2949138201028108,3.3097287368029353,3.7915702039748429,3.7798069768398999,3.7980324232578275,3.968971025068313],"y":[23.601986067555845,23.617213973961771,22.387392402067782,21.641610292159022,24.192363764159381,24.35917713548988,17.347746610082687,22.353931142203511,20.717690634727479,23.142807421274483,23.367244083620609],"text":["displ: 2.4<br />hwy: 24<br />class: minivan","displ: 3.0<br />hwy: 24<br />class: minivan","displ: 3.3<br />hwy: 22<br />class: minivan","displ: 3.3<br />hwy: 22<br />class: minivan","displ: 3.3<br />hwy: 24<br />class: minivan","displ: 3.3<br />hwy: 24<br />class: minivan","displ: 3.3<br />hwy: 17<br />class: minivan","displ: 3.8<br />hwy: 22<br />class: minivan","displ: 3.8<br />hwy: 21<br />class: minivan","displ: 3.8<br />hwy: 23<br />class: minivan","displ: 4.0<br />hwy: 23<br />class: minivan"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,192,148,1)","opacity":1,"size":5.6692913385826778,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,148,1)"}},"hoveron":"points","name":"minivan","legendgroup":"minivan","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.6644059126824144,3.7349874269776047,3.8993400282599029,3.9213269790448249,4.6777006146125499,4.6723097032867376,4.7166022755764425,5.2092074139229956,5.1711515379883348,4.7363954462669788,4.6703185754641892,4.7121553973853594,4.7010919803939766,4.6920485321059822,4.6783195648342373,5.1673454667441554,5.1776210389472546,5.711516351122409,5.9336009636148814,4.2009785191714766,4.1825609990768138,4.5707564163394272,4.6048773256316782,4.6247191661968827,5.4074434122256934,5.415407729931176,2.681510367561132,2.6975389589369301,2.7026222739554941,3.429068760424852,3.4053708100691438,4.0240551073662933,4.0159556412696835],"y":[18.6950696291402,18.126300057768823,16.950647142715752,16.854467834532262,18.966206201538444,19.385786178894342,11.732702171057463,17.272549975104631,14.705734739080071,16.218898242525757,11.688470613211393,16.864613098464908,17.220450025238097,15.768994535133242,12.336151522211731,15.328091369010508,16.092440630309284,16.864953706786036,15.321335912123322,17.087374543212356,17.120047034323214,15.681715614162385,15.841853651963174,17.12710848208517,14.946300163306296,17.048580751568078,20.15350147895515,20.305938729830086,22.119926105253398,16.637634325027467,18.85577505417168,18.259168810211122,19.846657723002135],"text":["displ: 3.7<br />hwy: 19<br />class: pickup","displ: 3.7<br />hwy: 18<br />class: pickup","displ: 3.9<br />hwy: 17<br />class: pickup","displ: 3.9<br />hwy: 17<br />class: pickup","displ: 4.7<br />hwy: 19<br />class: pickup","displ: 4.7<br />hwy: 19<br />class: pickup","displ: 4.7<br />hwy: 12<br />class: pickup","displ: 5.2<br />hwy: 17<br />class: pickup","displ: 5.2<br />hwy: 15<br />class: pickup","displ: 4.7<br />hwy: 16<br />class: pickup","displ: 4.7<br />hwy: 12<br />class: pickup","displ: 4.7<br />hwy: 17<br />class: pickup","displ: 4.7<br />hwy: 17<br />class: pickup","displ: 4.7<br />hwy: 16<br />class: pickup","displ: 4.7<br />hwy: 12<br />class: pickup","displ: 5.2<br />hwy: 15<br />class: pickup","displ: 5.2<br />hwy: 16<br />class: pickup","displ: 5.7<br />hwy: 17<br />class: pickup","displ: 5.9<br />hwy: 15<br />class: pickup","displ: 4.2<br />hwy: 17<br />class: pickup","displ: 4.2<br />hwy: 17<br />class: pickup","displ: 4.6<br />hwy: 16<br />class: pickup","displ: 4.6<br />hwy: 16<br />class: pickup","displ: 4.6<br />hwy: 17<br />class: pickup","displ: 5.4<br />hwy: 15<br />class: pickup","displ: 5.4<br />hwy: 17<br />class: pickup","displ: 2.7<br />hwy: 20<br />class: pickup","displ: 2.7<br />hwy: 20<br />class: pickup","displ: 2.7<br />hwy: 22<br />class: pickup","displ: 3.4<br />hwy: 17<br />class: pickup","displ: 3.4<br />hwy: 19<br />class: pickup","displ: 4.0<br />hwy: 18<br />class: pickup","displ: 4.0<br />hwy: 20<br />class: pickup"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,182,235,1)","opacity":1,"size":5.6692913385826778,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,182,235,1)"}},"hoveron":"points","name":"pickup","legendgroup":"pickup","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.7860079658403993,3.7659737472422421,3.9624818545766174,3.9837006762437523,4.6049007459729907,4.5853631335124367,4.5652555744908749,4.5763918304443356,5.4138457635417581,1.6026902654767037,1.6386933494731784,1.6187247909791769,1.6376252675056457,1.5775338322110475,1.812160624396056,1.8225386313907801,1.8283033508062363,2.0013444801233709,2.0082489726878703,2.0196245684102179,2.0129968487471341,1.9614034012146295,2.6919970217347147,2.7235542682185772,2.7092528148740533,2.197549693938345,2.2093869804590942,2.5184853932820261,2.5177755025401711,1.8748352996818722,1.8698212919570505,1.9967889674380421,1.9990866637416185,2.539999827649444,2.4893673563934864],"y":[25.615973873622714,25.279803651012479,25.671043971925975,24.123867355845867,21.264057170227169,21.745839072763921,22.857251922599971,22.170410923287271,20.349185182712972,32.660467837378384,32.240333223156632,31.717960353940725,28.72438694573939,31.937444970197976,34.371976919658479,36.17376019824296,35.757446898706256,28.863207204826175,25.925339772924779,29.360867992043495,28.054620142281056,27.059409120492639,24.331227408535778,23.695917034707964,23.722745421342552,25.776748832873999,25.622287917509674,26.348578728921712,26.329172057844698,43.728121899627148,40.682481662742795,29.312456995621325,26.302335121296345,28.269102694280445,28.616239157877864],"text":["displ: 3.8<br />hwy: 26<br />class: subcompact","displ: 3.8<br />hwy: 25<br />class: subcompact","displ: 4.0<br />hwy: 26<br />class: subcompact","displ: 4.0<br />hwy: 24<br />class: subcompact","displ: 4.6<br />hwy: 21<br />class: subcompact","displ: 4.6<br />hwy: 22<br />class: subcompact","displ: 4.6<br />hwy: 23<br />class: subcompact","displ: 4.6<br />hwy: 22<br />class: subcompact","displ: 5.4<br />hwy: 20<br />class: subcompact","displ: 1.6<br />hwy: 33<br />class: subcompact","displ: 1.6<br />hwy: 32<br />class: subcompact","displ: 1.6<br />hwy: 32<br />class: subcompact","displ: 1.6<br />hwy: 29<br />class: subcompact","displ: 1.6<br />hwy: 32<br />class: subcompact","displ: 1.8<br />hwy: 34<br />class: subcompact","displ: 1.8<br />hwy: 36<br />class: subcompact","displ: 1.8<br />hwy: 36<br />class: subcompact","displ: 2.0<br />hwy: 29<br />class: subcompact","displ: 2.0<br />hwy: 26<br />class: subcompact","displ: 2.0<br />hwy: 29<br />class: subcompact","displ: 2.0<br />hwy: 28<br />class: subcompact","displ: 2.0<br />hwy: 27<br />class: subcompact","displ: 2.7<br />hwy: 24<br />class: subcompact","displ: 2.7<br />hwy: 24<br />class: subcompact","displ: 2.7<br />hwy: 24<br />class: subcompact","displ: 2.2<br />hwy: 26<br />class: subcompact","displ: 2.2<br />hwy: 26<br />class: subcompact","displ: 2.5<br />hwy: 26<br />class: subcompact","displ: 2.5<br />hwy: 26<br />class: subcompact","displ: 1.9<br />hwy: 44<br />class: subcompact","displ: 1.9<br />hwy: 41<br />class: subcompact","displ: 2.0<br />hwy: 29<br />class: subcompact","displ: 2.0<br />hwy: 26<br />class: subcompact","displ: 2.5<br />hwy: 28<br />class: subcompact","displ: 2.5<br />hwy: 29<br />class: subcompact"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(165,138,255,1)","opacity":1,"size":5.6692913385826778,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(165,138,255,1)"}},"hoveron":"points","name":"subcompact","legendgroup":"subcompact","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[5.3199644084833562,5.28540859458968,5.3105068657733501,5.737452658172697,6.0205845195055003,5.3338312603719533,5.3002116204611953,5.6605454375036066,6.4849252340570089,3.8788346214219929,4.6818282347731293,4.7359074239805343,4.679196602068842,5.1749159341119233,5.7313133860193197,5.9282583456300202,4.593223123122006,5.4143359559588138,5.437519745063037,4.0109154460392888,4.020601612646133,4.0193051042966541,3.9693481243960562,4.5973714539967476,5.0169705096445973,3.0225540595687925,3.6678122204542163,4.0383029652200637,4.7090875161997978,4.6996293329261247,4.6732455093599858,5.7089754409529272,6.0944702688604586,3.9747105049341918,4.2260076353512703,4.3652429757267237,4.6312761527486144,5.3806605642475196,5.3622386176697914,5.3847709194011992,3.9970683291181923,4.0222068797610699,4.5775538596324621,4.9606368120387199,3.3095071423798799,3.3089277295023201,4.0247369147837162,5.5642928118258714,2.4885501845367255,2.4650262359529735,2.4636744370311501,2.5116222390532492,2.5347503781877458,2.5281101459637285,2.7181988401524722,2.6997180860117078,3.3839177616871892,3.4055084159970281,3.9780317497812212,4.7161202829517421,4.7237062316760419,5.7179617519676684],"y":[19.608398016542196,14.918203483894468,19.995404674485325,17.040318647772075,17.254865615256129,19.034835498966277,13.784600826725363,14.822439379990101,16.603359938226639,17.035210559517147,17.258200411126019,12.229801170527935,17.228658838383854,15.737634136527777,17.948260283656417,14.809405529312789,17.045730585046112,17.368217605352402,17.995043010264634,16.610096647590399,18.792197121120989,16.663075666688382,19.169495370052754,19.248248941451312,17.390974568016826,21.833978627808392,18.909628642164172,19.837268124707045,17.055170721188187,12.219070863164962,18.785739819146691,17.87278364226222,14.258043763041496,14.713572565838694,17.704276521317659,17.644882365502419,14.759257884509861,17.045105525106191,16.121614379622041,17.779684096015991,17.357890117727219,18.703915838710962,18.649543753638863,17.184807361476125,17.126299686543643,16.732259467430413,19.728575008548795,18.237986868061125,24.733051142096521,23.839856830798091,27.160598420351743,24.916056800074877,25.883514588326214,23.010833397321402,20.242409756779672,19.845978226326405,19.051565663143993,17.259758079610766,20.066445320658385,16.621109329350293,14.781959696486592,18.035891386307775],"text":["displ: 5.3<br />hwy: 20<br />class: suv","displ: 5.3<br />hwy: 15<br />class: suv","displ: 5.3<br />hwy: 20<br />class: suv","displ: 5.7<br />hwy: 17<br />class: suv","displ: 6.0<br />hwy: 17<br />class: suv","displ: 5.3<br />hwy: 19<br />class: suv","displ: 5.3<br />hwy: 14<br />class: suv","displ: 5.7<br />hwy: 15<br />class: suv","displ: 6.5<br />hwy: 17<br />class: suv","displ: 3.9<br />hwy: 17<br />class: suv","displ: 4.7<br />hwy: 17<br />class: suv","displ: 4.7<br />hwy: 12<br />class: suv","displ: 4.7<br />hwy: 17<br />class: suv","displ: 5.2<br />hwy: 16<br />class: suv","displ: 5.7<br />hwy: 18<br />class: suv","displ: 5.9<br />hwy: 15<br />class: suv","displ: 4.6<br />hwy: 17<br />class: suv","displ: 5.4<br />hwy: 17<br />class: suv","displ: 5.4<br />hwy: 18<br />class: suv","displ: 4.0<br />hwy: 17<br />class: suv","displ: 4.0<br />hwy: 19<br />class: suv","displ: 4.0<br />hwy: 17<br />class: suv","displ: 4.0<br />hwy: 19<br />class: suv","displ: 4.6<br />hwy: 19<br />class: suv","displ: 5.0<br />hwy: 17<br />class: suv","displ: 3.0<br />hwy: 22<br />class: suv","displ: 3.7<br />hwy: 19<br />class: suv","displ: 4.0<br />hwy: 20<br />class: suv","displ: 4.7<br />hwy: 17<br />class: suv","displ: 4.7<br />hwy: 12<br />class: suv","displ: 4.7<br />hwy: 19<br />class: suv","displ: 5.7<br />hwy: 18<br />class: suv","displ: 6.1<br />hwy: 14<br />class: suv","displ: 4.0<br />hwy: 15<br />class: suv","displ: 4.2<br />hwy: 18<br />class: suv","displ: 4.4<br />hwy: 18<br />class: suv","displ: 4.6<br />hwy: 15<br />class: suv","displ: 5.4<br />hwy: 17<br />class: suv","displ: 5.4<br />hwy: 16<br />class: suv","displ: 5.4<br />hwy: 18<br />class: suv","displ: 4.0<br />hwy: 17<br />class: suv","displ: 4.0<br />hwy: 19<br />class: suv","displ: 4.6<br />hwy: 19<br />class: suv","displ: 5.0<br />hwy: 17<br />class: suv","displ: 3.3<br />hwy: 17<br />class: suv","displ: 3.3<br />hwy: 17<br />class: suv","displ: 4.0<br />hwy: 20<br />class: suv","displ: 5.6<br />hwy: 18<br />class: suv","displ: 2.5<br />hwy: 25<br />class: suv","displ: 2.5<br />hwy: 24<br />class: suv","displ: 2.5<br />hwy: 27<br />class: suv","displ: 2.5<br />hwy: 25<br />class: suv","displ: 2.5<br />hwy: 26<br />class: suv","displ: 2.5<br />hwy: 23<br />class: suv","displ: 2.7<br />hwy: 20<br />class: suv","displ: 2.7<br />hwy: 20<br />class: suv","displ: 3.4<br />hwy: 19<br />class: suv","displ: 3.4<br />hwy: 17<br />class: suv","displ: 4.0<br />hwy: 20<br />class: suv","displ: 4.7<br />hwy: 17<br />class: suv","displ: 4.7<br />hwy: 15<br />class: suv","displ: 5.7<br />hwy: 18<br />class: suv"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(251,97,215,1)","opacity":1,"size":5.6692913385826778,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(251,97,215,1)"}},"hoveron":"points","name":"suv","legendgroup":"suv","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.6000000000000001,1.6683544303797468,1.7367088607594938,1.8050632911392406,1.8734177215189876,1.9417721518987343,2.0101265822784811,2.0784810126582278,2.1468354430379746,2.2151898734177218,2.2835443037974685,2.3518987341772153,2.420253164556962,2.4886075949367088,2.556962025316456,2.6253164556962028,2.6936708860759495,2.7620253164556963,2.830379746835443,2.8987341772151902,2.967088607594937,3.0354430379746837,3.1037974683544305,3.1721518987341772,3.2405063291139244,3.3088607594936708,3.377215189873418,3.4455696202531647,3.5139240506329115,3.5822784810126587,3.6506329113924054,3.7189873417721522,3.7873417721518989,3.8556962025316457,3.9240506329113924,3.9924050632911396,4.0607594936708864,4.1291139240506336,4.1974683544303799,4.2658227848101262,4.3341772151898734,4.4025316455696206,4.4708860759493678,4.5392405063291141,4.6075949367088604,4.6759493670886076,4.7443037974683548,4.812658227848102,4.8810126582278484,4.9493670886075947,5.0177215189873419,5.0860759493670891,5.1544303797468363,5.2227848101265826,5.2911392405063289,5.3594936708860761,5.4278481012658233,5.4962025316455705,5.5645569620253168,5.6329113924050631,5.7012658227848103,5.7696202531645575,5.8379746835443047,5.9063291139240501,5.9746835443037973,6.0430379746835445,6.1113924050632917,6.1797468354430389,6.2481012658227844,6.3164556962025316,6.3848101265822788,6.453164556962026,6.5215189873417732,6.5898734177215186,6.6582278481012658,6.726582278481013,6.7949367088607602,6.8632911392405074,6.9316455696202528,7],"y":[33.092856601853775,32.510783550357097,31.942220282938944,31.388484860677568,30.850895344651214,30.329995750033866,29.82385891881011,29.33337421940621,28.858385139052402,28.398142907231776,27.951898753427436,27.518903907122453,27.098763113307726,26.695783673587776,26.309081882146469,25.935588466411239,25.572234153809493,25.229179538119435,24.91819381138416,24.629874974796845,24.354674016954146,24.083041926452729,23.805473995433307,23.529589280263266,23.264636248189326,23.008106285748148,22.757490779476402,22.510281115910736,22.263968681587812,22.016044863044289,21.764001046816826,21.505328619442093,21.237518967456737,20.95806347739742,20.6636946027661,20.346382530292072,20.011440388454819,19.667539399964042,19.323350787529446,18.987545773860713,18.668795581667542,18.375771433659622,18.117144552546669,17.901586161038363,17.737478261884668,17.603892509481771,17.484469169152128,17.380369635021232,17.292755301214584,17.222787561857675,17.171627811076004,17.140437442995065,17.130377851740359,17.14261043143738,17.178296576211626,17.236490288008039,17.314259588958254,17.411549666674187,17.528349170468662,17.664646749654484,17.820431053544475,17.99569073145145,18.190414432688215,18.404590806567594,18.638208502402392,18.891256169505439,19.163722457189539,19.455596014767501,19.766865491552146,20.097519536856289,20.44754679999275,20.816935930274347,21.205675577013874,21.613754389524146,22.041161017118011,22.487884109108251,22.953912314807699,23.439234283529156,23.943838664585435,24.467714107289368],"text":["displ: 1.600000<br />hwy: 33.09286","displ: 1.668354<br />hwy: 32.51078","displ: 1.736709<br />hwy: 31.94222","displ: 1.805063<br />hwy: 31.38848","displ: 1.873418<br />hwy: 30.85090","displ: 1.941772<br />hwy: 30.33000","displ: 2.010127<br />hwy: 29.82386","displ: 2.078481<br />hwy: 29.33337","displ: 2.146835<br />hwy: 28.85839","displ: 2.215190<br />hwy: 28.39814","displ: 2.283544<br />hwy: 27.95190","displ: 2.351899<br />hwy: 27.51890","displ: 2.420253<br />hwy: 27.09876","displ: 2.488608<br />hwy: 26.69578","displ: 2.556962<br />hwy: 26.30908","displ: 2.625316<br />hwy: 25.93559","displ: 2.693671<br />hwy: 25.57223","displ: 2.762025<br />hwy: 25.22918","displ: 2.830380<br />hwy: 24.91819","displ: 2.898734<br />hwy: 24.62987","displ: 2.967089<br />hwy: 24.35467","displ: 3.035443<br />hwy: 24.08304","displ: 3.103797<br />hwy: 23.80547","displ: 3.172152<br />hwy: 23.52959","displ: 3.240506<br />hwy: 23.26464","displ: 3.308861<br />hwy: 23.00811","displ: 3.377215<br />hwy: 22.75749","displ: 3.445570<br />hwy: 22.51028","displ: 3.513924<br />hwy: 22.26397","displ: 3.582278<br />hwy: 22.01604","displ: 3.650633<br />hwy: 21.76400","displ: 3.718987<br />hwy: 21.50533","displ: 3.787342<br />hwy: 21.23752","displ: 3.855696<br />hwy: 20.95806","displ: 3.924051<br />hwy: 20.66369","displ: 3.992405<br />hwy: 20.34638","displ: 4.060759<br />hwy: 20.01144","displ: 4.129114<br />hwy: 19.66754","displ: 4.197468<br />hwy: 19.32335","displ: 4.265823<br />hwy: 18.98755","displ: 4.334177<br />hwy: 18.66880","displ: 4.402532<br />hwy: 18.37577","displ: 4.470886<br />hwy: 18.11714","displ: 4.539241<br />hwy: 17.90159","displ: 4.607595<br />hwy: 17.73748","displ: 4.675949<br />hwy: 17.60389","displ: 4.744304<br />hwy: 17.48447","displ: 4.812658<br />hwy: 17.38037","displ: 4.881013<br />hwy: 17.29276","displ: 4.949367<br />hwy: 17.22279","displ: 5.017722<br />hwy: 17.17163","displ: 5.086076<br />hwy: 17.14044","displ: 5.154430<br />hwy: 17.13038","displ: 5.222785<br />hwy: 17.14261","displ: 5.291139<br />hwy: 17.17830","displ: 5.359494<br />hwy: 17.23649","displ: 5.427848<br />hwy: 17.31426","displ: 5.496203<br />hwy: 17.41155","displ: 5.564557<br />hwy: 17.52835","displ: 5.632911<br />hwy: 17.66465","displ: 5.701266<br />hwy: 17.82043","displ: 5.769620<br />hwy: 17.99569","displ: 5.837975<br />hwy: 18.19041","displ: 5.906329<br />hwy: 18.40459","displ: 5.974684<br />hwy: 18.63821","displ: 6.043038<br />hwy: 18.89126","displ: 6.111392<br />hwy: 19.16372","displ: 6.179747<br />hwy: 19.45560","displ: 6.248101<br />hwy: 19.76687","displ: 6.316456<br />hwy: 20.09752","displ: 6.384810<br />hwy: 20.44755","displ: 6.453165<br />hwy: 20.81694","displ: 6.521519<br />hwy: 21.20568","displ: 6.589873<br />hwy: 21.61375","displ: 6.658228<br />hwy: 22.04116","displ: 6.726582<br />hwy: 22.48788","displ: 6.794937<br />hwy: 22.95391","displ: 6.863291<br />hwy: 23.43923","displ: 6.931646<br />hwy: 23.94384","displ: 7.000000<br />hwy: 24.46771"],"type":"scatter","mode":"lines","name":"fitted values","line":{"width":3.7795275590551185,"color":"rgba(51,102,255,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.6000000000000001,1.6683544303797468,1.7367088607594938,1.8050632911392406,1.8734177215189876,1.9417721518987343,2.0101265822784811,2.0784810126582278,2.1468354430379746,2.2151898734177218,2.2835443037974685,2.3518987341772153,2.420253164556962,2.4886075949367088,2.556962025316456,2.6253164556962028,2.6936708860759495,2.7620253164556963,2.830379746835443,2.8987341772151902,2.967088607594937,3.0354430379746837,3.1037974683544305,3.1721518987341772,3.2405063291139244,3.3088607594936708,3.377215189873418,3.4455696202531647,3.5139240506329115,3.5822784810126587,3.6506329113924054,3.7189873417721522,3.7873417721518989,3.8556962025316457,3.9240506329113924,3.9924050632911396,4.0607594936708864,4.1291139240506336,4.1974683544303799,4.2658227848101262,4.3341772151898734,4.4025316455696206,4.4708860759493678,4.5392405063291141,4.6075949367088604,4.6759493670886076,4.7443037974683548,4.812658227848102,4.8810126582278484,4.9493670886075947,5.0177215189873419,5.0860759493670891,5.1544303797468363,5.2227848101265826,5.2911392405063289,5.3594936708860761,5.4278481012658233,5.4962025316455705,5.5645569620253168,5.6329113924050631,5.7012658227848103,5.7696202531645575,5.8379746835443047,5.9063291139240501,5.9746835443037973,6.0430379746835445,6.1113924050632917,6.1797468354430389,6.2481012658227844,6.3164556962025316,6.3848101265822788,6.453164556962026,6.5215189873417732,6.5898734177215186,6.6582278481012658,6.726582278481013,6.7949367088607602,6.8632911392405074,6.9316455696202528,7,7,7,6.9316455696202528,6.8632911392405074,6.7949367088607602,6.726582278481013,6.6582278481012658,6.5898734177215186,6.5215189873417732,6.453164556962026,6.3848101265822788,6.3164556962025316,6.2481012658227844,6.1797468354430389,6.1113924050632917,6.0430379746835445,5.9746835443037973,5.9063291139240501,5.8379746835443047,5.7696202531645575,5.7012658227848103,5.6329113924050631,5.5645569620253168,5.4962025316455705,5.4278481012658233,5.3594936708860761,5.2911392405063289,5.2227848101265826,5.1544303797468363,5.0860759493670891,5.0177215189873419,4.9493670886075947,4.8810126582278484,4.812658227848102,4.7443037974683548,4.6759493670886076,4.6075949367088604,4.5392405063291141,4.4708860759493678,4.4025316455696206,4.3341772151898734,4.2658227848101262,4.1974683544303799,4.1291139240506336,4.0607594936708864,3.9924050632911396,3.9240506329113924,3.8556962025316457,3.7873417721518989,3.7189873417721522,3.6506329113924054,3.5822784810126587,3.5139240506329115,3.4455696202531647,3.377215189873418,3.3088607594936708,3.2405063291139244,3.1721518987341772,3.1037974683544305,3.0354430379746837,2.967088607594937,2.8987341772151902,2.830379746835443,2.7620253164556963,2.6936708860759495,2.6253164556962028,2.556962025316456,2.4886075949367088,2.420253164556962,2.3518987341772153,2.2835443037974685,2.2151898734177218,2.1468354430379746,2.0784810126582278,2.0101265822784811,1.9417721518987343,1.8734177215189876,1.8050632911392406,1.7367088607594938,1.6683544303797468,1.6000000000000001,1.6000000000000001],"y":[31.550292174195793,31.143961549634732,30.734766341174026,30.321917456816472,29.904971528724893,29.483426427439042,29.054623095409806,28.619194064456405,28.178138352187645,27.733165188183978,27.287080898839278,26.843189106552579,26.405132750751655,25.98239498124963,25.575921909057563,25.183254798879357,24.802393152877332,24.445501865960317,24.121438292723276,23.814527608510609,23.514852391723682,23.220242920853778,22.933520888616439,22.665991242151396,22.419122021648025,22.184142516019449,21.952370178198365,21.716169166381022,21.470030007955209,21.211337744309922,20.940375734846342,20.659551935185313,20.372285036614361,20.081982151462451,19.790060877064167,19.485225010972311,19.167134817178137,18.839684146605766,18.507615444318091,18.177256016002097,17.857020684613019,17.557441473747648,17.290678592427213,17.069694933758974,16.906974599230377,16.779502803594873,16.667093775087555,16.569539534903932,16.48683930892631,16.41929172621731,16.36754004185569,16.332555111691445,16.315548918827691,16.317822983780879,16.340565335936429,16.381909084776744,16.437137009374407,16.505176734410622,16.585022488705722,16.675759404071073,16.776626559572634,16.887053720421427,17.006669563008458,17.135285918322914,17.272866717517406,17.419490920707499,17.575316668696104,17.740550880089618,17.915425837209742,18.100182531946697,18.295059666518725,18.500286958894975,18.716081503162375,18.94264617415066,19.18016932439728,19.428825246143091,19.688775045495113,19.960167702385647,20.243141177391518,20.537823484714846,20.537823484714846,28.39760472986389,27.644536151779352,26.918300864672666,26.219049584120285,25.54694297207341,24.902152709838742,24.284862604897633,23.695269650865374,23.13358490165372,22.600033933466776,22.094856541765882,21.618305145894549,21.170641149445384,20.752128245682975,20.363021418303379,20.003550287287378,19.673895694812273,19.374159302367971,19.104327742481473,18.864235547516316,18.653534095237895,18.471675852231602,18.317922598937752,18.191382168542102,18.091071491239333,18.016027816486822,17.96739787909388,17.945206784653028,17.948319774298685,17.975715580296317,18.026283397498041,18.098671293502857,18.191199735138532,18.301844563216701,18.428282215368668,18.567981924538959,18.733477388317752,18.943610512666126,19.194101393571597,19.480570478722065,19.797835531719329,20.1390861307408,20.495394653322318,20.8557459597315,21.207540049611833,21.537328328468032,21.834144803332389,22.102752898299112,22.351105303698873,22.587626358787311,22.820751981778656,23.057907355220415,23.304393065440451,23.56261138075444,23.832070055476848,24.110150474730627,24.393187318375137,24.677427102250174,24.945840932051681,25.194495642184609,25.445222341083081,25.714949330045044,26.012857210278554,26.342075154741654,26.687922133943122,27.042241855235375,27.409172365925922,27.792393475863797,28.194618707692328,28.616716608015594,29.063120626279574,29.538631925917159,30.047554374356015,30.593094742210415,31.176565072628691,31.796819160577535,32.455052264538665,33.149674224703865,33.877605551079462,34.635421029511754,31.550292174195793],"text":["displ: 1.600000<br />hwy: 33.09286","displ: 1.668354<br />hwy: 32.51078","displ: 1.736709<br />hwy: 31.94222","displ: 1.805063<br />hwy: 31.38848","displ: 1.873418<br />hwy: 30.85090","displ: 1.941772<br />hwy: 30.33000","displ: 2.010127<br />hwy: 29.82386","displ: 2.078481<br />hwy: 29.33337","displ: 2.146835<br />hwy: 28.85839","displ: 2.215190<br />hwy: 28.39814","displ: 2.283544<br />hwy: 27.95190","displ: 2.351899<br />hwy: 27.51890","displ: 2.420253<br />hwy: 27.09876","displ: 2.488608<br />hwy: 26.69578","displ: 2.556962<br />hwy: 26.30908","displ: 2.625316<br />hwy: 25.93559","displ: 2.693671<br />hwy: 25.57223","displ: 2.762025<br />hwy: 25.22918","displ: 2.830380<br />hwy: 24.91819","displ: 2.898734<br />hwy: 24.62987","displ: 2.967089<br />hwy: 24.35467","displ: 3.035443<br />hwy: 24.08304","displ: 3.103797<br />hwy: 23.80547","displ: 3.172152<br />hwy: 23.52959","displ: 3.240506<br />hwy: 23.26464","displ: 3.308861<br />hwy: 23.00811","displ: 3.377215<br />hwy: 22.75749","displ: 3.445570<br />hwy: 22.51028","displ: 3.513924<br />hwy: 22.26397","displ: 3.582278<br />hwy: 22.01604","displ: 3.650633<br />hwy: 21.76400","displ: 3.718987<br />hwy: 21.50533","displ: 3.787342<br />hwy: 21.23752","displ: 3.855696<br />hwy: 20.95806","displ: 3.924051<br />hwy: 20.66369","displ: 3.992405<br />hwy: 20.34638","displ: 4.060759<br />hwy: 20.01144","displ: 4.129114<br />hwy: 19.66754","displ: 4.197468<br />hwy: 19.32335","displ: 4.265823<br />hwy: 18.98755","displ: 4.334177<br />hwy: 18.66880","displ: 4.402532<br />hwy: 18.37577","displ: 4.470886<br />hwy: 18.11714","displ: 4.539241<br />hwy: 17.90159","displ: 4.607595<br />hwy: 17.73748","displ: 4.675949<br />hwy: 17.60389","displ: 4.744304<br />hwy: 17.48447","displ: 4.812658<br />hwy: 17.38037","displ: 4.881013<br />hwy: 17.29276","displ: 4.949367<br />hwy: 17.22279","displ: 5.017722<br />hwy: 17.17163","displ: 5.086076<br />hwy: 17.14044","displ: 5.154430<br />hwy: 17.13038","displ: 5.222785<br />hwy: 17.14261","displ: 5.291139<br />hwy: 17.17830","displ: 5.359494<br />hwy: 17.23649","displ: 5.427848<br />hwy: 17.31426","displ: 5.496203<br />hwy: 17.41155","displ: 5.564557<br />hwy: 17.52835","displ: 5.632911<br />hwy: 17.66465","displ: 5.701266<br />hwy: 17.82043","displ: 5.769620<br />hwy: 17.99569","displ: 5.837975<br />hwy: 18.19041","displ: 5.906329<br />hwy: 18.40459","displ: 5.974684<br />hwy: 18.63821","displ: 6.043038<br />hwy: 18.89126","displ: 6.111392<br />hwy: 19.16372","displ: 6.179747<br />hwy: 19.45560","displ: 6.248101<br />hwy: 19.76687","displ: 6.316456<br />hwy: 20.09752","displ: 6.384810<br />hwy: 20.44755","displ: 6.453165<br />hwy: 20.81694","displ: 6.521519<br />hwy: 21.20568","displ: 6.589873<br />hwy: 21.61375","displ: 6.658228<br />hwy: 22.04116","displ: 6.726582<br />hwy: 22.48788","displ: 6.794937<br />hwy: 22.95391","displ: 6.863291<br />hwy: 23.43923","displ: 6.931646<br />hwy: 23.94384","displ: 7.000000<br />hwy: 24.46771","displ: 7.000000<br />hwy: 24.46771","displ: 7.000000<br />hwy: 24.46771","displ: 6.931646<br />hwy: 23.94384","displ: 6.863291<br />hwy: 23.43923","displ: 6.794937<br />hwy: 22.95391","displ: 6.726582<br />hwy: 22.48788","displ: 6.658228<br />hwy: 22.04116","displ: 6.589873<br />hwy: 21.61375","displ: 6.521519<br />hwy: 21.20568","displ: 6.453165<br />hwy: 20.81694","displ: 6.384810<br />hwy: 20.44755","displ: 6.316456<br />hwy: 20.09752","displ: 6.248101<br />hwy: 19.76687","displ: 6.179747<br />hwy: 19.45560","displ: 6.111392<br />hwy: 19.16372","displ: 6.043038<br />hwy: 18.89126","displ: 5.974684<br />hwy: 18.63821","displ: 5.906329<br />hwy: 18.40459","displ: 5.837975<br />hwy: 18.19041","displ: 5.769620<br />hwy: 17.99569","displ: 5.701266<br />hwy: 17.82043","displ: 5.632911<br />hwy: 17.66465","displ: 5.564557<br />hwy: 17.52835","displ: 5.496203<br />hwy: 17.41155","displ: 5.427848<br />hwy: 17.31426","displ: 5.359494<br />hwy: 17.23649","displ: 5.291139<br />hwy: 17.17830","displ: 5.222785<br />hwy: 17.14261","displ: 5.154430<br />hwy: 17.13038","displ: 5.086076<br />hwy: 17.14044","displ: 5.017722<br />hwy: 17.17163","displ: 4.949367<br />hwy: 17.22279","displ: 4.881013<br />hwy: 17.29276","displ: 4.812658<br />hwy: 17.38037","displ: 4.744304<br />hwy: 17.48447","displ: 4.675949<br />hwy: 17.60389","displ: 4.607595<br />hwy: 17.73748","displ: 4.539241<br />hwy: 17.90159","displ: 4.470886<br />hwy: 18.11714","displ: 4.402532<br />hwy: 18.37577","displ: 4.334177<br />hwy: 18.66880","displ: 4.265823<br />hwy: 18.98755","displ: 4.197468<br />hwy: 19.32335","displ: 4.129114<br />hwy: 19.66754","displ: 4.060759<br />hwy: 20.01144","displ: 3.992405<br />hwy: 20.34638","displ: 3.924051<br />hwy: 20.66369","displ: 3.855696<br />hwy: 20.95806","displ: 3.787342<br />hwy: 21.23752","displ: 3.718987<br />hwy: 21.50533","displ: 3.650633<br />hwy: 21.76400","displ: 3.582278<br />hwy: 22.01604","displ: 3.513924<br />hwy: 22.26397","displ: 3.445570<br />hwy: 22.51028","displ: 3.377215<br />hwy: 22.75749","displ: 3.308861<br />hwy: 23.00811","displ: 3.240506<br />hwy: 23.26464","displ: 3.172152<br />hwy: 23.52959","displ: 3.103797<br />hwy: 23.80547","displ: 3.035443<br />hwy: 24.08304","displ: 2.967089<br />hwy: 24.35467","displ: 2.898734<br />hwy: 24.62987","displ: 2.830380<br />hwy: 24.91819","displ: 2.762025<br />hwy: 25.22918","displ: 2.693671<br />hwy: 25.57223","displ: 2.625316<br />hwy: 25.93559","displ: 2.556962<br />hwy: 26.30908","displ: 2.488608<br />hwy: 26.69578","displ: 2.420253<br />hwy: 27.09876","displ: 2.351899<br />hwy: 27.51890","displ: 2.283544<br />hwy: 27.95190","displ: 2.215190<br />hwy: 28.39814","displ: 2.146835<br />hwy: 28.85839","displ: 2.078481<br />hwy: 29.33337","displ: 2.010127<br />hwy: 29.82386","displ: 1.941772<br />hwy: 30.33000","displ: 1.873418<br />hwy: 30.85090","displ: 1.805063<br />hwy: 31.38848","displ: 1.736709<br />hwy: 31.94222","displ: 1.668354<br />hwy: 32.51078","displ: 1.600000<br />hwy: 33.09286","displ: 1.600000<br />hwy: 33.09286"],"type":"scatter","mode":"lines","line":{"width":3.7795275590551185,"color":"transparent","dash":"solid"},"fill":"toself","fillcolor":"rgba(153,153,153,0.4)","hoveron":"points","hoverinfo":"x+y","showlegend":false,"xaxis":"x","yaxis":"y","frame":null}],"layout":{"margin":{"t":26.228310502283104,"r":7.3059360730593621,"b":40.182648401826491,"l":37.260273972602747},"plot_bgcolor":"rgba(235,235,235,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[1.3057213434530421,7.285596096129157],"tickmode":"array","ticktext":["2","3","4","5","6","7"],"tickvals":[2,3,4,5,6,7],"categoryorder":"array","categoryarray":["2","3","4","5","6","7"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.6529680365296811,"tickwidth":0.66417600664176002,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"displ","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[10.079158530533313,45.484024349451069],"tickmode":"array","ticktext":["20","30","40"],"tickvals":[20,30,40],"categoryorder":"array","categoryarray":["20","30","40"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.6529680365296811,"tickwidth":0.66417600664176002,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"hwy","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.8897637795275593,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498},"title":{"text":"class","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"22883b5f9793":{"x":{},"y":{},"colour":{},"type":"scatter"},"22881e9b4885":{"x":{},"y":{}}},"cur_data":"22883b5f9793","visdat":{"22883b5f9793":["function (y) ","x"],"22881e9b4885":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>We can now use our mouse to hover over points and see the associated data, turn series off and on, and draw rectangles to zoom in.</p>
+<p>This kind of visualisation is a good way to expose extra data through the tooltips. For example, associating the “manufacturer” and “model” variables to “label” aesthetics in the ggplot2 command won’t show that information on the static visualisation (unless labelling geometry is used), but it will be included in the plotly tooltip:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>static_plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(mpg,</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>                      <span class="fu">aes</span>(<span class="at">x =</span> displ,</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>                          <span class="at">y =</span> hwy)) <span class="sc">+</span> </span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="fu">aes</span>(<span class="at">colour =</span> class,</span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>                  <span class="at">label =</span> manufacturer,</span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>                  <span class="at">label2 =</span> model)) <span class="sc">+</span> </span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>()</span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplotly</span>(static_plot)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-e5575cac4a477dbd5823" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-e5575cac4a477dbd5823">{"x":{"data":[{"x":[5.7270501364953814,5.7204959573037923,6.2235511528514325,6.2044410864450041,6.9981389281339945],"y":[26.189472432062029,22.832700633630157,26.281333638913928,25.009725845977663,23.88081067483872],"text":["displ: 5.7<br />hwy: 26<br />class: 2seater<br />manufacturer: chevrolet<br />model: corvette","displ: 5.7<br />hwy: 23<br />class: 2seater<br />manufacturer: chevrolet<br />model: corvette","displ: 6.2<br />hwy: 26<br />class: 2seater<br />manufacturer: chevrolet<br />model: corvette","displ: 6.2<br />hwy: 25<br />class: 2seater<br />manufacturer: chevrolet<br />model: corvette","displ: 7.0<br />hwy: 24<br />class: 2seater<br />manufacturer: chevrolet<br />model: corvette"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(248,118,109,1)","opacity":1,"size":5.6692913385826778,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(248,118,109,1)"}},"hoveron":"points","name":"2seater","legendgroup":"2seater","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.7651787013933065,1.8007189856469632,1.9963364783115685,2.0304194002412257,2.7904847277142104,2.7604596342518923,3.0677784857898951,1.7790653441473843,1.7643460246361793,1.9641440742649139,1.9710688146762552,2.7638588250800966,2.829275420513004,3.0697472750395538,3.1043683632090691,2.414015927966684,2.4085372587107119,2.5312255174666642,2.4823031976260244,2.5366068823821841,2.4679891640879217,2.1996091831289233,2.1801860624551774,2.4196130776591596,2.3813269174471499,3.0138533747754992,3.0017756031639875,3.3279294616915283,1.777866150457412,1.8236231710575521,1.7902199092693627,1.7909445937164128,1.774853468257934,2.004083667565137,1.9695730497688055,2.00894703283906,1.988038232754916,2.8284963282570241,1.8658902766369283,2.0256591819599268,2.0002254449576138,1.9787165431678295,1.9680049193836751,2.5245663700997829,2.467909607682377,2.8103380987420676,2.7931249538250267],"y":[28.90697194263339,28.79749400243163,31.343983090482652,29.778507508151232,25.82108365613967,26.36663927268237,26.948388983123003,26.253207211941479,24.783603272214531,27.745955144427718,27.121798763610421,25.004248558729888,24.720134342834353,25.306754467263818,25.354201731272042,29.111342216841877,26.820076653175057,24.888122982904314,27.316463709063829,25.137268054857849,27.253998915851117,27.267139394395052,29.072373724728823,31.357100342586637,31.05355276092887,26.207202318683265,26.274534094706176,27.192143528163434,30.006412263214589,33.239038906991482,35.188258720748124,37.01549530811608,35.156450100615622,28.835369056463243,25.909009468182923,29.19883776959032,29.195861926116049,24.099690312705935,43.716129299066964,28.632733895629645,26.104411371424796,28.687289535440506,29.253344511054458,28.779072026908398,28.625160969980062,23.320580854453148,23.675742841511966],"text":["displ: 1.8<br />hwy: 29<br />class: compact<br />manufacturer: audi<br />model: a4","displ: 1.8<br />hwy: 29<br />class: compact<br />manufacturer: audi<br />model: a4","displ: 2.0<br />hwy: 31<br />class: compact<br />manufacturer: audi<br />model: a4","displ: 2.0<br />hwy: 30<br />class: compact<br />manufacturer: audi<br />model: a4","displ: 2.8<br />hwy: 26<br />class: compact<br />manufacturer: audi<br />model: a4","displ: 2.8<br />hwy: 26<br />class: compact<br />manufacturer: audi<br />model: a4","displ: 3.1<br />hwy: 27<br />class: compact<br />manufacturer: audi<br />model: a4","displ: 1.8<br />hwy: 26<br />class: compact<br />manufacturer: audi<br />model: a4 quattro","displ: 1.8<br />hwy: 25<br />class: compact<br />manufacturer: audi<br />model: a4 quattro","displ: 2.0<br />hwy: 28<br />class: compact<br />manufacturer: audi<br />model: a4 quattro","displ: 2.0<br />hwy: 27<br />class: compact<br />manufacturer: audi<br />model: a4 quattro","displ: 2.8<br />hwy: 25<br />class: compact<br />manufacturer: audi<br />model: a4 quattro","displ: 2.8<br />hwy: 25<br />class: compact<br />manufacturer: audi<br />model: a4 quattro","displ: 3.1<br />hwy: 25<br />class: compact<br />manufacturer: audi<br />model: a4 quattro","displ: 3.1<br />hwy: 25<br />class: compact<br />manufacturer: audi<br />model: a4 quattro","displ: 2.4<br />hwy: 29<br />class: compact<br />manufacturer: nissan<br />model: altima","displ: 2.4<br />hwy: 27<br />class: compact<br />manufacturer: nissan<br />model: altima","displ: 2.5<br />hwy: 25<br />class: compact<br />manufacturer: subaru<br />model: impreza awd","displ: 2.5<br />hwy: 27<br />class: compact<br />manufacturer: subaru<br />model: impreza awd","displ: 2.5<br />hwy: 25<br />class: compact<br />manufacturer: subaru<br />model: impreza awd","displ: 2.5<br />hwy: 27<br />class: compact<br />manufacturer: subaru<br />model: impreza awd","displ: 2.2<br />hwy: 27<br />class: compact<br />manufacturer: toyota<br />model: camry solara","displ: 2.2<br />hwy: 29<br />class: compact<br />manufacturer: toyota<br />model: camry solara","displ: 2.4<br />hwy: 31<br />class: compact<br />manufacturer: toyota<br />model: camry solara","displ: 2.4<br />hwy: 31<br />class: compact<br />manufacturer: toyota<br />model: camry solara","displ: 3.0<br />hwy: 26<br />class: compact<br />manufacturer: toyota<br />model: camry solara","displ: 3.0<br />hwy: 26<br />class: compact<br />manufacturer: toyota<br />model: camry solara","displ: 3.3<br />hwy: 27<br />class: compact<br />manufacturer: toyota<br />model: camry solara","displ: 1.8<br />hwy: 30<br />class: compact<br />manufacturer: toyota<br />model: corolla","displ: 1.8<br />hwy: 33<br />class: compact<br />manufacturer: toyota<br />model: corolla","displ: 1.8<br />hwy: 35<br />class: compact<br />manufacturer: toyota<br />model: corolla","displ: 1.8<br />hwy: 37<br />class: compact<br />manufacturer: toyota<br />model: corolla","displ: 1.8<br />hwy: 35<br />class: compact<br />manufacturer: toyota<br />model: corolla","displ: 2.0<br />hwy: 29<br />class: compact<br />manufacturer: volkswagen<br />model: gti","displ: 2.0<br />hwy: 26<br />class: compact<br />manufacturer: volkswagen<br />model: gti","displ: 2.0<br />hwy: 29<br />class: compact<br />manufacturer: volkswagen<br />model: gti","displ: 2.0<br />hwy: 29<br />class: compact<br />manufacturer: volkswagen<br />model: gti","displ: 2.8<br />hwy: 24<br />class: compact<br />manufacturer: volkswagen<br />model: gti","displ: 1.9<br />hwy: 44<br />class: compact<br />manufacturer: volkswagen<br />model: jetta","displ: 2.0<br />hwy: 29<br />class: compact<br />manufacturer: volkswagen<br />model: jetta","displ: 2.0<br />hwy: 26<br />class: compact<br />manufacturer: volkswagen<br />model: jetta","displ: 2.0<br />hwy: 29<br />class: compact<br />manufacturer: volkswagen<br />model: jetta","displ: 2.0<br />hwy: 29<br />class: compact<br />manufacturer: volkswagen<br />model: jetta","displ: 2.5<br />hwy: 29<br />class: compact<br />manufacturer: volkswagen<br />model: jetta","displ: 2.5<br />hwy: 29<br />class: compact<br />manufacturer: volkswagen<br />model: jetta","displ: 2.8<br />hwy: 23<br />class: compact<br />manufacturer: volkswagen<br />model: jetta","displ: 2.8<br />hwy: 24<br />class: compact<br />manufacturer: volkswagen<br />model: jetta"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(196,154,0,1)","opacity":1,"size":5.6692913385826778,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(196,154,0,1)"}},"hoveron":"points","name":"compact","legendgroup":"compact","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.7666549651511012,3.1250022250972687,4.2022277101874357,2.4083080773614345,2.3662982764840126,3.1117807714268566,3.469892566446215,3.5922176647000015,2.3670938091911378,2.3688856831379237,2.3780578017048537,2.3691292245499791,2.5216551472246644,2.467546660602093,3.2939118912070988,2.513243614491075,2.4933037129603326,3.5108363031223417,3.478876868132502,2.9927243649773301,2.9703362584859132,3.5391613726504145,3.1178007635287939,3.7833492541313172,3.7663489492982625,3.8031867324002087,5.3113864765129986,2.2260044005513193,2.1828260419704022,2.4035869501903653,2.3956270829960702,2.9895016581937672,2.9625031410343947,3.5036480029486121,1.7821442059986294,1.774225875772536,1.9833099929988385,1.9848803697153927,2.7978019850328564,2.8327339710853989,3.6342655760236084],"y":[23.84940201919526,24.613737863115965,22.783191180974246,26.833474508114158,30.397973314300181,25.691305629163981,29.100836457684636,26.282831277512013,26.168446967564524,27.2081520749256,30.007402114570141,31.377530776150525,25.984806826710702,26.31590414661914,27.92288151215762,30.967266798950732,32.309276562929156,26.682194502092898,25.615103036910295,25.814068270660936,24.813030706718564,25.274051830731331,26.251661521941422,26.117079884186388,26.95369038116187,28.28596801813692,24.782721607573329,28.658747282251717,26.926178932003676,31.079788882471622,31.083282238803804,26.283377743698658,26.237747145071626,28.113693359307945,28.62300595585257,29.362589762359857,27.603160206601025,28.986465324647725,25.947392931021749,26.184176810085773,26.318984810076653],"text":["displ: 2.8<br />hwy: 24<br />class: midsize<br />manufacturer: audi<br />model: a6 quattro","displ: 3.1<br />hwy: 25<br />class: midsize<br />manufacturer: audi<br />model: a6 quattro","displ: 4.2<br />hwy: 23<br />class: midsize<br />manufacturer: audi<br />model: a6 quattro","displ: 2.4<br />hwy: 27<br />class: midsize<br />manufacturer: chevrolet<br />model: malibu","displ: 2.4<br />hwy: 30<br />class: midsize<br />manufacturer: chevrolet<br />model: malibu","displ: 3.1<br />hwy: 26<br />class: midsize<br />manufacturer: chevrolet<br />model: malibu","displ: 3.5<br />hwy: 29<br />class: midsize<br />manufacturer: chevrolet<br />model: malibu","displ: 3.6<br />hwy: 26<br />class: midsize<br />manufacturer: chevrolet<br />model: malibu","displ: 2.4<br />hwy: 26<br />class: midsize<br />manufacturer: hyundai<br />model: sonata","displ: 2.4<br />hwy: 27<br />class: midsize<br />manufacturer: hyundai<br />model: sonata","displ: 2.4<br />hwy: 30<br />class: midsize<br />manufacturer: hyundai<br />model: sonata","displ: 2.4<br />hwy: 31<br />class: midsize<br />manufacturer: hyundai<br />model: sonata","displ: 2.5<br />hwy: 26<br />class: midsize<br />manufacturer: hyundai<br />model: sonata","displ: 2.5<br />hwy: 26<br />class: midsize<br />manufacturer: hyundai<br />model: sonata","displ: 3.3<br />hwy: 28<br />class: midsize<br />manufacturer: hyundai<br />model: sonata","displ: 2.5<br />hwy: 31<br />class: midsize<br />manufacturer: nissan<br />model: altima","displ: 2.5<br />hwy: 32<br />class: midsize<br />manufacturer: nissan<br />model: altima","displ: 3.5<br />hwy: 27<br />class: midsize<br />manufacturer: nissan<br />model: altima","displ: 3.5<br />hwy: 26<br />class: midsize<br />manufacturer: nissan<br />model: altima","displ: 3.0<br />hwy: 26<br />class: midsize<br />manufacturer: nissan<br />model: maxima","displ: 3.0<br />hwy: 25<br />class: midsize<br />manufacturer: nissan<br />model: maxima","displ: 3.5<br />hwy: 25<br />class: midsize<br />manufacturer: nissan<br />model: maxima","displ: 3.1<br />hwy: 26<br />class: midsize<br />manufacturer: pontiac<br />model: grand prix","displ: 3.8<br />hwy: 26<br />class: midsize<br />manufacturer: pontiac<br />model: grand prix","displ: 3.8<br />hwy: 27<br />class: midsize<br />manufacturer: pontiac<br />model: grand prix","displ: 3.8<br />hwy: 28<br />class: midsize<br />manufacturer: pontiac<br />model: grand prix","displ: 5.3<br />hwy: 25<br />class: midsize<br />manufacturer: pontiac<br />model: grand prix","displ: 2.2<br />hwy: 29<br />class: midsize<br />manufacturer: toyota<br />model: camry","displ: 2.2<br />hwy: 27<br />class: midsize<br />manufacturer: toyota<br />model: camry","displ: 2.4<br />hwy: 31<br />class: midsize<br />manufacturer: toyota<br />model: camry","displ: 2.4<br />hwy: 31<br />class: midsize<br />manufacturer: toyota<br />model: camry","displ: 3.0<br />hwy: 26<br />class: midsize<br />manufacturer: toyota<br />model: camry","displ: 3.0<br />hwy: 26<br />class: midsize<br />manufacturer: toyota<br />model: camry","displ: 3.5<br />hwy: 28<br />class: midsize<br />manufacturer: toyota<br />model: camry","displ: 1.8<br />hwy: 29<br />class: midsize<br />manufacturer: volkswagen<br />model: passat","displ: 1.8<br />hwy: 29<br />class: midsize<br />manufacturer: volkswagen<br />model: passat","displ: 2.0<br />hwy: 28<br />class: midsize<br />manufacturer: volkswagen<br />model: passat","displ: 2.0<br />hwy: 29<br />class: midsize<br />manufacturer: volkswagen<br />model: passat","displ: 2.8<br />hwy: 26<br />class: midsize<br />manufacturer: volkswagen<br />model: passat","displ: 2.8<br />hwy: 26<br />class: midsize<br />manufacturer: volkswagen<br />model: passat","displ: 3.6<br />hwy: 26<br />class: midsize<br />manufacturer: volkswagen<br />model: passat"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(83,180,0,1)","opacity":1,"size":5.6692913385826778,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(83,180,0,1)"}},"hoveron":"points","name":"midsize","legendgroup":"midsize","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2.4108576766960321,2.9948461014404892,3.3270445294864475,3.2980624687485394,3.2648286183178423,3.3396862516924735,3.3170928277075289,3.7752269045077265,3.8164341390132903,3.8168528911843893,3.9846858395077289],"y":[23.601733940094711,24.166878425329923,21.872208270058035,21.730920326709747,24.147952400520445,24.008240650594235,16.669822208210824,21.993156164512037,21.370780427567659,23.386777888052166,22.693873298354447],"text":["displ: 2.4<br />hwy: 24<br />class: minivan<br />manufacturer: dodge<br />model: caravan 2wd","displ: 3.0<br />hwy: 24<br />class: minivan<br />manufacturer: dodge<br />model: caravan 2wd","displ: 3.3<br />hwy: 22<br />class: minivan<br />manufacturer: dodge<br />model: caravan 2wd","displ: 3.3<br />hwy: 22<br />class: minivan<br />manufacturer: dodge<br />model: caravan 2wd","displ: 3.3<br />hwy: 24<br />class: minivan<br />manufacturer: dodge<br />model: caravan 2wd","displ: 3.3<br />hwy: 24<br />class: minivan<br />manufacturer: dodge<br />model: caravan 2wd","displ: 3.3<br />hwy: 17<br />class: minivan<br />manufacturer: dodge<br />model: caravan 2wd","displ: 3.8<br />hwy: 22<br />class: minivan<br />manufacturer: dodge<br />model: caravan 2wd","displ: 3.8<br />hwy: 21<br />class: minivan<br />manufacturer: dodge<br />model: caravan 2wd","displ: 3.8<br />hwy: 23<br />class: minivan<br />manufacturer: dodge<br />model: caravan 2wd","displ: 4.0<br />hwy: 23<br />class: minivan<br />manufacturer: dodge<br />model: caravan 2wd"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,192,148,1)","opacity":1,"size":5.6692913385826778,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,192,148,1)"}},"hoveron":"points","name":"minivan","legendgroup":"minivan","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.6775763779692356,3.7175917993299663,3.9148613654635844,3.8969438843429089,4.7276137159578502,4.7023392215371134,4.7220450391992932,5.2086617161147295,5.1978663688898088,4.6708075195737182,4.7014292658492929,4.6835880450904375,4.6605599398724742,4.7396734852530065,4.6867452029697603,5.1954626583494248,5.1808076018653813,5.7336110001802449,5.8820850781723859,4.1787115929834551,4.2291593601740898,4.5876566583104426,4.6222254064492878,4.6021229150891303,5.3879805008322004,5.4095392190665006,2.6986220342479648,2.6821273618564012,2.7369889538548886,3.3973138078115879,3.4246893693134188,4.0210864411294462,4.0266957831941541],"y":[18.759580372832716,18.052635711804033,16.951475930027662,17.260497571900487,19.340307795628906,19.156940378062426,11.805930367298425,17.130876768380404,14.628337476216256,16.275068524479867,11.958817661181092,17.225681543909012,17.274894815124572,15.838279015384614,11.84304594155401,14.804840178787709,15.856011601723731,17.353412545658649,14.850111279264093,17.231490084715187,16.905457339994609,16.003737502358852,16.141018961742521,16.682513508945704,15.067781803198159,16.863562893122435,19.937633611075579,20.040892830491067,22.278530648909509,16.859810107573868,18.999688860215247,17.935152692161502,19.843241356499494],"text":["displ: 3.7<br />hwy: 19<br />class: pickup<br />manufacturer: dodge<br />model: dakota pickup 4wd","displ: 3.7<br />hwy: 18<br />class: pickup<br />manufacturer: dodge<br />model: dakota pickup 4wd","displ: 3.9<br />hwy: 17<br />class: pickup<br />manufacturer: dodge<br />model: dakota pickup 4wd","displ: 3.9<br />hwy: 17<br />class: pickup<br />manufacturer: dodge<br />model: dakota pickup 4wd","displ: 4.7<br />hwy: 19<br />class: pickup<br />manufacturer: dodge<br />model: dakota pickup 4wd","displ: 4.7<br />hwy: 19<br />class: pickup<br />manufacturer: dodge<br />model: dakota pickup 4wd","displ: 4.7<br />hwy: 12<br />class: pickup<br />manufacturer: dodge<br />model: dakota pickup 4wd","displ: 5.2<br />hwy: 17<br />class: pickup<br />manufacturer: dodge<br />model: dakota pickup 4wd","displ: 5.2<br />hwy: 15<br />class: pickup<br />manufacturer: dodge<br />model: dakota pickup 4wd","displ: 4.7<br />hwy: 16<br />class: pickup<br />manufacturer: dodge<br />model: ram 1500 pickup 4wd","displ: 4.7<br />hwy: 12<br />class: pickup<br />manufacturer: dodge<br />model: ram 1500 pickup 4wd","displ: 4.7<br />hwy: 17<br />class: pickup<br />manufacturer: dodge<br />model: ram 1500 pickup 4wd","displ: 4.7<br />hwy: 17<br />class: pickup<br />manufacturer: dodge<br />model: ram 1500 pickup 4wd","displ: 4.7<br />hwy: 16<br />class: pickup<br />manufacturer: dodge<br />model: ram 1500 pickup 4wd","displ: 4.7<br />hwy: 12<br />class: pickup<br />manufacturer: dodge<br />model: ram 1500 pickup 4wd","displ: 5.2<br />hwy: 15<br />class: pickup<br />manufacturer: dodge<br />model: ram 1500 pickup 4wd","displ: 5.2<br />hwy: 16<br />class: pickup<br />manufacturer: dodge<br />model: ram 1500 pickup 4wd","displ: 5.7<br />hwy: 17<br />class: pickup<br />manufacturer: dodge<br />model: ram 1500 pickup 4wd","displ: 5.9<br />hwy: 15<br />class: pickup<br />manufacturer: dodge<br />model: ram 1500 pickup 4wd","displ: 4.2<br />hwy: 17<br />class: pickup<br />manufacturer: ford<br />model: f150 pickup 4wd","displ: 4.2<br />hwy: 17<br />class: pickup<br />manufacturer: ford<br />model: f150 pickup 4wd","displ: 4.6<br />hwy: 16<br />class: pickup<br />manufacturer: ford<br />model: f150 pickup 4wd","displ: 4.6<br />hwy: 16<br />class: pickup<br />manufacturer: ford<br />model: f150 pickup 4wd","displ: 4.6<br />hwy: 17<br />class: pickup<br />manufacturer: ford<br />model: f150 pickup 4wd","displ: 5.4<br />hwy: 15<br />class: pickup<br />manufacturer: ford<br />model: f150 pickup 4wd","displ: 5.4<br />hwy: 17<br />class: pickup<br />manufacturer: ford<br />model: f150 pickup 4wd","displ: 2.7<br />hwy: 20<br />class: pickup<br />manufacturer: toyota<br />model: toyota tacoma 4wd","displ: 2.7<br />hwy: 20<br />class: pickup<br />manufacturer: toyota<br />model: toyota tacoma 4wd","displ: 2.7<br />hwy: 22<br />class: pickup<br />manufacturer: toyota<br />model: toyota tacoma 4wd","displ: 3.4<br />hwy: 17<br />class: pickup<br />manufacturer: toyota<br />model: toyota tacoma 4wd","displ: 3.4<br />hwy: 19<br />class: pickup<br />manufacturer: toyota<br />model: toyota tacoma 4wd","displ: 4.0<br />hwy: 18<br />class: pickup<br />manufacturer: toyota<br />model: toyota tacoma 4wd","displ: 4.0<br />hwy: 20<br />class: pickup<br />manufacturer: toyota<br />model: toyota tacoma 4wd"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,182,235,1)","opacity":1,"size":5.6692913385826778,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,182,235,1)"}},"hoveron":"points","name":"pickup","legendgroup":"pickup","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3.7638330462947489,3.7808547233603895,3.9804517669416963,3.9872418778389691,4.5864943262003361,4.6017195013724264,4.6133196336776017,4.6022402162477372,5.4332062881067396,1.6365937121771275,1.586680857781321,1.5701793244294824,1.5768942304886879,1.6264102720469236,1.7911826555803418,1.7892986987158657,1.8351728290319442,2.0328264870122075,2.0130747697502374,2.0288903260231015,1.9845552874542773,1.9604382476769389,2.6696005289442839,2.6663829822838307,2.7007617525011303,2.1952983499877159,2.191793313417584,2.4886587404459717,2.5377040225081147,1.934987974874675,1.9162117568403481,2.0171017942950127,1.9888984235003591,2.5282445753179488,2.4684949254430832],"y":[25.715159583836794,24.602758598700166,26.323150890134276,24.232648583129048,21.395937341451646,21.908302146196366,22.714645562134685,22.176733574829996,20.047988735884427,33.339895961061117,32.183906905911861,32.297721276804808,28.670847594738007,32.17918065432459,34.372471272945404,35.956415608711538,35.765748672559859,28.735473329015075,25.678912043757737,29.030114304088055,27.940669300965965,27.198555681668221,23.774397972971201,24.28192062713206,23.703578110970557,26.27523734625429,26.065592821501195,25.832386996597052,26.181100887805222,44.211323048733178,41.042653695493939,29.164337919466199,26.070610608160496,28.005569373443723,29.204498004727064],"text":["displ: 3.8<br />hwy: 26<br />class: subcompact<br />manufacturer: ford<br />model: mustang","displ: 3.8<br />hwy: 25<br />class: subcompact<br />manufacturer: ford<br />model: mustang","displ: 4.0<br />hwy: 26<br />class: subcompact<br />manufacturer: ford<br />model: mustang","displ: 4.0<br />hwy: 24<br />class: subcompact<br />manufacturer: ford<br />model: mustang","displ: 4.6<br />hwy: 21<br />class: subcompact<br />manufacturer: ford<br />model: mustang","displ: 4.6<br />hwy: 22<br />class: subcompact<br />manufacturer: ford<br />model: mustang","displ: 4.6<br />hwy: 23<br />class: subcompact<br />manufacturer: ford<br />model: mustang","displ: 4.6<br />hwy: 22<br />class: subcompact<br />manufacturer: ford<br />model: mustang","displ: 5.4<br />hwy: 20<br />class: subcompact<br />manufacturer: ford<br />model: mustang","displ: 1.6<br />hwy: 33<br />class: subcompact<br />manufacturer: honda<br />model: civic","displ: 1.6<br />hwy: 32<br />class: subcompact<br />manufacturer: honda<br />model: civic","displ: 1.6<br />hwy: 32<br />class: subcompact<br />manufacturer: honda<br />model: civic","displ: 1.6<br />hwy: 29<br />class: subcompact<br />manufacturer: honda<br />model: civic","displ: 1.6<br />hwy: 32<br />class: subcompact<br />manufacturer: honda<br />model: civic","displ: 1.8<br />hwy: 34<br />class: subcompact<br />manufacturer: honda<br />model: civic","displ: 1.8<br />hwy: 36<br />class: subcompact<br />manufacturer: honda<br />model: civic","displ: 1.8<br />hwy: 36<br />class: subcompact<br />manufacturer: honda<br />model: civic","displ: 2.0<br />hwy: 29<br />class: subcompact<br />manufacturer: honda<br />model: civic","displ: 2.0<br />hwy: 26<br />class: subcompact<br />manufacturer: hyundai<br />model: tiburon","displ: 2.0<br />hwy: 29<br />class: subcompact<br />manufacturer: hyundai<br />model: tiburon","displ: 2.0<br />hwy: 28<br />class: subcompact<br />manufacturer: hyundai<br />model: tiburon","displ: 2.0<br />hwy: 27<br />class: subcompact<br />manufacturer: hyundai<br />model: tiburon","displ: 2.7<br />hwy: 24<br />class: subcompact<br />manufacturer: hyundai<br />model: tiburon","displ: 2.7<br />hwy: 24<br />class: subcompact<br />manufacturer: hyundai<br />model: tiburon","displ: 2.7<br />hwy: 24<br />class: subcompact<br />manufacturer: hyundai<br />model: tiburon","displ: 2.2<br />hwy: 26<br />class: subcompact<br />manufacturer: subaru<br />model: impreza awd","displ: 2.2<br />hwy: 26<br />class: subcompact<br />manufacturer: subaru<br />model: impreza awd","displ: 2.5<br />hwy: 26<br />class: subcompact<br />manufacturer: subaru<br />model: impreza awd","displ: 2.5<br />hwy: 26<br />class: subcompact<br />manufacturer: subaru<br />model: impreza awd","displ: 1.9<br />hwy: 44<br />class: subcompact<br />manufacturer: volkswagen<br />model: new beetle","displ: 1.9<br />hwy: 41<br />class: subcompact<br />manufacturer: volkswagen<br />model: new beetle","displ: 2.0<br />hwy: 29<br />class: subcompact<br />manufacturer: volkswagen<br />model: new beetle","displ: 2.0<br />hwy: 26<br />class: subcompact<br />manufacturer: volkswagen<br />model: new beetle","displ: 2.5<br />hwy: 28<br />class: subcompact<br />manufacturer: volkswagen<br />model: new beetle","displ: 2.5<br />hwy: 29<br />class: subcompact<br />manufacturer: volkswagen<br />model: new beetle"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(165,138,255,1)","opacity":1,"size":5.6692913385826778,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(165,138,255,1)"}},"hoveron":"points","name":"subcompact","legendgroup":"subcompact","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[5.3274300853163004,5.2611873256973922,5.3340928230993443,5.7233744340203705,6.0076034175232049,5.3275729580223556,5.298003564216196,5.6716863850876695,6.5244481889344748,3.9386469471082091,4.7164278386346998,4.687073973044753,4.6620323207229379,5.160364942625165,5.6770696089603012,5.8699071565642962,4.6099384150281546,5.3860338422842329,5.3919415719434625,4.0149209637567402,3.9724913064949217,3.9977986417524516,3.9769132004678251,4.6118459949828683,5.0065815644524987,2.9819690235704184,3.6726925378665332,3.9619411441124979,4.6918354618176821,4.7157973117940131,4.7312291161157187,5.7184008903615178,6.1159744727052745,3.9769037741795183,4.167150631323457,4.4363200648128984,4.6026736533269279,5.3666627693176272,5.3635903556458659,5.4152575378119945,4.0122632217034697,3.983156044166535,4.5864144806750113,5.0089482668414709,3.3033020167052745,3.2979457943327724,3.9874656651727856,5.6065304383076722,2.4794650407694281,2.480189296491444,2.537852972857654,2.5266598399914799,2.5110142905823887,2.4641494583524763,2.6962623632326723,2.7036278867721557,3.3879539755173025,3.427942906823009,3.9991410779580474,4.6649385624751449,4.6781661781854931,5.7392721230722961],"y":[19.605252772383391,15.069207318685949,20.306849663704632,17.151840165443719,16.84738971106708,19.070459849759935,14.123820901848376,14.642757579497992,17.0795664396137,16.661835450492799,16.79047679193318,11.860772376321256,17.118086416088044,16.152009632065891,17.808343892544507,14.720828110538424,17.137813242524864,17.290658064559103,17.848429873771966,17.352573394775391,18.838962340727448,16.714781388454139,18.722857533767819,19.38239961657673,16.835435160249471,21.882264626212418,19.191955646127461,20.342588529363276,16.750556009821594,11.714653430320322,18.745811200514435,18.152570980973543,13.817218284867703,15.394892950728536,17.923272342234849,18.134325809031726,15.169288890622557,17.273860053159297,16.320976970158519,17.827876154705883,17.309779188595712,19.250643704086542,19.022875818982719,16.90113751627505,17.296966398134828,16.996964217349888,20.04652529526502,18.070755521580576,24.85794135555625,23.638448394462465,27.155494940653444,24.836072948388754,26.208460105396806,23.260432213917376,19.614515784196556,19.977951879799367,18.964693887904286,17.180534110032021,20.366038851998745,16.79320758599788,14.758661627210676,18.371824993379413],"text":["displ: 5.3<br />hwy: 20<br />class: suv<br />manufacturer: chevrolet<br />model: c1500 suburban 2wd","displ: 5.3<br />hwy: 15<br />class: suv<br />manufacturer: chevrolet<br />model: c1500 suburban 2wd","displ: 5.3<br />hwy: 20<br />class: suv<br />manufacturer: chevrolet<br />model: c1500 suburban 2wd","displ: 5.7<br />hwy: 17<br />class: suv<br />manufacturer: chevrolet<br />model: c1500 suburban 2wd","displ: 6.0<br />hwy: 17<br />class: suv<br />manufacturer: chevrolet<br />model: c1500 suburban 2wd","displ: 5.3<br />hwy: 19<br />class: suv<br />manufacturer: chevrolet<br />model: k1500 tahoe 4wd","displ: 5.3<br />hwy: 14<br />class: suv<br />manufacturer: chevrolet<br />model: k1500 tahoe 4wd","displ: 5.7<br />hwy: 15<br />class: suv<br />manufacturer: chevrolet<br />model: k1500 tahoe 4wd","displ: 6.5<br />hwy: 17<br />class: suv<br />manufacturer: chevrolet<br />model: k1500 tahoe 4wd","displ: 3.9<br />hwy: 17<br />class: suv<br />manufacturer: dodge<br />model: durango 4wd","displ: 4.7<br />hwy: 17<br />class: suv<br />manufacturer: dodge<br />model: durango 4wd","displ: 4.7<br />hwy: 12<br />class: suv<br />manufacturer: dodge<br />model: durango 4wd","displ: 4.7<br />hwy: 17<br />class: suv<br />manufacturer: dodge<br />model: durango 4wd","displ: 5.2<br />hwy: 16<br />class: suv<br />manufacturer: dodge<br />model: durango 4wd","displ: 5.7<br />hwy: 18<br />class: suv<br />manufacturer: dodge<br />model: durango 4wd","displ: 5.9<br />hwy: 15<br />class: suv<br />manufacturer: dodge<br />model: durango 4wd","displ: 4.6<br />hwy: 17<br />class: suv<br />manufacturer: ford<br />model: expedition 2wd","displ: 5.4<br />hwy: 17<br />class: suv<br />manufacturer: ford<br />model: expedition 2wd","displ: 5.4<br />hwy: 18<br />class: suv<br />manufacturer: ford<br />model: expedition 2wd","displ: 4.0<br />hwy: 17<br />class: suv<br />manufacturer: ford<br />model: explorer 4wd","displ: 4.0<br />hwy: 19<br />class: suv<br />manufacturer: ford<br />model: explorer 4wd","displ: 4.0<br />hwy: 17<br />class: suv<br />manufacturer: ford<br />model: explorer 4wd","displ: 4.0<br />hwy: 19<br />class: suv<br />manufacturer: ford<br />model: explorer 4wd","displ: 4.6<br />hwy: 19<br />class: suv<br />manufacturer: ford<br />model: explorer 4wd","displ: 5.0<br />hwy: 17<br />class: suv<br />manufacturer: ford<br />model: explorer 4wd","displ: 3.0<br />hwy: 22<br />class: suv<br />manufacturer: jeep<br />model: grand cherokee 4wd","displ: 3.7<br />hwy: 19<br />class: suv<br />manufacturer: jeep<br />model: grand cherokee 4wd","displ: 4.0<br />hwy: 20<br />class: suv<br />manufacturer: jeep<br />model: grand cherokee 4wd","displ: 4.7<br />hwy: 17<br />class: suv<br />manufacturer: jeep<br />model: grand cherokee 4wd","displ: 4.7<br />hwy: 12<br />class: suv<br />manufacturer: jeep<br />model: grand cherokee 4wd","displ: 4.7<br />hwy: 19<br />class: suv<br />manufacturer: jeep<br />model: grand cherokee 4wd","displ: 5.7<br />hwy: 18<br />class: suv<br />manufacturer: jeep<br />model: grand cherokee 4wd","displ: 6.1<br />hwy: 14<br />class: suv<br />manufacturer: jeep<br />model: grand cherokee 4wd","displ: 4.0<br />hwy: 15<br />class: suv<br />manufacturer: land rover<br />model: range rover","displ: 4.2<br />hwy: 18<br />class: suv<br />manufacturer: land rover<br />model: range rover","displ: 4.4<br />hwy: 18<br />class: suv<br />manufacturer: land rover<br />model: range rover","displ: 4.6<br />hwy: 15<br />class: suv<br />manufacturer: land rover<br />model: range rover","displ: 5.4<br />hwy: 17<br />class: suv<br />manufacturer: lincoln<br />model: navigator 2wd","displ: 5.4<br />hwy: 16<br />class: suv<br />manufacturer: lincoln<br />model: navigator 2wd","displ: 5.4<br />hwy: 18<br />class: suv<br />manufacturer: lincoln<br />model: navigator 2wd","displ: 4.0<br />hwy: 17<br />class: suv<br />manufacturer: mercury<br />model: mountaineer 4wd","displ: 4.0<br />hwy: 19<br />class: suv<br />manufacturer: mercury<br />model: mountaineer 4wd","displ: 4.6<br />hwy: 19<br />class: suv<br />manufacturer: mercury<br />model: mountaineer 4wd","displ: 5.0<br />hwy: 17<br />class: suv<br />manufacturer: mercury<br />model: mountaineer 4wd","displ: 3.3<br />hwy: 17<br />class: suv<br />manufacturer: nissan<br />model: pathfinder 4wd","displ: 3.3<br />hwy: 17<br />class: suv<br />manufacturer: nissan<br />model: pathfinder 4wd","displ: 4.0<br />hwy: 20<br />class: suv<br />manufacturer: nissan<br />model: pathfinder 4wd","displ: 5.6<br />hwy: 18<br />class: suv<br />manufacturer: nissan<br />model: pathfinder 4wd","displ: 2.5<br />hwy: 25<br />class: suv<br />manufacturer: subaru<br />model: forester awd","displ: 2.5<br />hwy: 24<br />class: suv<br />manufacturer: subaru<br />model: forester awd","displ: 2.5<br />hwy: 27<br />class: suv<br />manufacturer: subaru<br />model: forester awd","displ: 2.5<br />hwy: 25<br />class: suv<br />manufacturer: subaru<br />model: forester awd","displ: 2.5<br />hwy: 26<br />class: suv<br />manufacturer: subaru<br />model: forester awd","displ: 2.5<br />hwy: 23<br />class: suv<br />manufacturer: subaru<br />model: forester awd","displ: 2.7<br />hwy: 20<br />class: suv<br />manufacturer: toyota<br />model: 4runner 4wd","displ: 2.7<br />hwy: 20<br />class: suv<br />manufacturer: toyota<br />model: 4runner 4wd","displ: 3.4<br />hwy: 19<br />class: suv<br />manufacturer: toyota<br />model: 4runner 4wd","displ: 3.4<br />hwy: 17<br />class: suv<br />manufacturer: toyota<br />model: 4runner 4wd","displ: 4.0<br />hwy: 20<br />class: suv<br />manufacturer: toyota<br />model: 4runner 4wd","displ: 4.7<br />hwy: 17<br />class: suv<br />manufacturer: toyota<br />model: 4runner 4wd","displ: 4.7<br />hwy: 15<br />class: suv<br />manufacturer: toyota<br />model: land cruiser wagon 4wd","displ: 5.7<br />hwy: 18<br />class: suv<br />manufacturer: toyota<br />model: land cruiser wagon 4wd"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(251,97,215,1)","opacity":1,"size":5.6692913385826778,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(251,97,215,1)"}},"hoveron":"points","name":"suv","legendgroup":"suv","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.6000000000000001,1.6683544303797468,1.7367088607594938,1.8050632911392406,1.8734177215189876,1.9417721518987343,2.0101265822784811,2.0784810126582278,2.1468354430379746,2.2151898734177218,2.2835443037974685,2.3518987341772153,2.420253164556962,2.4886075949367088,2.556962025316456,2.6253164556962028,2.6936708860759495,2.7620253164556963,2.830379746835443,2.8987341772151902,2.967088607594937,3.0354430379746837,3.1037974683544305,3.1721518987341772,3.2405063291139244,3.3088607594936708,3.377215189873418,3.4455696202531647,3.5139240506329115,3.5822784810126587,3.6506329113924054,3.7189873417721522,3.7873417721518989,3.8556962025316457,3.9240506329113924,3.9924050632911396,4.0607594936708864,4.1291139240506336,4.1974683544303799,4.2658227848101262,4.3341772151898734,4.4025316455696206,4.4708860759493678,4.5392405063291141,4.6075949367088604,4.6759493670886076,4.7443037974683548,4.812658227848102,4.8810126582278484,4.9493670886075947,5.0177215189873419,5.0860759493670891,5.1544303797468363,5.2227848101265826,5.2911392405063289,5.3594936708860761,5.4278481012658233,5.4962025316455705,5.5645569620253168,5.6329113924050631,5.7012658227848103,5.7696202531645575,5.8379746835443047,5.9063291139240501,5.9746835443037973,6.0430379746835445,6.1113924050632917,6.1797468354430389,6.2481012658227844,6.3164556962025316,6.3848101265822788,6.453164556962026,6.5215189873417732,6.5898734177215186,6.6582278481012658,6.726582278481013,6.7949367088607602,6.8632911392405074,6.9316455696202528,7],"y":[33.092856601853775,32.510783550357097,31.942220282938944,31.388484860677568,30.850895344651214,30.329995750033866,29.82385891881011,29.33337421940621,28.858385139052402,28.398142907231776,27.951898753427436,27.518903907122453,27.098763113307726,26.695783673587776,26.309081882146469,25.935588466411239,25.572234153809493,25.229179538119435,24.91819381138416,24.629874974796845,24.354674016954146,24.083041926452729,23.805473995433307,23.529589280263266,23.264636248189326,23.008106285748148,22.757490779476402,22.510281115910736,22.263968681587812,22.016044863044289,21.764001046816826,21.505328619442093,21.237518967456737,20.95806347739742,20.6636946027661,20.346382530292072,20.011440388454819,19.667539399964042,19.323350787529446,18.987545773860713,18.668795581667542,18.375771433659622,18.117144552546669,17.901586161038363,17.737478261884668,17.603892509481771,17.484469169152128,17.380369635021232,17.292755301214584,17.222787561857675,17.171627811076004,17.140437442995065,17.130377851740359,17.14261043143738,17.178296576211626,17.236490288008039,17.314259588958254,17.411549666674187,17.528349170468662,17.664646749654484,17.820431053544475,17.99569073145145,18.190414432688215,18.404590806567594,18.638208502402392,18.891256169505439,19.163722457189539,19.455596014767501,19.766865491552146,20.097519536856289,20.44754679999275,20.816935930274347,21.205675577013874,21.613754389524146,22.041161017118011,22.487884109108251,22.953912314807699,23.439234283529156,23.943838664585435,24.467714107289368],"text":["displ: 1.600000<br />hwy: 33.09286","displ: 1.668354<br />hwy: 32.51078","displ: 1.736709<br />hwy: 31.94222","displ: 1.805063<br />hwy: 31.38848","displ: 1.873418<br />hwy: 30.85090","displ: 1.941772<br />hwy: 30.33000","displ: 2.010127<br />hwy: 29.82386","displ: 2.078481<br />hwy: 29.33337","displ: 2.146835<br />hwy: 28.85839","displ: 2.215190<br />hwy: 28.39814","displ: 2.283544<br />hwy: 27.95190","displ: 2.351899<br />hwy: 27.51890","displ: 2.420253<br />hwy: 27.09876","displ: 2.488608<br />hwy: 26.69578","displ: 2.556962<br />hwy: 26.30908","displ: 2.625316<br />hwy: 25.93559","displ: 2.693671<br />hwy: 25.57223","displ: 2.762025<br />hwy: 25.22918","displ: 2.830380<br />hwy: 24.91819","displ: 2.898734<br />hwy: 24.62987","displ: 2.967089<br />hwy: 24.35467","displ: 3.035443<br />hwy: 24.08304","displ: 3.103797<br />hwy: 23.80547","displ: 3.172152<br />hwy: 23.52959","displ: 3.240506<br />hwy: 23.26464","displ: 3.308861<br />hwy: 23.00811","displ: 3.377215<br />hwy: 22.75749","displ: 3.445570<br />hwy: 22.51028","displ: 3.513924<br />hwy: 22.26397","displ: 3.582278<br />hwy: 22.01604","displ: 3.650633<br />hwy: 21.76400","displ: 3.718987<br />hwy: 21.50533","displ: 3.787342<br />hwy: 21.23752","displ: 3.855696<br />hwy: 20.95806","displ: 3.924051<br />hwy: 20.66369","displ: 3.992405<br />hwy: 20.34638","displ: 4.060759<br />hwy: 20.01144","displ: 4.129114<br />hwy: 19.66754","displ: 4.197468<br />hwy: 19.32335","displ: 4.265823<br />hwy: 18.98755","displ: 4.334177<br />hwy: 18.66880","displ: 4.402532<br />hwy: 18.37577","displ: 4.470886<br />hwy: 18.11714","displ: 4.539241<br />hwy: 17.90159","displ: 4.607595<br />hwy: 17.73748","displ: 4.675949<br />hwy: 17.60389","displ: 4.744304<br />hwy: 17.48447","displ: 4.812658<br />hwy: 17.38037","displ: 4.881013<br />hwy: 17.29276","displ: 4.949367<br />hwy: 17.22279","displ: 5.017722<br />hwy: 17.17163","displ: 5.086076<br />hwy: 17.14044","displ: 5.154430<br />hwy: 17.13038","displ: 5.222785<br />hwy: 17.14261","displ: 5.291139<br />hwy: 17.17830","displ: 5.359494<br />hwy: 17.23649","displ: 5.427848<br />hwy: 17.31426","displ: 5.496203<br />hwy: 17.41155","displ: 5.564557<br />hwy: 17.52835","displ: 5.632911<br />hwy: 17.66465","displ: 5.701266<br />hwy: 17.82043","displ: 5.769620<br />hwy: 17.99569","displ: 5.837975<br />hwy: 18.19041","displ: 5.906329<br />hwy: 18.40459","displ: 5.974684<br />hwy: 18.63821","displ: 6.043038<br />hwy: 18.89126","displ: 6.111392<br />hwy: 19.16372","displ: 6.179747<br />hwy: 19.45560","displ: 6.248101<br />hwy: 19.76687","displ: 6.316456<br />hwy: 20.09752","displ: 6.384810<br />hwy: 20.44755","displ: 6.453165<br />hwy: 20.81694","displ: 6.521519<br />hwy: 21.20568","displ: 6.589873<br />hwy: 21.61375","displ: 6.658228<br />hwy: 22.04116","displ: 6.726582<br />hwy: 22.48788","displ: 6.794937<br />hwy: 22.95391","displ: 6.863291<br />hwy: 23.43923","displ: 6.931646<br />hwy: 23.94384","displ: 7.000000<br />hwy: 24.46771"],"type":"scatter","mode":"lines","name":"fitted values","line":{"width":3.7795275590551185,"color":"rgba(51,102,255,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.6000000000000001,1.6683544303797468,1.7367088607594938,1.8050632911392406,1.8734177215189876,1.9417721518987343,2.0101265822784811,2.0784810126582278,2.1468354430379746,2.2151898734177218,2.2835443037974685,2.3518987341772153,2.420253164556962,2.4886075949367088,2.556962025316456,2.6253164556962028,2.6936708860759495,2.7620253164556963,2.830379746835443,2.8987341772151902,2.967088607594937,3.0354430379746837,3.1037974683544305,3.1721518987341772,3.2405063291139244,3.3088607594936708,3.377215189873418,3.4455696202531647,3.5139240506329115,3.5822784810126587,3.6506329113924054,3.7189873417721522,3.7873417721518989,3.8556962025316457,3.9240506329113924,3.9924050632911396,4.0607594936708864,4.1291139240506336,4.1974683544303799,4.2658227848101262,4.3341772151898734,4.4025316455696206,4.4708860759493678,4.5392405063291141,4.6075949367088604,4.6759493670886076,4.7443037974683548,4.812658227848102,4.8810126582278484,4.9493670886075947,5.0177215189873419,5.0860759493670891,5.1544303797468363,5.2227848101265826,5.2911392405063289,5.3594936708860761,5.4278481012658233,5.4962025316455705,5.5645569620253168,5.6329113924050631,5.7012658227848103,5.7696202531645575,5.8379746835443047,5.9063291139240501,5.9746835443037973,6.0430379746835445,6.1113924050632917,6.1797468354430389,6.2481012658227844,6.3164556962025316,6.3848101265822788,6.453164556962026,6.5215189873417732,6.5898734177215186,6.6582278481012658,6.726582278481013,6.7949367088607602,6.8632911392405074,6.9316455696202528,7,7,7,6.9316455696202528,6.8632911392405074,6.7949367088607602,6.726582278481013,6.6582278481012658,6.5898734177215186,6.5215189873417732,6.453164556962026,6.3848101265822788,6.3164556962025316,6.2481012658227844,6.1797468354430389,6.1113924050632917,6.0430379746835445,5.9746835443037973,5.9063291139240501,5.8379746835443047,5.7696202531645575,5.7012658227848103,5.6329113924050631,5.5645569620253168,5.4962025316455705,5.4278481012658233,5.3594936708860761,5.2911392405063289,5.2227848101265826,5.1544303797468363,5.0860759493670891,5.0177215189873419,4.9493670886075947,4.8810126582278484,4.812658227848102,4.7443037974683548,4.6759493670886076,4.6075949367088604,4.5392405063291141,4.4708860759493678,4.4025316455696206,4.3341772151898734,4.2658227848101262,4.1974683544303799,4.1291139240506336,4.0607594936708864,3.9924050632911396,3.9240506329113924,3.8556962025316457,3.7873417721518989,3.7189873417721522,3.6506329113924054,3.5822784810126587,3.5139240506329115,3.4455696202531647,3.377215189873418,3.3088607594936708,3.2405063291139244,3.1721518987341772,3.1037974683544305,3.0354430379746837,2.967088607594937,2.8987341772151902,2.830379746835443,2.7620253164556963,2.6936708860759495,2.6253164556962028,2.556962025316456,2.4886075949367088,2.420253164556962,2.3518987341772153,2.2835443037974685,2.2151898734177218,2.1468354430379746,2.0784810126582278,2.0101265822784811,1.9417721518987343,1.8734177215189876,1.8050632911392406,1.7367088607594938,1.6683544303797468,1.6000000000000001,1.6000000000000001],"y":[31.550292174195793,31.143961549634732,30.734766341174026,30.321917456816472,29.904971528724893,29.483426427439042,29.054623095409806,28.619194064456405,28.178138352187645,27.733165188183978,27.287080898839278,26.843189106552579,26.405132750751655,25.98239498124963,25.575921909057563,25.183254798879357,24.802393152877332,24.445501865960317,24.121438292723276,23.814527608510609,23.514852391723682,23.220242920853778,22.933520888616439,22.665991242151396,22.419122021648025,22.184142516019449,21.952370178198365,21.716169166381022,21.470030007955209,21.211337744309922,20.940375734846342,20.659551935185313,20.372285036614361,20.081982151462451,19.790060877064167,19.485225010972311,19.167134817178137,18.839684146605766,18.507615444318091,18.177256016002097,17.857020684613019,17.557441473747648,17.290678592427213,17.069694933758974,16.906974599230377,16.779502803594873,16.667093775087555,16.569539534903932,16.48683930892631,16.41929172621731,16.36754004185569,16.332555111691445,16.315548918827691,16.317822983780879,16.340565335936429,16.381909084776744,16.437137009374407,16.505176734410622,16.585022488705722,16.675759404071073,16.776626559572634,16.887053720421427,17.006669563008458,17.135285918322914,17.272866717517406,17.419490920707499,17.575316668696104,17.740550880089618,17.915425837209742,18.100182531946697,18.295059666518725,18.500286958894975,18.716081503162375,18.94264617415066,19.18016932439728,19.428825246143091,19.688775045495113,19.960167702385647,20.243141177391518,20.537823484714846,20.537823484714846,28.39760472986389,27.644536151779352,26.918300864672666,26.219049584120285,25.54694297207341,24.902152709838742,24.284862604897633,23.695269650865374,23.13358490165372,22.600033933466776,22.094856541765882,21.618305145894549,21.170641149445384,20.752128245682975,20.363021418303379,20.003550287287378,19.673895694812273,19.374159302367971,19.104327742481473,18.864235547516316,18.653534095237895,18.471675852231602,18.317922598937752,18.191382168542102,18.091071491239333,18.016027816486822,17.96739787909388,17.945206784653028,17.948319774298685,17.975715580296317,18.026283397498041,18.098671293502857,18.191199735138532,18.301844563216701,18.428282215368668,18.567981924538959,18.733477388317752,18.943610512666126,19.194101393571597,19.480570478722065,19.797835531719329,20.1390861307408,20.495394653322318,20.8557459597315,21.207540049611833,21.537328328468032,21.834144803332389,22.102752898299112,22.351105303698873,22.587626358787311,22.820751981778656,23.057907355220415,23.304393065440451,23.56261138075444,23.832070055476848,24.110150474730627,24.393187318375137,24.677427102250174,24.945840932051681,25.194495642184609,25.445222341083081,25.714949330045044,26.012857210278554,26.342075154741654,26.687922133943122,27.042241855235375,27.409172365925922,27.792393475863797,28.194618707692328,28.616716608015594,29.063120626279574,29.538631925917159,30.047554374356015,30.593094742210415,31.176565072628691,31.796819160577535,32.455052264538665,33.149674224703865,33.877605551079462,34.635421029511754,31.550292174195793],"text":["displ: 1.600000<br />hwy: 33.09286","displ: 1.668354<br />hwy: 32.51078","displ: 1.736709<br />hwy: 31.94222","displ: 1.805063<br />hwy: 31.38848","displ: 1.873418<br />hwy: 30.85090","displ: 1.941772<br />hwy: 30.33000","displ: 2.010127<br />hwy: 29.82386","displ: 2.078481<br />hwy: 29.33337","displ: 2.146835<br />hwy: 28.85839","displ: 2.215190<br />hwy: 28.39814","displ: 2.283544<br />hwy: 27.95190","displ: 2.351899<br />hwy: 27.51890","displ: 2.420253<br />hwy: 27.09876","displ: 2.488608<br />hwy: 26.69578","displ: 2.556962<br />hwy: 26.30908","displ: 2.625316<br />hwy: 25.93559","displ: 2.693671<br />hwy: 25.57223","displ: 2.762025<br />hwy: 25.22918","displ: 2.830380<br />hwy: 24.91819","displ: 2.898734<br />hwy: 24.62987","displ: 2.967089<br />hwy: 24.35467","displ: 3.035443<br />hwy: 24.08304","displ: 3.103797<br />hwy: 23.80547","displ: 3.172152<br />hwy: 23.52959","displ: 3.240506<br />hwy: 23.26464","displ: 3.308861<br />hwy: 23.00811","displ: 3.377215<br />hwy: 22.75749","displ: 3.445570<br />hwy: 22.51028","displ: 3.513924<br />hwy: 22.26397","displ: 3.582278<br />hwy: 22.01604","displ: 3.650633<br />hwy: 21.76400","displ: 3.718987<br />hwy: 21.50533","displ: 3.787342<br />hwy: 21.23752","displ: 3.855696<br />hwy: 20.95806","displ: 3.924051<br />hwy: 20.66369","displ: 3.992405<br />hwy: 20.34638","displ: 4.060759<br />hwy: 20.01144","displ: 4.129114<br />hwy: 19.66754","displ: 4.197468<br />hwy: 19.32335","displ: 4.265823<br />hwy: 18.98755","displ: 4.334177<br />hwy: 18.66880","displ: 4.402532<br />hwy: 18.37577","displ: 4.470886<br />hwy: 18.11714","displ: 4.539241<br />hwy: 17.90159","displ: 4.607595<br />hwy: 17.73748","displ: 4.675949<br />hwy: 17.60389","displ: 4.744304<br />hwy: 17.48447","displ: 4.812658<br />hwy: 17.38037","displ: 4.881013<br />hwy: 17.29276","displ: 4.949367<br />hwy: 17.22279","displ: 5.017722<br />hwy: 17.17163","displ: 5.086076<br />hwy: 17.14044","displ: 5.154430<br />hwy: 17.13038","displ: 5.222785<br />hwy: 17.14261","displ: 5.291139<br />hwy: 17.17830","displ: 5.359494<br />hwy: 17.23649","displ: 5.427848<br />hwy: 17.31426","displ: 5.496203<br />hwy: 17.41155","displ: 5.564557<br />hwy: 17.52835","displ: 5.632911<br />hwy: 17.66465","displ: 5.701266<br />hwy: 17.82043","displ: 5.769620<br />hwy: 17.99569","displ: 5.837975<br />hwy: 18.19041","displ: 5.906329<br />hwy: 18.40459","displ: 5.974684<br />hwy: 18.63821","displ: 6.043038<br />hwy: 18.89126","displ: 6.111392<br />hwy: 19.16372","displ: 6.179747<br />hwy: 19.45560","displ: 6.248101<br />hwy: 19.76687","displ: 6.316456<br />hwy: 20.09752","displ: 6.384810<br />hwy: 20.44755","displ: 6.453165<br />hwy: 20.81694","displ: 6.521519<br />hwy: 21.20568","displ: 6.589873<br />hwy: 21.61375","displ: 6.658228<br />hwy: 22.04116","displ: 6.726582<br />hwy: 22.48788","displ: 6.794937<br />hwy: 22.95391","displ: 6.863291<br />hwy: 23.43923","displ: 6.931646<br />hwy: 23.94384","displ: 7.000000<br />hwy: 24.46771","displ: 7.000000<br />hwy: 24.46771","displ: 7.000000<br />hwy: 24.46771","displ: 6.931646<br />hwy: 23.94384","displ: 6.863291<br />hwy: 23.43923","displ: 6.794937<br />hwy: 22.95391","displ: 6.726582<br />hwy: 22.48788","displ: 6.658228<br />hwy: 22.04116","displ: 6.589873<br />hwy: 21.61375","displ: 6.521519<br />hwy: 21.20568","displ: 6.453165<br />hwy: 20.81694","displ: 6.384810<br />hwy: 20.44755","displ: 6.316456<br />hwy: 20.09752","displ: 6.248101<br />hwy: 19.76687","displ: 6.179747<br />hwy: 19.45560","displ: 6.111392<br />hwy: 19.16372","displ: 6.043038<br />hwy: 18.89126","displ: 5.974684<br />hwy: 18.63821","displ: 5.906329<br />hwy: 18.40459","displ: 5.837975<br />hwy: 18.19041","displ: 5.769620<br />hwy: 17.99569","displ: 5.701266<br />hwy: 17.82043","displ: 5.632911<br />hwy: 17.66465","displ: 5.564557<br />hwy: 17.52835","displ: 5.496203<br />hwy: 17.41155","displ: 5.427848<br />hwy: 17.31426","displ: 5.359494<br />hwy: 17.23649","displ: 5.291139<br />hwy: 17.17830","displ: 5.222785<br />hwy: 17.14261","displ: 5.154430<br />hwy: 17.13038","displ: 5.086076<br />hwy: 17.14044","displ: 5.017722<br />hwy: 17.17163","displ: 4.949367<br />hwy: 17.22279","displ: 4.881013<br />hwy: 17.29276","displ: 4.812658<br />hwy: 17.38037","displ: 4.744304<br />hwy: 17.48447","displ: 4.675949<br />hwy: 17.60389","displ: 4.607595<br />hwy: 17.73748","displ: 4.539241<br />hwy: 17.90159","displ: 4.470886<br />hwy: 18.11714","displ: 4.402532<br />hwy: 18.37577","displ: 4.334177<br />hwy: 18.66880","displ: 4.265823<br />hwy: 18.98755","displ: 4.197468<br />hwy: 19.32335","displ: 4.129114<br />hwy: 19.66754","displ: 4.060759<br />hwy: 20.01144","displ: 3.992405<br />hwy: 20.34638","displ: 3.924051<br />hwy: 20.66369","displ: 3.855696<br />hwy: 20.95806","displ: 3.787342<br />hwy: 21.23752","displ: 3.718987<br />hwy: 21.50533","displ: 3.650633<br />hwy: 21.76400","displ: 3.582278<br />hwy: 22.01604","displ: 3.513924<br />hwy: 22.26397","displ: 3.445570<br />hwy: 22.51028","displ: 3.377215<br />hwy: 22.75749","displ: 3.308861<br />hwy: 23.00811","displ: 3.240506<br />hwy: 23.26464","displ: 3.172152<br />hwy: 23.52959","displ: 3.103797<br />hwy: 23.80547","displ: 3.035443<br />hwy: 24.08304","displ: 2.967089<br />hwy: 24.35467","displ: 2.898734<br />hwy: 24.62987","displ: 2.830380<br />hwy: 24.91819","displ: 2.762025<br />hwy: 25.22918","displ: 2.693671<br />hwy: 25.57223","displ: 2.625316<br />hwy: 25.93559","displ: 2.556962<br />hwy: 26.30908","displ: 2.488608<br />hwy: 26.69578","displ: 2.420253<br />hwy: 27.09876","displ: 2.351899<br />hwy: 27.51890","displ: 2.283544<br />hwy: 27.95190","displ: 2.215190<br />hwy: 28.39814","displ: 2.146835<br />hwy: 28.85839","displ: 2.078481<br />hwy: 29.33337","displ: 2.010127<br />hwy: 29.82386","displ: 1.941772<br />hwy: 30.33000","displ: 1.873418<br />hwy: 30.85090","displ: 1.805063<br />hwy: 31.38848","displ: 1.736709<br />hwy: 31.94222","displ: 1.668354<br />hwy: 32.51078","displ: 1.600000<br />hwy: 33.09286","displ: 1.600000<br />hwy: 33.09286"],"type":"scatter","mode":"lines","line":{"width":3.7795275590551185,"color":"transparent","dash":"solid"},"fill":"toself","fillcolor":"rgba(153,153,153,0.4)","hoveron":"points","hoverinfo":"x+y","showlegend":false,"xaxis":"x","yaxis":"y","frame":null}],"layout":{"margin":{"t":26.228310502283104,"r":7.3059360730593621,"b":40.182648401826491,"l":37.260273972602747},"plot_bgcolor":"rgba(235,235,235,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[1.2986882906509565,7.2714910337785259],"tickmode":"array","ticktext":["2","3","4","5","6","7"],"tickvals":[2,3,4,5,6,7],"categoryorder":"array","categoryarray":["2","3","4","5","6","7"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.6529680365296811,"tickwidth":0.66417600664176002,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"displ","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[10.089819949399679,45.83615652965382],"tickmode":"array","ticktext":["20","30","40"],"tickvals":[20,30,40],"categoryorder":"array","categoryarray":["20","30","40"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.6529680365296811,"tickwidth":0.66417600664176002,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(255,255,255,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"hwy","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.8897637795275593,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498},"title":{"text":"class","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"2288614336d8":{"x":{},"y":{},"colour":{},"label":{},"label2":{},"type":"scatter"},"22886b409c78":{"x":{},"y":{}}},"cur_data":"2288614336d8","visdat":{"2288614336d8":["function (y) ","x"],"22886b409c78":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="further-resources" class="level2">
+<h2 class="anchored" data-anchor-id="further-resources">Further resources</h2>
+<ul>
+<li><a href="https://www.rstudio.org/links/data_visualization_cheat_sheet">ggplot2 cheatsheet</a></li>
+<li>Official <a href="https://ggplot2.tidyverse.org/reference/">ggplot2 documentation</a></li>
+<li>Official <a href="https://ggplot2.tidyverse.org/">ggplot2 website</a></li>
+<li><a href="https://r4ds.hadley.nz/data-visualize.html">Chapter on data visualisation</a> in the book <em>R for Data Science</em></li>
+<li><a href="https://www.data-to-viz.com/">From Data to Viz</a>, a website to explore different visualisations and the code that generates them</li>
+<li>Selva Prabhakaran’s <a href="https://r-statistics.co/ggplot2-Tutorial-With-R.html"><em>r-statistics.co</em> section on ggplot2</a></li>
+<li><a href="https://ourcodingclub.github.io/tutorials/datavis/">Coding Club’s data visualisation tutorial</a></li>
+<li><a href="https://www.sthda.com/english/wiki/ggplot2-essentials">STHDA’s ggplot2 essentials</a></li>
+<li>Lear more about plotly and exploratory data analysis with the book <em><a href="https://plotly-r.com/">Interactive web-based data visualization with R, plotly, and shiny</a></em></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/camwest5\.github\.io\/training-intensives\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
