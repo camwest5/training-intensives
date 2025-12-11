@@ -50,9 +50,9 @@ We recommend starting from our [template](template.qmd).
 
 We've also put together an example reports which you're welcome to look at - you can download the code from there.
 
-::: {.panel-tabset}
+::: {.panel-tabset group="lang"}
 
-## R
+## R {.active}
 
 ::: {#r-example-proj}
 :::

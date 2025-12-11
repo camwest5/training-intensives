@@ -6,9 +6,9 @@ Here's a few general tips. In addition, we strongly recommend using [the pandas 
 
 ## Hotkeys
 
-::: {.panel-tabset}
+::: {.panel-tabset group="lang"}
 
-## R
+## R {.active}
 
 | Code | Hotkey | Description |
 | --- | --- | --- |
@@ -33,7 +33,7 @@ Here's a few general tips. In addition, we strongly recommend using [the pandas 
 
 Import packages to make data manipulation easier
 
-::: {.panel-tabset}
+::: {.panel-tabset group="lang"}
 
 ## R
 
@@ -51,7 +51,7 @@ import pandas as pd
 ### Importing and exporting data
 Read your data with an I/O (input/output) function.
 
-::: {.panel-tabset}
+::: {.panel-tabset group="lang"}
 
 ## R
 ```r
@@ -68,7 +68,7 @@ df = pd.read_csv("data/dataset.csv")
 
 You can also export your data to a csv file.
 
-::: {.panel-tabset}
+::: {.panel-tabset group="lang"}
 
 ## R
 
@@ -87,7 +87,7 @@ df.to_csv("data/output_name.csv")
 ### Initial exploration
 You'll want to explore the data to start with - below are a few functions to get started.
 
-::: {.panel-tabset}
+::: {.panel-tabset group="lang"}
 
 ## R
 
@@ -115,7 +115,7 @@ You'll want to explore the data to start with - below are a few functions to get
 
 We can remove `nan`s by filtering
 
-::: {.panel-tabset}
+::: {.panel-tabset group="lang"}
 
 ## R
 
@@ -141,7 +141,7 @@ df = df[df["variable"].notna()]
 ### Time series data
 If you've picked a dataset with time-series data (e.g. a "date" variable), you should transform that variable so that it visualises better:
 
-::: {.panel-tabset}
+::: {.panel-tabset group="lang"}
 
 ## R
 
@@ -160,7 +160,7 @@ df["variable"] = pd.to_datetime(df["variable"])
 ### Categorical and ordered data
 If you're dealing with categorical data, you can specify this explicitly to keep track of the levels.
 
-::: {.panel-tabset}
+::: {.panel-tabset group="lang"}
 
 ## R
 ```r
@@ -177,7 +177,7 @@ df["variable"] = df["variable"].astype("category")
 
 To manually specify the order of categories, 
 
-::: {.panel-tabset}
+::: {.panel-tabset group="lang"}
 
 ## R
 Specify the order by sending in an ordered list of the levels joined with `c()`:
@@ -213,7 +213,7 @@ This is particularly useful for the **Coffee survey** dataset.
 ### Renaming variables
 Some datasets have cumbersome names for their variables which we can rename.
 
-::: {.panel-tabset}
+::: {.panel-tabset group="lang"}
 
 ## R
 
@@ -258,7 +258,7 @@ This is particularly useful for the **World population** dataset.
 ## Visualisation
 We can make simple visualisations of our data.
 
-::: {.panel-tabset}
+::: {.panel-tabset group="lang"}
 
 ## R
 Use `ggplot2`'s `ggplot()` function, with 
@@ -303,7 +303,7 @@ sns.relplot(data = df, x = "variable_x", y = "variable_y", hue = "variable_colou
 
 We can add additional customisations to our plots, such as axis labels.
 
-::: {.panel-tabset}
+::: {.panel-tabset group="lang"}
 
 ## R
 Generally, `ggplot2` lets you do this with additional elements added to the plot. For example, to add axis labels,

@@ -1,5 +1,8 @@
+from datetime import datetime as dt
+from datetime import timedelta as td
+from datetime import timezone as tz
+
 from glob import glob
-import os
 from os.path import dirname as d
 from os.path import basename as b
 from os.path import join as j
@@ -26,6 +29,69 @@ def find_rendered_files(
     return files
 
 
+def change_active_tabset(source: str) -> str:
+
+    active_specifier = "## R {.active}"
+    bad_specifier = "## Python {.active}"
+
+    # If during Python intensive, swap
+    if dt(2026, 2, 1) < dt.now() < dt(2026, 2, 10):
+        active_specifier, bad_specifier = (bad_specifier, active_specifier)
+
+    # Find first tabset
+    if '.panel-tabset group="lang"' in source:
+        first_tabset_i = source.index('::: {.panel-tabset group="lang"')
+
+        if bad_specifier in source:
+            source = source.replace(bad_specifier, bad_specifier[:-10])
+            print(
+                project_processing.GRN,
+                "\tFIXED:",
+                project_processing.O,
+                bad_specifier,
+                "->",
+                bad_specifier[:-10],
+            )
+
+        if active_specifier not in source:
+            source = source[:first_tabset_i] + source[first_tabset_i:].replace(
+                active_specifier[:-10], active_specifier, 1
+            )
+            print(
+                project_processing.GRN,
+                "\tFIXED:",
+                project_processing.O,
+                active_specifier[:-10],
+                "->",
+                active_specifier,
+            )
+
+        if source.count("{.active}") == 0:
+            print(
+                project_processing.RED,
+                "\tWARNING:",
+                project_processing.O,
+                "No {.active} tags in tabsets!",
+            )
+        elif source.count("{.active}") > 1:
+            print(
+                project_processing.RED,
+                "\tWARNING:",
+                project_processing.O,
+                "Multiple {.active} produced!",
+            )
+
+    elif source.count("{.active}") != 0:
+        print(
+            project_processing.RED,
+            "\tWARNING:",
+            project_processing.O,
+            "{.active} present yet no tabsets found!",
+        )
+
+    return source
+
+
 def insert_banner(source: str) -> str:
     raise NotImplementedError()
 
@@ -48,7 +114,8 @@ def process_content() -> None:
         all_paths = csv_paths | png_paths
 
         content = project_processing.update_links(qmd, all_paths, content)
-        print()
+
+        content = change_active_tabset(content)
 
         with open(qmd, "w") as f:
             f.write(content)

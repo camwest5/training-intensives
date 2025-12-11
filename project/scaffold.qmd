@@ -1,5 +1,6 @@
 ---
 title: "Getting started"
+format: html
 listing:
    - id: py-example-proj
      contents: ../gallery/Python/26Summer/example_project/example_project.qmd
@@ -9,9 +10,9 @@ listing:
 
 You're welcome to dive in and work as you please, but if you're feeling at a loss where to begin, follow the scaffold below. Don't forget to start from our [template](template.qmd) and look at the examples:
 
-::: {.panel-tabset}
+::: {.panel-tabset group="lang"}
 
-## R
+## R {.active}
 
 ::: {#r-example-proj}
 :::
@@ -44,7 +45,7 @@ We have nine datasets for you to choose from. **We recommend saving your data in
 
 Remember, to work with data, we should import our useful packages and load the data in.
 
-::: {.panel-tabset}
+::: {.panel-tabset group="lang"}
 
 ## R
 
@@ -75,7 +76,7 @@ The datasets are varied with respect to variable types and content. The first ex
 
 Use the following functions to view your data and the underlying data types.
 
-::: {.panel-tabset}
+::: {.panel-tabset group="lang"}
 
 ## R
 
@@ -99,7 +100,7 @@ df.describe()
 
 To view the contents of particular columns, you can select them via indexing
 
-::: {.panel-tabset}
+::: {.panel-tabset group="lang"}
 
 ## R
 
@@ -133,7 +134,7 @@ The datasets have lots of observations for lots of variables. To draw meaningful
 
 Recall that filtering looks like indexing. If you only want to examine a certain subset of a variable, the following code will isolate that subset
 
-::: {.panel-tabset}
+::: {.panel-tabset group="lang"}
 
 ## R 
 
@@ -165,7 +166,7 @@ If you want to aggregate over a particular variable you need to group by it. Thi
 
 If you want to group by a column and, for each of its values, apply a statistic **to all the others**,
 
-::: {.panel-tabset}
+::: {.panel-tabset group="lang"}
 
 ## R 
 ```r
@@ -205,7 +206,7 @@ With your summary dataset, you can now try to visualise your variables.
 
 First, you need to import the appropriate visualisation module
 
-::: {.panel-tabset}
+::: {.panel-tabset group="lang"}
 
 ## R 
 
@@ -232,7 +233,7 @@ import plotly.express as px
 
 Next, you'll need to identify the variables to visualise. If they're both continuous, you could use a scatter or line plot
 
-::: {.panel-tabset}
+::: {.panel-tabset group="lang"}
 
 ## R 
 
