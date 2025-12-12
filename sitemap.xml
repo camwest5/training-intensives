@@ -2,198 +2,286 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://camwest5.github.io/training-intensives/r/setup.html</loc>
-    <lastmod>2025-12-11T07:30:52.948Z</lastmod>
+    <lastmod>2025-12-12T05:26:09.966Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/r/Essentials/3 - Visualisation.html</loc>
-    <lastmod>2025-12-11T07:30:52.950Z</lastmod>
+    <lastmod>2025-12-12T05:26:09.964Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/r/Essentials/2 - Data processing.html</loc>
-    <lastmod>2025-12-11T07:30:52.946Z</lastmod>
+    <lastmod>2025-12-12T05:26:09.963Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/r/Advanced topics/5 - Statistics.html</loc>
-    <lastmod>2025-12-11T07:30:52.949Z</lastmod>
+    <lastmod>2025-12-12T05:26:09.962Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/qgis/Essentials/1 - Fundamentals.html</loc>
-    <lastmod>2025-12-11T07:30:52.947Z</lastmod>
+    <lastmod>2025-12-12T05:26:09.962Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/qgis/Essentials/3 - Data Sources and Projections.html</loc>
-    <lastmod>2025-12-11T07:30:52.948Z</lastmod>
+    <lastmod>2025-12-12T05:26:09.966Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/qgis/Advanced topics/5 - Styling Themes and Templates.html</loc>
-    <lastmod>2025-12-11T07:30:52.949Z</lastmod>
+    <lastmod>2025-12-12T05:26:09.966Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/python/setup.html</loc>
-    <lastmod>2025-12-11T07:30:52.947Z</lastmod>
+    <lastmod>2025-12-12T05:26:09.962Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/python/Essentials/3 - Visualisation.html</loc>
-    <lastmod>2025-12-11T07:30:52.947Z</lastmod>
+    <lastmod>2025-12-12T05:26:09.965Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/python/Essentials/2 - Data processing.html</loc>
-    <lastmod>2025-12-11T07:30:52.949Z</lastmod>
+    <lastmod>2025-12-12T05:26:09.966Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/python/Advanced topics/5 - Statistics.html</loc>
-    <lastmod>2025-12-11T07:30:52.949Z</lastmod>
+    <lastmod>2025-12-12T05:26:09.965Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/project/template.html</loc>
-    <lastmod>2025-12-11T07:30:52.949Z</lastmod>
+    <lastmod>2025-12-12T05:26:09.965Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/project/details.html</loc>
-    <lastmod>2025-12-11T07:30:52.947Z</lastmod>
+    <lastmod>2025-12-12T05:26:09.965Z</lastmod>
+  </url>
+  <url>
+    <loc>https://camwest5.github.io/training-intensives/gallery/R/25Winter/example_project/example_project.html</loc>
+    <lastmod>2025-12-12T05:24:47.108Z</lastmod>
+  </url>
+  <url>
+    <loc>https://camwest5.github.io/training-intensives/gallery/R/25Winter/Swagata &amp; Sandhya&#39;s Project/Queensland hospital dataanalysis.html</loc>
+    <lastmod>2025-12-12T05:24:20.088Z</lastmod>
+  </url>
+  <url>
+    <loc>https://camwest5.github.io/training-intensives/gallery/R/25Winter/Claudine &amp; Emman/QLD_fuel.html</loc>
+    <lastmod>2025-12-12T05:25:54.748Z</lastmod>
+  </url>
+  <url>
+    <loc>https://camwest5.github.io/training-intensives/gallery/R/25Winter/Chris/Population - Presentation for R Training.html</loc>
+    <lastmod>2025-12-12T05:24:28.573Z</lastmod>
+  </url>
+  <url>
+    <loc>https://camwest5.github.io/training-intensives/gallery/R/25Winter/Andrew Proj/report.html</loc>
+    <lastmod>2025-12-12T05:24:38.669Z</lastmod>
+  </url>
+  <url>
+    <loc>https://camwest5.github.io/training-intensives/gallery/R/25Winter/Adriel Project/Report-Test.html</loc>
+    <lastmod>2025-12-12T05:25:38.942Z</lastmod>
+  </url>
+  <url>
+    <loc>https://camwest5.github.io/training-intensives/gallery/R/25Summer/Toasted/Bird Strike Dashboard.html</loc>
+    <lastmod>2025-12-12T05:23:08.754Z</lastmod>
+  </url>
+  <url>
+    <loc>https://camwest5.github.io/training-intensives/gallery/R/25Summer/Krystie/dashy presentation.html</loc>
+    <lastmod>2025-12-12T05:24:00.768Z</lastmod>
+  </url>
+  <url>
+    <loc>https://camwest5.github.io/training-intensives/gallery/R/25Summer/Dawn/project_dashboard.html</loc>
+    <lastmod>2025-12-12T05:24:07.905Z</lastmod>
+  </url>
+  <url>
+    <loc>https://camwest5.github.io/training-intensives/gallery/R/25Summer/Birdstrike/Birdstrikes.html</loc>
+    <lastmod>2025-12-12T05:23:52.885Z</lastmod>
+  </url>
+  <url>
+    <loc>https://camwest5.github.io/training-intensives/gallery/R/25Summer/Adelia/COFFEE.html</loc>
+    <lastmod>2025-12-12T05:23:35.462Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/gallery/Python/25Winter/example_project/example_project.html</loc>
-    <lastmod>2025-12-11T07:30:36.070Z</lastmod>
+    <lastmod>2025-12-12T05:22:31.882Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/gallery/Python/25Winter/Prince/gapminder2025.html</loc>
-    <lastmod>2025-12-11T07:30:37.647Z</lastmod>
+    <lastmod>2025-12-12T05:22:32.894Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/gallery/Python/25Winter/Group2/group_project.html</loc>
-    <lastmod>2025-12-11T07:30:42.368Z</lastmod>
+    <lastmod>2025-12-12T05:22:37.909Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/gallery/Python/25Winter/Coffee Preferences/ProjectCoffee.html</loc>
-    <lastmod>2025-12-11T07:30:38.968Z</lastmod>
+    <lastmod>2025-12-12T05:22:34.399Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/gallery/Python/25Winter/Australia and Cambodia Populations/project_report.html</loc>
-    <lastmod>2025-12-11T07:30:36.765Z</lastmod>
+    <lastmod>2025-12-12T05:22:32.621Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/gallery/Python/25Summer/example_project/example_project.html</loc>
-    <lastmod>2025-12-11T07:28:26.580Z</lastmod>
+    <lastmod>2025-12-12T05:20:07.947Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/gallery/Python/25Summer/Najiha/dashboardbooks.html</loc>
-    <lastmod>2025-12-11T07:30:30.034Z</lastmod>
+    <lastmod>2025-12-12T05:22:24.263Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/gallery/Python/25Summer/Koyo &amp; Liz/project.html</loc>
-    <lastmod>2025-12-11T07:30:34.788Z</lastmod>
+    <lastmod>2025-12-12T05:22:30.484Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/gallery/Python/25Summer/Emma/Goodread.html</loc>
-    <lastmod>2025-12-11T07:28:27.122Z</lastmod>
+    <lastmod>2025-12-12T05:20:08.538Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/gallery/Python/25Summer/Edison/fuel_db.html</loc>
-    <lastmod>2025-12-11T07:29:24.467Z</lastmod>
+    <lastmod>2025-12-12T05:21:10.287Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/gallery/Python/25Summer/Adelia &amp; Lauren/Fuel.html</loc>
-    <lastmod>2025-12-11T07:28:42.697Z</lastmod>
+    <lastmod>2025-12-12T05:20:24.672Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/index.html</loc>
-    <lastmod>2025-12-11T07:30:52.949Z</lastmod>
+    <lastmod>2025-12-12T05:26:09.964Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/gallery/project_gallery.html</loc>
-    <lastmod>2025-12-11T07:30:52.946Z</lastmod>
+    <lastmod>2025-12-12T05:26:09.966Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/gallery/Python/25Summer/Caira/dashboardbooks.html</loc>
-    <lastmod>2025-12-11T07:28:26.115Z</lastmod>
+    <lastmod>2025-12-12T05:20:07.390Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/gallery/Python/25Summer/Edison/fuel_project.html</loc>
-    <lastmod>2025-12-11T07:29:21.177Z</lastmod>
+    <lastmod>2025-12-12T05:21:06.596Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/gallery/Python/25Summer/Koyo &amp; Liz/Plane.html</loc>
-    <lastmod>2025-12-11T07:30:32.308Z</lastmod>
+    <lastmod>2025-12-12T05:22:27.639Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/gallery/Python/25Summer/Lydeth/Goodread.html</loc>
-    <lastmod>2025-12-11T07:28:26.428Z</lastmod>
+    <lastmod>2025-12-12T05:20:07.774Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/gallery/Python/25Summer/Python-project-Nish/dashboard.html</loc>
-    <lastmod>2025-12-11T07:28:25.924Z</lastmod>
+    <lastmod>2025-12-12T05:20:07.349Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/gallery/Python/25Winter/Another coffee survey/Pawatsada.html</loc>
-    <lastmod>2025-12-11T07:30:36.524Z</lastmod>
+    <lastmod>2025-12-12T05:22:32.393Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/gallery/Python/25Winter/Coffee Horror/coffee.html</loc>
-    <lastmod>2025-12-11T07:30:35.553Z</lastmod>
+    <lastmod>2025-12-12T05:22:31.343Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/gallery/Python/25Winter/Coffee Survey/MyReport.html</loc>
-    <lastmod>2025-12-11T07:30:39.824Z</lastmod>
+    <lastmod>2025-12-12T05:22:35.361Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/gallery/Python/25Winter/Mst Noorunnahar/project_nahar.html</loc>
-    <lastmod>2025-12-11T07:30:36.524Z</lastmod>
+    <lastmod>2025-12-12T05:22:32.393Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/gallery/Python/25Winter/Sisay/report.html</loc>
-    <lastmod>2025-12-11T07:30:35.188Z</lastmod>
+    <lastmod>2025-12-12T05:22:30.933Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/gallery/Python/26Summer/example_project/example_project.html</loc>
-    <lastmod>2025-12-11T07:25:48.525Z</lastmod>
+    <lastmod>2025-12-12T05:20:03.305Z</lastmod>
+  </url>
+  <url>
+    <loc>https://camwest5.github.io/training-intensives/gallery/R/25Summer/BCD/Goodreads_books.html</loc>
+    <lastmod>2025-12-12T05:23:26.598Z</lastmod>
+  </url>
+  <url>
+    <loc>https://camwest5.github.io/training-intensives/gallery/R/25Summer/Caira/Coffee.html</loc>
+    <lastmod>2025-12-12T05:22:54.602Z</lastmod>
+  </url>
+  <url>
+    <loc>https://camwest5.github.io/training-intensives/gallery/R/25Summer/Karunarathna/dashboard.html</loc>
+    <lastmod>2025-12-12T05:23:17.985Z</lastmod>
+  </url>
+  <url>
+    <loc>https://camwest5.github.io/training-intensives/gallery/R/25Summer/Mehershad/Football Birth Month.html</loc>
+    <lastmod>2025-12-12T05:23:44.282Z</lastmod>
+  </url>
+  <url>
+    <loc>https://camwest5.github.io/training-intensives/gallery/R/25Summer/Warren/DashbdProjW.html</loc>
+    <lastmod>2025-12-12T05:23:01.524Z</lastmod>
+  </url>
+  <url>
+    <loc>https://camwest5.github.io/training-intensives/gallery/R/25Winter/Aisha Aslam/R Intensive Report.html</loc>
+    <lastmod>2025-12-12T05:25:31.339Z</lastmod>
+  </url>
+  <url>
+    <loc>https://camwest5.github.io/training-intensives/gallery/R/25Winter/Casey &amp; Jess Project/Project Hospital Report.html</loc>
+    <lastmod>2025-12-12T05:25:17.692Z</lastmod>
+  </url>
+  <url>
+    <loc>https://camwest5.github.io/training-intensives/gallery/R/25Winter/Claudine &amp; Emman/Fuel sites.html</loc>
+    <lastmod>2025-12-12T05:26:09.930Z</lastmod>
+  </url>
+  <url>
+    <loc>https://camwest5.github.io/training-intensives/gallery/R/25Winter/Sandya &amp; Buddhika/melb property.html</loc>
+    <lastmod>2025-12-12T05:25:03.075Z</lastmod>
+  </url>
+  <url>
+    <loc>https://camwest5.github.io/training-intensives/gallery/R/25Winter/cathys project/report.html</loc>
+    <lastmod>2025-12-12T05:24:54.404Z</lastmod>
+  </url>
+  <url>
+    <loc>https://camwest5.github.io/training-intensives/gallery/R/26Summer/example_project/example_project.html</loc>
+    <lastmod>2025-12-12T05:22:46.568Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/project/scaffold.html</loc>
-    <lastmod>2025-12-11T07:30:52.950Z</lastmod>
+    <lastmod>2025-12-12T05:26:09.963Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/project/tips.html</loc>
-    <lastmod>2025-12-11T07:30:52.948Z</lastmod>
+    <lastmod>2025-12-12T05:26:09.963Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/python/Advanced topics/6 - Programming.html</loc>
-    <lastmod>2025-12-11T07:30:52.946Z</lastmod>
+    <lastmod>2025-12-12T05:26:09.962Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/python/Essentials/4 - Sharing and Publishing.html</loc>
-    <lastmod>2025-12-11T07:30:52.948Z</lastmod>
+    <lastmod>2025-12-12T05:26:09.963Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/python/Essentials/1 - Fundamentals.html</loc>
-    <lastmod>2025-12-11T07:30:52.949Z</lastmod>
+    <lastmod>2025-12-12T05:26:09.967Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/qgis/Advanced topics/6 - Field Data.html</loc>
-    <lastmod>2025-12-11T07:30:52.949Z</lastmod>
+    <lastmod>2025-12-12T05:26:09.965Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/qgis/Essentials/4 - Raster Analysis.html</loc>
-    <lastmod>2025-12-11T07:30:52.947Z</lastmod>
+    <lastmod>2025-12-12T05:26:09.964Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/qgis/Essentials/2 - Vector Analysis.html</loc>
-    <lastmod>2025-12-11T07:30:52.947Z</lastmod>
+    <lastmod>2025-12-12T05:26:09.965Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/qgis/setup.html</loc>
-    <lastmod>2025-12-11T07:30:52.948Z</lastmod>
+    <lastmod>2025-12-12T05:26:09.964Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/r/Advanced topics/6 - Programming.html</loc>
-    <lastmod>2025-12-11T07:30:52.948Z</lastmod>
+    <lastmod>2025-12-12T05:26:09.962Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/r/Essentials/4 - Sharing and Publishing.html</loc>
-    <lastmod>2025-12-11T07:30:52.946Z</lastmod>
+    <lastmod>2025-12-12T05:26:09.964Z</lastmod>
   </url>
   <url>
     <loc>https://camwest5.github.io/training-intensives/r/Essentials/1 - Fundamentals.html</loc>
-    <lastmod>2025-12-11T07:30:52.946Z</lastmod>
+    <lastmod>2025-12-12T05:26:09.962Z</lastmod>
   </url>
 </urlset>
