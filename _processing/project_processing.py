@@ -330,8 +330,8 @@ def run_checker(dev: bool = False, clear_log: bool = False) -> None:
         r_code = "\n".join(r_chunks)
         py_code = "\n".join(py_chunks)
 
-        os.chdir(d(qmd))
         if r_code:
+            r_code = f"setwd('{d(qmd)}')\n" + r_code
             Rout = run("R -s -e".split() + [r_code], capture_output=True)
 
             if Rout.returncode:
@@ -339,6 +339,7 @@ def run_checker(dev: bool = False, clear_log: bool = False) -> None:
                 e_log.append((qmd, message.decode()))
                 print(RED, "\tFAILED:", O, message)
 
+        os.chdir(d(qmd))
         if py_code:
             if "plotly" in py_code:
                 py_code = (
