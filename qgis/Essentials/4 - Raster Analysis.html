@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2025-12-12">
 
-<title>Sharing and Publishing – UQ Library Training Intensives</title>
+<title>Raster Analysis – UQ Library Training Intensives</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -172,17 +137,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#quarto" id="toc-quarto" class="nav-link active" data-scroll-target="#quarto">Quarto</a>
-  <ul class="collapse">
-  <li><a href="#rendering" id="toc-rendering" class="nav-link" data-scroll-target="#rendering">Rendering</a></li>
-  <li><a href="#cell-options" id="toc-cell-options" class="nav-link" data-scroll-target="#cell-options">Cell options</a></li>
-  <li><a href="#output-formats" id="toc-output-formats" class="nav-link" data-scroll-target="#output-formats">Output formats</a></li>
-  </ul></li>
-  <li><a href="#git-and-github" id="toc-git-and-github" class="nav-link" data-scroll-target="#git-and-github">Git and GitHub</a>
-  <ul class="collapse">
-  <li><a href="#github" id="toc-github" class="nav-link" data-scroll-target="#github">GitHub</a></li>
-  </ul></li>
-  <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further resources</a></li>
+  <li><a href="#what-are-we-going-to-learn" id="toc-what-are-we-going-to-learn" class="nav-link active" data-scroll-target="#what-are-we-going-to-learn">What are we going to learn?</a></li>
+  <li><a href="#what-is-raster-data" id="toc-what-is-raster-data" class="nav-link" data-scroll-target="#what-is-raster-data">What is Raster Data?</a></li>
+  <li><a href="#install-the-saga-plugin" id="toc-install-the-saga-plugin" class="nav-link" data-scroll-target="#install-the-saga-plugin">Install the SAGA Plugin</a></li>
+  <li><a href="#get-some-elevation-data" id="toc-get-some-elevation-data" class="nav-link" data-scroll-target="#get-some-elevation-data">Get some elevation data</a></li>
+  <li><a href="#merge-the-two-dem-layers" id="toc-merge-the-two-dem-layers" class="nav-link" data-scroll-target="#merge-the-two-dem-layers">Merge the two DEM layers</a></li>
+  <li><a href="#reproject-the-dem" id="toc-reproject-the-dem" class="nav-link" data-scroll-target="#reproject-the-dem">Reproject the DEM</a></li>
+  <li><a href="#clip-the-dem" id="toc-clip-the-dem" class="nav-link" data-scroll-target="#clip-the-dem">Clip the DEM</a></li>
+  <li><a href="#change-the-symbology" id="toc-change-the-symbology" class="nav-link" data-scroll-target="#change-the-symbology">Change the symbology</a></li>
+  <li><a href="#add-a-hillshade" id="toc-add-a-hillshade" class="nav-link" data-scroll-target="#add-a-hillshade">Add a hillshade</a></li>
+  <li><a href="#create-a-watershed-layer" id="toc-create-a-watershed-layer" class="nav-link" data-scroll-target="#create-a-watershed-layer">Create a watershed layer</a></li>
+  <li><a href="#channel-network-and-drainage-basin" id="toc-channel-network-and-drainage-basin" class="nav-link" data-scroll-target="#channel-network-and-drainage-basin">Channel network and drainage basin</a></li>
+  <li><a href="#viewshed" id="toc-viewshed" class="nav-link" data-scroll-target="#viewshed">Viewshed</a></li>
+  <li><a href="#d-maps" id="toc-d-maps" class="nav-link" data-scroll-target="#d-maps">3D maps</a></li>
+  <li><a href="#exporting" id="toc-exporting" class="nav-link" data-scroll-target="#exporting">Exporting</a></li>
+  <li><a href="#saving-your-project" id="toc-saving-your-project" class="nav-link" data-scroll-target="#saving-your-project">Saving your project</a></li>
+  <li><a href="#feedback" id="toc-feedback" class="nav-link" data-scroll-target="#feedback">Feedback</a></li>
   </ul>
 </nav>
     </div>
@@ -191,7 +161,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Sharing and Publishing</h1>
+<h1 class="title">Raster Analysis</h1>
 </div>
 
 
@@ -214,249 +184,205 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>In this workshop we cover using GitHub for sharing your source code, Git for version control, and Quarto for publishing outputs. Specifically, we look at:</p>
+<section id="what-are-we-going-to-learn" class="level2">
+<h2 class="anchored" data-anchor-id="what-are-we-going-to-learn">What are we going to learn?</h2>
+<p>In this workshop, we will learn about:</p>
 <ul>
-<li>How to create code-dependent documents, dashboards and presentation using Quarto</li>
-<li>How to create a Git repository on GitHub and add files to it</li>
-<li>How Git can help record a clean history of a project and collaborate with others</li>
-<li>How Git and GitHub integrate with different tools</li>
+<li>DEM</li>
+<li>Terrain Analysis</li>
+<li>Contours</li>
+<li>Georeferencing</li>
 </ul>
-<section id="quarto" class="level2">
-<h2 class="anchored" data-anchor-id="quarto">Quarto</h2>
-<p>Quarto is a publishing system that allows creating documents, presentations, websites and dashboards that contain prose, code and code outputs. This means that such outputs can detail exactly what happened to the data, and outputs can be re-generated very quickly if, for example, the underlying dataset was updated, or if the analysis needs to change.</p>
-<p>Let’s create a document using some of the syntax we learned in previous sessions.</p>
-<p>Use “New File &gt; Quarto Document…” to create a <code>.qmd</code> file. The dialog that open allows us to change a few settings. Let’s give the title “Reproducible Output”, and untick “Use visual markdown editor” so we can learn about the syntax. Save the new file in your project directory.</p>
-<p>This new <code>.rmd</code> script will be made of <strong>markdown text</strong> and <strong>code chunks</strong>. Code chunks can be inserted with the editor pane’s toolbar or the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>I</kbd>.</p>
-<p>At the top of our script, we need to include a header (also called “front matter”) that contains the document’s settings. We can start with:</p>
-<pre><code>---
-title: Reproducible Output
-author: Your Name
-date: 2025-01-01
----</code></pre>
-<p>The rest of the document will be a mix of markdown-formatted prose and executable code chunks. For example:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>## Import the data</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>Let's **import** the data:</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>```{r}</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>players &lt;- read.csv("../../data/Players2024.csv")</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>```</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>## Prepare the data</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>Remove missing position and ensure **reasonable heights**:</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>```{r}</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>library(dplyr)</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>players &lt;- players %&gt;% filter(positions != "Missing", height_cm &gt; 100)</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>```</span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>## Plot the data</span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>A boxplot of player **height by position**:</span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>```{r}</span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>library(ggplot2)</span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>ggplot(players, aes(x = positions, y = height_cm)) + </span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>  geom_boxplot() + </span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>  labs(x = "Position", y = "Height (cm)")</span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>```</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Outside the code chunks, we use the Markdown markup language to format the text. For example, using <code>##</code> before some text defines a heading of level 2 (level 1 being the document’s title), and using <code>**</code> around some text makes it bold. See <a href="https://quarto.org/docs/authoring/markdown-basics.html">more Markdown hints in the Quarto documentation</a>.</p>
-<section id="rendering" class="level3">
-<h3 class="anchored" data-anchor-id="rendering">Rendering</h3>
-<p>To render the document and see the result, use the “Render” button in the source pane toolbar.</p>
-<p>This should create a HTML document in your project directory, which you can open in a web browser by clicking it and choosing “View in web browser” (if it is not opened automatically already). The file can be left open and will automatically update in your browser when the document is rendered again.</p>
-<p>As the default Quarto output is a HTML file, we can include interactive visualisations too.</p>
 </section>
-<section id="cell-options" class="level3">
-<h3 class="anchored" data-anchor-id="cell-options">Cell options</h3>
-<p>If you want to show the code but don’t want to run it, you can add the cell option <code>#| eval: false</code>. And if you want to show the output but not show the underlying code, use <code>#| echo: false</code>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>## Interactive plots</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>We need plotly. If you need to install it:</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>```{r}</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>#| eval: false</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>install.packages("plotly")</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>```</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>An interactive scartterplot:</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>```{r}</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>#| title: Age vs Height</span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>#| echo: false</span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>p &lt;- ggplot(players, aes(x = age, y = height_cm, colour = positions, label = name, label2 = nationality)) + </span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>  geom_point() + </span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>  facet_wrap(vars(positions)) + </span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>  labs(x = "Age", colour = "Position", y = "Height (cm)")</span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>library(plotly)</span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>ggplotly(p)</span>
-<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>```</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>And for adding a caption and alternative text to a figure, we can modify our boxplot chunk as follows:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>```{r}</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>#| fig-cap: "Goalkeepers tend to be taller."</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>#| fig-alt: "A boxplot of the relationship between height and position."</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>library(ggplot2)</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>ggplot(players, aes(x = positions, y = height_cm)) + </span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  geom_boxplot() + </span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  labs(x = "Position", y = "Height (cm)")</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>```</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><a href="https://quarto.org/docs/computations/execution-options.html">Many more cell options</a> exist, including captioning and formatting visualisations. Note that these options can be used at the cell level as well as globally (by modifying the front matter at the top of the document).</p>
-<p>For example, to make sure error and warning messages are never shown:</p>
-<pre><code>---
-title: Reproducible Output
-author: Your Name
-date: 2025-01-01
-warning: false
-error: false
----</code></pre>
+<section id="what-is-raster-data" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-raster-data">What is Raster Data?</h2>
 </section>
-<section id="output-formats" class="level3">
-<h3 class="anchored" data-anchor-id="output-formats">Output formats</h3>
-<p>The default output format in Quarto is HTML, which is by far the most flexible. However, Quarto is a very versatile publishing system and can generate many different output formats, including PDF, DOCX and ODT, slide formats, Markdown suited for GitHub… and even whole blogs, books and dashboards.</p>
-<p>Let’s try rendering a PDF:</p>
-<pre><code>---
-title: Reproducible Output
-author: Your Name
-date: 2025-01-01
-format: pdf
----</code></pre>
-<p>When rendering PDFs, the first issue we might run into is the lack of a LaTeX distribution. If Quarto didn’t detect one, it will suggest to install tinytex (a minimal LaTeX distribution) with this terminal command:</p>
-<pre><code>quarto install tinytex</code></pre>
-<p>Once that is installed, Quarto should render a PDF.</p>
-<p>Another issue with our example document is that an interactive HTML visualisation won’t be rendered in the PDF. You can suppress it by using the <code>#| eval: false</code> option:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>```{r}</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>#| title: Age vs Height</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>#| echo: false</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>#| eval: false</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>p &lt;- ggplot(players, aes(x = age, y = height_cm, colour = positions, label = name, label2 = nationality)) + </span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  geom_point() + </span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  facet_wrap(vars(positions)) + </span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  labs(x = "Age", colour = "Position", y = "Height (cm)")</span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>library(plotly)</span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>ggplotly(p)</span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>```</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<!-- 
-#### Dashboard
-
-A great way to present a variety of outputs in a grid is by creating a HTML dashboard.
-
-Let's modify our script to render a dashboard. First, change the output format:
-
-```
----
-title: Reproducible Output
-author: Your Name
-date: 2025-01-01
-format: dashboard
----
-```
-
-We can already render the dashboard and see the result. Each panel can be expanded with the bottom-right button. Note that by default:
-
-* each cell is rendered in a separate card
-* headings define the rows
-* the heading text is discarded
-* code is not shown (but can be by using `echo: true`)
-
-Given this default behaviour, you might have to rethink a good part of your script to make it suited for a striking dashboard. For example, removing most of the text, customising the layout (tabsets, rows, card heights...) and adding custom cards like "value boxes". Learn more about all these in the [Quarto Dashboards documentation](https://quarto.org/docs/dashboards/).
-
-As a starting point, copy the current script across to a new script called `dashboard.rmd` and modify it so it matches the following:
-
-
-````{.default}
----
-title: "My dashboard"
-author: Your Name
-date: 2025-01-01
-format: dashboard
-warning: false
----
-
-```xrf
-players <- read.csv("../../data/Players2024.csv")
-```
-
-```xrf
-library(dplyr)
-players <- players %>% filter(positions != "Missing", height_cm > 100)
-```
-
-## Figures {height=70%}
-
-```xrf
-#| title: Goalkeepers tend to be taller
-#| fig-alt: "A boxplot of the relationship between height and position."
-library(ggplot2)
-ggplot(players, aes(x = positions, y = height_cm)) + 
-  geom_boxplot() + 
-  labs(x = "Position", y = "Height (cm)")
-```
-
-```xrf
-#| title: Age vs Height by position
-p <- ggplot(players, aes(x = age, y = height_cm, colour = positions, label = name, label2 = nationality)) + 
-  geom_point() + 
-  facet_wrap(vars(positions)) + 
-  labs(x = "Age", colour = "Position", y = "Height (cm)")
-library(plotly)
-ggplotly(p)
-```
-
-## Table
-
-```xrf
-#| title: A glimpse at the dataset
-library(knitr)
-kable(players)
-```
-````
-
-This results in a dashboard containing three cards organised in two rows. The top row uses 70% of the available height, and the bottom row shows a table of the top 10 rows of the dataset. Each card has a title.
-
-![Quarto dashboard with three cards: static visualisation, interactive visualisation, and table.](img/dashboard.png) -->
+<section id="install-the-saga-plugin" class="level2">
+<h2 class="anchored" data-anchor-id="install-the-saga-plugin">Install the SAGA Plugin</h2>
+<p>We need to install a plugin so we can access certain geoprocessing tools (the built-in SAGA provider has been <a href="https://changelog.qgis.org/en/qgis/version/3.30/#processing-drop-unmainted-saga-provider-from-qgis-">removed in version 3.30</a>). Go to <code>Plugins &gt; Manage and Install Plugins...</code> and <code>Search...</code> for “<strong>SAGA</strong>”. From the list on options choose <strong>Processing Saga NextGen Provider</strong> then in the bottom right, click <code>Install Plugin</code>. You might also need to install SAGA (version 9 or above) on your computer, if not already available.</p>
 </section>
-</section>
-<section id="git-and-github" class="level2">
-<h2 class="anchored" data-anchor-id="git-and-github">Git and GitHub</h2>
-<p><strong>Git</strong> is a version control system that allows to record a clean history of your project, track precise authorship, and collaborate asynchronously with others. It can be used offline, from the command line or with integration into Integrated Desktop Environments</p>
-<p><strong>GitHub</strong> is one of many websites that allow you to host projects that are tracked with Git. But even without using Git at all, it is possible to use GitHub to share and make your project public. Many researchers use it to make their code public alongside a published paper, to increase reproducibility and transparency. It can also be useful to build and share a portfolio of your work.</p>
-<p>Fortunately, RStudio does have Git integration! If you have Git installed on your computer, you can use the “Git” section to commit those changes to a repository. You can then push and pull GitHub to keep your local copy in sync.</p>
-<p>Learning about the ins and out of Git takes time, so in this section we will mainly use GitHub as a place to upload and share your code and outputs, and as a starting point for learning more about Git in the future.</p>
-<section id="github" class="level3">
-<h3 class="anchored" data-anchor-id="github">GitHub</h3>
-<p><a href="https://github.com/">GitHub</a> is currently the most popular place for hosting, sharing and collaborating on code. You can create an account for free, and then create a <strong>repository</strong> for your project.</p>
-<ol type="1">
-<li>Create an account and log in</li>
-<li>Click on the “+” button (top right of the page)</li>
-<li>Select “New repository”</li>
-<li>Choose a name and description for your repository</li>
-<li>Tick “Add a README file” - this will be where you introduce your project</li>
-<li>Click “Create repository”</li>
-</ol>
-<p>From there, you can upload your files, and edit text-based files straight from your web browser if you need to.</p>
-<p>The README file is a markdown file that can contain the most important information about your project. It’s important to populate it as it is the first document most people see. It could contain:</p>
+<section id="get-some-elevation-data" class="level2">
+<h2 class="anchored" data-anchor-id="get-some-elevation-data">Get some elevation data</h2>
+<p>A Digital Elevation Model (DEM) is a common example of <strong>raster data</strong>, i.e.&nbsp;grid data that contains a value in each cell (a bit like the pixels in a coloured picture).</p>
+<p>For this tutorial, we are using a DEM sourced from the USGS website.</p>
 <ul>
-<li>Name and description of the project</li>
-<li>How to use it (installation process if any, examples…)</li>
-<li>Who is the author, who maintains it</li>
-<li>How to contribute</li>
+<li>Go to https://earthexplorer.usgs.gov/</li>
+<li>Click the World Features box, and then search for “Brisbane” in the “Feature Name” search box</li>
+<li>Click Show and select the first result</li>
+<li>Zoom onto an area of interest around Brisbane and click “Use Map”</li>
+<li>Click the “Data Sets” button and then <code>Digital Elevation &gt; SRTM</code>, select “SRTM 1 Arc-Second Global” and click “Results”</li>
 </ul>
-<p>For inspiration, see the <a href="https://github.com/pandas-dev/pandas?tab=readme-ov-file#pandas-powerful-python-data-analysis-toolkit">pandas README file</a>.</p>
-<p>To practice managing a git repository on GitHub, try creating a personal portfolio repository where you can showcase what you have worked on and the outputs your are most proud of.</p>
+<p>“SRTM” stands for “<a href="https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-shuttle-radar-topography-mission-srtm-1-arc?qt-science_center_objects=0#qt-science_center_objects">Shuttle Radar Topography Mission</a>”. It provides global elevation data collected in 2000 by the space shuttle Endeavour.</p>
+<p>Our area covers two separate raster files. We can click on the foot icon to see the footprint of each file, and the picture icon to see what the DEM looks like.</p>
+<p>Use the download button to download each file into your project directory. You will need a login for that, which is free but can take a bit of time. You can instead <strong>download the two raster files</strong> as an archive from our GitHub repository <a href="https://github.com/uqlibrary/technology-training-assets/raw/master/QGIS/raster/QGIS_Raster_Data.zip">here</a>.</p>
 </section>
-</section>
-<section id="further-resources" class="level2">
-<h2 class="anchored" data-anchor-id="further-resources">Further resources</h2>
+<section id="merge-the-two-dem-layers" class="level2">
+<h2 class="anchored" data-anchor-id="merge-the-two-dem-layers">Merge the two DEM layers</h2>
+<p>If you downloaded the archive, make sure you place it into the project directory so you can find it in “Project Home” and easily <strong>load the raster files</strong>: from the Browser panel, we can go into the data archive and drag and drop each <code>.tif</code> file into the Layers panel.</p>
+<p>See the visible line between the two raster tiles? That is because the two separate raster files have different maximum and minimum values, so use different shades for different elevations. We have to <strong>merge</strong> them to make sure they use the same colour scale.</p>
+<p>To do that, we use the <code>Raster &gt; Miscellaneous &gt; Merge...</code> tool to create one single layer from them.</p>
 <ul>
-<li>Some alternatives to GitHub: <a href="https://codeberg.org/">Codeberg</a> and <a href="https://gitlab.com">Gitlab</a></li>
-<li><a href="https://quarto.org/">Quarto documentation</a></li>
-<li><a href="https://github.com/uqlibrary/technology-training/blob/master/Git/git.md">Course on Git from the command line</a></li>
-<li><a href="https://github.com/uqlibrary/technology-training/blob/master/Git/GitHub/GitHub_intro.md">Course on Git with GitHub</a></li>
-<li><a href="https://happygitwithr.com/">Book on Git for R and RStudio users</a>, by Jenny Bryan</li>
+<li>First, select both DEM layers for the “Input layers”</li>
+<li>Make sure the option “Place each input file into a separate band” is off, as we want to end up with one single-band layer</li>
+<li>We can save the output on disk instead of only creating a temporary file (for example, name it <code>SRTM_DEM_merged</code> and save it inside your project directory)</li>
+<li>Click “Run”</li>
 </ul>
+<blockquote class="blockquote">
+<p>You will need to have GDAL installed for this to work.</p>
+</blockquote>
+<p>We can now remove the two original raster files.</p>
+</section>
+<section id="reproject-the-dem" class="level2">
+<h2 class="anchored" data-anchor-id="reproject-the-dem">Reproject the DEM</h2>
+<p>In the merged layer’s Properties (<code>Right click &gt; Properties... &gt; Source</code>), we can see that the Coordinate Reference System (CRS) in use is <a href="https://epsg.io/4326">EPSG:4326 - WGS 84</a>. It is the one that QGIS detected when opening the file. This Geographic Reference System is good for global data, but if we want to focus on a more precise area around Brisbane/Meanjin, and want our analyses to be accurate, we should reproject the data to a local Projected Reference System (PRS). We will also need a projection that uses Metres, rather than Degrees (as EPSG:4326 does). A good PRS for around Brisbane/Meanjin is “<a href="https://epsg.io/7856">EPSG:7856 - GDA2020 / MGA zone 56</a>”. We can’t change that here, we instead will need to use the <strong>Warp (Reproject)</strong> tool.</p>
+<ul>
+<li>Use the tool <code>Raster &gt; Projections &gt; Warp (Reproject)</code></li>
+<li>use the merged layer as an input</li>
+<li>pick “EPSG:7856 - GDA2020 / MGA zone 56” as the Target CRS
+<ul>
+<li>you may need to click the Select CRS button <img src="https://user-images.githubusercontent.com/67612228/197653760-a9df4671-5852-499c-a085-3d995489599a.png" class="img-fluid" alt="image"></li>
+<li>untick No CRS</li>
+<li>use the filter to search for “7856”</li>
+<li>You should be able to find “EPSG:7856 - GDA2020 / MGA zone 56” under <strong>Predefined Coordinate Reference Systems</strong></li>
+</ul></li>
+</ul>
+<blockquote class="blockquote">
+<p>If you want to learn more about the static datum GDA2020 (for “Geocentric Datum of Australia 2020”), an upgrade from the previous, less precise GDA94, head to the <a href="https://www.icsm.gov.au/gda2020">ICSM website</a>.</p>
+</blockquote>
+</section>
+<section id="clip-the-dem" class="level2">
+<h2 class="anchored" data-anchor-id="clip-the-dem">Clip the DEM</h2>
+<p>We now use <code>Raster &gt; Extraction &gt; Clip Raster by Extent</code> to <strong>focus on a smaller area of interest</strong>.</p>
+<p>Make sure the DEM is selected in the Input layer, and set the clip extent with <code>... &gt; Draw on Canvas</code>. We want to select an area that is inland, and contains both some of the D’Aguilar National Park, and a section of the Brisbane river (you can untick the DEM in the Layers panel to reveal the basemap).</p>
+<p>If you don’t save to file directly, remember two things:</p>
+<ul>
+<li><strong>rename</strong> your clipped layer so it is more descriptive than the generic “Clipped (extent)”</li>
+<li>you are currently using a temporary, <strong>scratch layer</strong>. It will be discarded if you exit QGIS. It is very useful for temporary intermediate files, but it can be safer to save copies of your intermediate data while you work, just in case! You can right-click on the layer and use <code>Export &gt; Save As..</code></li>
+</ul>
+</section>
+<section id="change-the-symbology" class="level2">
+<h2 class="anchored" data-anchor-id="change-the-symbology">Change the symbology</h2>
+<p>We can style our DEM with a <strong>terrain colour palette</strong>:</p>
+<ul>
+<li>double-click on the clipped DEM layer</li>
+<li>go to the “Symbology” tab</li>
+<li>change the Render type to “Singleband pseudocolor”</li>
+<li>by default, it uses the min/max values, which is what we want</li>
+<li>we can change the “Color ramp” to something more suitable with the drop-down menu and <code>Create new color ramp... &gt; Catalog: cpt-city &gt; Topography &gt; Elevation</code>, for example.</li>
+</ul>
+</section>
+<section id="add-a-hillshade" class="level2">
+<h2 class="anchored" data-anchor-id="add-a-hillshade">Add a hillshade</h2>
+<p>Adding a <strong>hillshade</strong> makes your visualisation of elevation more readable and visually pleasing by giving an artificial lighting look to your map.</p>
+<ul>
+<li>Right-click on the DEM layer and “Duplicate layer”</li>
+<li>Rename the duplicated layer “hillshade”</li>
+<li>Open the Symbology menu for the hillshade layer</li>
+<li>Change the “Render type” to “Hillshade”</li>
+<li>The defaults should work well, but you can play with the settings, like the Altitude and the Azimuth</li>
+<li>Make sure you apply some transparency to the pseudocolour DEM, and place the hillshade layer underneath (in <code>Properties &gt; Symbology &gt; Transparency</code>)</li>
+<li>Down the bottom of the window under <strong>Resampling</strong> change the <code>Zoomed: in</code> and <code>out</code> from “Nearest Neighbour” to “Cubic” (this will remove some of the grid-like patterns you might see in your Hillshade layer otherwise)</li>
+</ul>
+<blockquote class="blockquote">
+<p>Another method is to use the hillshade tool instead of the symbology: <code>Raster &gt; Analysis &gt; Hillshade...</code>.</p>
+</blockquote>
+</section>
+<section id="create-a-watershed-layer" class="level2">
+<h2 class="anchored" data-anchor-id="create-a-watershed-layer">Create a watershed layer</h2>
+<p>Using the Strahler tool, we can create a <strong>watershed</strong> raster that shows where water would flow according to the DEM.</p>
+<p>Open the Processing Toolbox (cog icon) and try using the SAGA Next Gen tool called “<strong>Strahler order</strong>” using the clipped DEM as an input (a temporary file is fine for now).</p>
+<p>Look at the result. It looks like there are few issues with our data. You may get a question mark symbol <img src="https://user-images.githubusercontent.com/67612228/197657028-314f7460-1c2c-4a5c-b447-25b82bea39ee.png" class="img-fluid" alt="image"> next to your data, when hovered over it will say “There is no coordinate reference system set!”. To resolve this, issue, simply left-click on the question mark symbol and assign “EPSG:7856 - GDA2020 / MGA zone 56” as the CRS.</p>
+<p>However there is still another issue with our data. A common problem with DEMs is that they have sinks and spikes that will make further analyses more difficult. This will mean the analysis is unable to best find where the water would flow. To resolve this, we need to use another tool to smooth out our raster before using the Strahler order tool.</p>
+<p>We can use the “Fill sinks (Wang &amp; Liu)” tool to <strong>fill the sinks</strong> in our clipped DEM.</p>
+<ul>
+<li>When we do that, we might have to play with the “Minimum slope” value. A value of 0.01 degrees should work well if the layer was reprojected to a suitable Projected Reference System.</li>
+<li>As an output, we only need to tick the “Filled DEM” (first one in the list), which we can also save to file. You can however keep the “Watershed Basins” output to check that your minimum slope is high enough.</li>
+</ul>
+<p>If we <strong>re-run the Strahler order tool</strong> on the filled DEM, we will be able to see more useful data.</p>
+<p>We can now colour the layer with “Singleband pseudocolor” to highlight the bigger streams. A palette that goes from white (for low values) to a dark colour (for high values) should work well. You can also set the smaller streams to be transparent to filter them out.</p>
+<blockquote class="blockquote">
+<p>Another way to filter out the noise of the smaller streams and <strong>highlight the major streams</strong> in the network, we can use the <code>Raster &gt; Raster Calculator</code> tool and use a formula like: <code>"name_of_layer@1" &gt;= 6</code> (the value will depend on how many levels exist in the Strahler layer). We need to save to file to be able to do that (name it “strahler_filtered”, for example). This will assign the value 1 to the cells matching the condition, and 0 to what is under the limit.</p>
+</blockquote>
+</section>
+<section id="channel-network-and-drainage-basin" class="level2">
+<h2 class="anchored" data-anchor-id="channel-network-and-drainage-basin">Channel network and drainage basin</h2>
+<p>Another analysis we can do is use the “Channel network and drainage basins” tool to calculate the <strong>flow direction, channels and drainage basins</strong>.</p>
+<ul>
+<li>Make sure you run this tool on the filled DEM.</li>
+<li>We might have to change the threshold to a higher one if the output includes too many small basins and channels. As the threshold is related to the Strahler order number, the middle point of your previous Strahler order values is a usually a good default.</li>
+</ul>
+<p>You might want to play with different threshold values depending on what you’re looking for. If you want to look at the main drainage basins of a region, you need to set the threshold higher. If you want to find all the small channels, you need to set the threshold lower. It’s worth trying a few options to find what works best for your dataset and the story you’re trying to tell.</p>
+<p>As an output, we only want to load (and save to file) the two non-optional outputs:</p>
+<ul>
+<li>Channels</li>
+<li>Drainage basins (shapefile) (to differentiate the two “Drainage basins” options, you can check what format it saves the file as)</li>
+</ul>
+<p>This is an example of <strong>creating vector data from raster data</strong>!</p>
+<p>We can now play with the <strong>symbology</strong> for those elements. For example:</p>
+<ul>
+<li>Try using different colours for each basin, by classifying by ID, or remove the fill (<code>Simple fill &gt; Fill Style &gt; No Brush</code>) so you can see the colours of the elevation colours underneath. You can also make the borders more obvious by changing the width of the stroke.</li>
+<li>Change the colour of the channels.
+<ul>
+<li>Change the symbol from “Single Symbol” to Graduated.</li>
+<li>Set the <code>Value</code> to “Order”</li>
+<li>Choose an appropriate colour ramp</li>
+<li>Change the <code>Mode</code> down the bottom of the window to “Equal Interval”</li>
+<li>Click Apply</li>
+</ul></li>
+<li>You can also further differentiate minor channels from major ones by using a “Data defined override” for the Width value:
+<ul>
+<li>Click on the bar next to <code>Symbol</code> <img src="https://user-images.githubusercontent.com/67612228/197659925-41753cd0-2fc7-4534-b6ec-7ddc4775d721.png" class="img-fluid" alt="image"></li>
+<li>Click on the “Data defined override” icon <img src="https://user-images.githubusercontent.com/67612228/197659891-5474b893-2de3-47a4-95f5-9991b394ecf3.png" class="img-fluid" alt="image"> next to the Width field</li>
+<li>Use the “Assistant”</li>
+<li>“Source” needs to be the column “ORDER” (which corresponds to the Strahler order)</li>
+<li>Click the double-arrow icon to “Fetch value range from layer”</li>
+<li>Change the “Size from” and “to” values to suitable values</li>
+</ul></li>
+</ul>
+</section>
+<section id="viewshed" class="level2">
+<h2 class="anchored" data-anchor-id="viewshed">Viewshed</h2>
+<p>If you want to know what can be seen from a certain point in a landscape you can use a DEM to perform a Viewshed Analysis.</p>
+<p>Open the Processing Toolbox (cog icon) and search for the GDAL tool called “<strong>Viewshed</strong>”.</p>
+<ul>
+<li><strong>Input Layer</strong>: Choose your <strong>Reprojected DEM</strong> layer</li>
+<li>Click the three dots next to <strong>Observer location</strong> to select a point on the map</li>
+<li><strong>Observer height, DEM units</strong>: 1.6 (the average human eye height is around 1.6m, choose a height you think might be appropriate)</li>
+<li><strong>Target height, DEM units</strong>: 1 (this means that the points around the observer will be obscured by any surface that is higher than 1m. If you want to know what <em>ground</em> your observer will see, choose something closer to 0)</li>
+<li><strong>Maximum distance from observer to compute visibility</strong>: 5000 (5km is the distance you can see on flat ground due to the curvature of the earth, this would change if you were higher up, for which you can find <a href="https://www.omnicalculator.com/physics/distance-to-horizon">calculators and a formula</a>)</li>
+</ul>
+<p>This will produce a black and white raster showing what can be seen, and what can’t. Go to the Layer <strong>Styling Menu</strong>, and change it to <strong>Singleband Pseudocolor</strong>, change the <strong>Mode</strong> to <strong>Equal Interval</strong>, and set the <strong>Classes</strong> to <strong>2</strong>. Change one of the Colors to transparent to highlight either what can be see, or what cannot.</p>
+<p>As an extra feature. You can do the reverse analysis with a Viewshed. That is, you could use this to know what landmarks are visible in a landscape. Set the Observer Height to that of a building or tree in the landscape, and the Target Height to be that of people in the landscape, and you’ll know where it can be seen from.</p>
+<p>If you want to get more sophisticated with your Viewshed analyses, there is, of course, a plugin called <strong>Visibility Analysis</strong> which will allow you to use one or multiple points as observers, take in account of the Earth’s curvature, see what vector points can see other vector points, and more.</p>
+</section>
+<section id="d-maps" class="level2">
+<h2 class="anchored" data-anchor-id="d-maps">3D maps</h2>
+<p>A 3D viewer is integrated in QGIS: <code>View &gt; 3D Map Views &gt; New 3D Map View</code></p>
+<p>In the 3D map window, make sure to first:</p>
+<ul>
+<li>Click the <strong>Options</strong> wrench icon, choose <code>Configure &gt; Terrain</code>, set the “Type” to “DEM (Raster layer)”, and set the “Elevation” to your clipped DEM.</li>
+<li>Exaggerate the relief with the “Vertical scale” setting (try 3).</li>
+</ul>
+<p>To see the 3D effect, you will have to use your <kbd>Ctrl</kbd> or <kbd>Shift</kbd> keys on your keyboard while panning with the mouse to change the angle of view.</p>
+<p>To avoid seeing gaps in the rendering, you can go back to your Terrain options and set the “Tile resolution” and “Skirt height” to higher values.</p>
+<blockquote class="blockquote">
+<p>A useful plugin for 3D maps is qgis2threeJS, which might be handy to add a 3D map to a website.</p>
+</blockquote>
+</section>
+<section id="exporting" class="level2">
+<h2 class="anchored" data-anchor-id="exporting">Exporting</h2>
+<p>Use the Layout Manager to create a new layout, and insert both a 2D map and a 3D map.</p>
+<p>When inserting the 3D map, it will tell you that the “scene is not set”. You will have to import the 3D scene settings from your view: <code>Item Properties &gt; Scene Settings &gt; Copy Scene Settings from a 3D View...</code> and then select your 3D map from the drop-down.</p>
+</section>
+<section id="saving-your-project" class="level2">
+<h2 class="anchored" data-anchor-id="saving-your-project">Saving your project</h2>
+<p>Notice the little icon next to some of your layers? We previously created “temporary scratch layers”. This is useful if you keep processing data and creating new layers that you want to discard afterwards. In our case, we do want to keep the “cities” and “rivers” layers, so we need to save them to a file. If we try to close QGIS with scratch layers loaded, it will give you a warning that they will be lost in the process.</p>
+<p>You can click on the scratch layer icon to save the file. In the dialog, we can give the layers a <code>File name</code> (in our project’s home directory) and click OK.</p>
+<p>You can save your project with the floppy disk icon, or using <kbd>Ctrl</kbd> + <kbd>S</kbd>, and the project should be visible in a list as soon as you open QGIS again.</p>
+</section>
+<section id="feedback" class="level2">
+<h2 class="anchored" data-anchor-id="feedback">Feedback</h2>
+<p>Please visit our website to <a href="https://web.library.uq.edu.au/study-and-learning-support/training-and-workshops/software-training-resources">provide feedback</a> and find upcoming training courses we have on offer.</p>
 
 
 </section>
