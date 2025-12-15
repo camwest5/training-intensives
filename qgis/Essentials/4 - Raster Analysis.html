@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-12-12">
+<meta name="dcterms.date" content="2025-12-15">
 
 <title>Raster Analysis – UQ Library Training Intensives</title>
 <style>
@@ -140,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#what-are-we-going-to-learn" id="toc-what-are-we-going-to-learn" class="nav-link active" data-scroll-target="#what-are-we-going-to-learn">What are we going to learn?</a></li>
   <li><a href="#what-is-raster-data" id="toc-what-is-raster-data" class="nav-link" data-scroll-target="#what-is-raster-data">What is Raster Data?</a></li>
   <li><a href="#install-the-saga-plugin" id="toc-install-the-saga-plugin" class="nav-link" data-scroll-target="#install-the-saga-plugin">Install the SAGA Plugin</a></li>
-  <li><a href="#get-some-elevation-data" id="toc-get-some-elevation-data" class="nav-link" data-scroll-target="#get-some-elevation-data">Get some elevation data</a></li>
+  <li><a href="#gather-some-data" id="toc-gather-some-data" class="nav-link" data-scroll-target="#gather-some-data">Gather some data</a></li>
   <li><a href="#merge-the-two-dem-layers" id="toc-merge-the-two-dem-layers" class="nav-link" data-scroll-target="#merge-the-two-dem-layers">Merge the two DEM layers</a></li>
   <li><a href="#reproject-the-dem" id="toc-reproject-the-dem" class="nav-link" data-scroll-target="#reproject-the-dem">Reproject the DEM</a></li>
   <li><a href="#clip-the-dem" id="toc-clip-the-dem" class="nav-link" data-scroll-target="#clip-the-dem">Clip the DEM</a></li>
@@ -172,7 +172,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">December 12, 2025</p>
+      <p class="date">December 15, 2025</p>
     </div>
   </div>
   
@@ -196,24 +196,14 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="what-is-raster-data" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-raster-data">What is Raster Data?</h2>
+<p>A Digital Elevation Model (DEM) is a common example of <strong>raster data</strong>, i.e.&nbsp;grid data that contains a value in each cell (a bit like the pixels in a coloured picture).</p>
 </section>
 <section id="install-the-saga-plugin" class="level2">
 <h2 class="anchored" data-anchor-id="install-the-saga-plugin">Install the SAGA Plugin</h2>
 <p>We need to install a plugin so we can access certain geoprocessing tools (the built-in SAGA provider has been <a href="https://changelog.qgis.org/en/qgis/version/3.30/#processing-drop-unmainted-saga-provider-from-qgis-">removed in version 3.30</a>). Go to <code>Plugins &gt; Manage and Install Plugins...</code> and <code>Search...</code> for “<strong>SAGA</strong>”. From the list on options choose <strong>Processing Saga NextGen Provider</strong> then in the bottom right, click <code>Install Plugin</code>. You might also need to install SAGA (version 9 or above) on your computer, if not already available.</p>
 </section>
-<section id="get-some-elevation-data" class="level2">
-<h2 class="anchored" data-anchor-id="get-some-elevation-data">Get some elevation data</h2>
-<p>A Digital Elevation Model (DEM) is a common example of <strong>raster data</strong>, i.e.&nbsp;grid data that contains a value in each cell (a bit like the pixels in a coloured picture).</p>
-<p>For this tutorial, we are using a DEM sourced from the USGS website.</p>
-<ul>
-<li>Go to https://earthexplorer.usgs.gov/</li>
-<li>Click the World Features box, and then search for “Brisbane” in the “Feature Name” search box</li>
-<li>Click Show and select the first result</li>
-<li>Zoom onto an area of interest around Brisbane and click “Use Map”</li>
-<li>Click the “Data Sets” button and then <code>Digital Elevation &gt; SRTM</code>, select “SRTM 1 Arc-Second Global” and click “Results”</li>
-</ul>
-<p>“SRTM” stands for “<a href="https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-shuttle-radar-topography-mission-srtm-1-arc?qt-science_center_objects=0#qt-science_center_objects">Shuttle Radar Topography Mission</a>”. It provides global elevation data collected in 2000 by the space shuttle Endeavour.</p>
-<p>Our area covers two separate raster files. We can click on the foot icon to see the footprint of each file, and the picture icon to see what the DEM looks like.</p>
+<section id="gather-some-data" class="level2">
+<h2 class="anchored" data-anchor-id="gather-some-data">Gather some data</h2>
 <p>Use the download button to download each file into your project directory. You will need a login for that, which is free but can take a bit of time. You can instead <strong>download the two raster files</strong> as an archive from our GitHub repository <a href="https://github.com/uqlibrary/technology-training-assets/raw/master/QGIS/raster/QGIS_Raster_Data.zip">here</a>.</p>
 </section>
 <section id="merge-the-two-dem-layers" class="level2">

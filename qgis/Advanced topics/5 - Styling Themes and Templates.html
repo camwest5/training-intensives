@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-12-12">
+<meta name="dcterms.date" content="2025-12-15">
 
 <title>Styling Themes and Templates – UQ Library Training Intensives</title>
 <style>
@@ -201,7 +201,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">December 12, 2025</p>
+      <p class="date">December 15, 2025</p>
     </div>
   </div>
   
@@ -272,30 +272,10 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="basemaps" class="level2">
 <h2 class="anchored" data-anchor-id="basemaps">Basemaps</h2>
-<p>Let’s start by making a map we might use in an <strong>Academic Paper</strong> or in an <strong>Article for the Public</strong>, where we want to focus their attention on our data. Unless we really need <strong>Satellite</strong> imagery, or everything on the <strong>OpenStreetMap</strong>, it is too busy and distracting.<br>
-<br>
-Let’s load in a new basemap.<br>
-<br>
-There are many ways of doing this, in the past we’ve used the <strong>QuickMapServices</strong> plugin to load in new basemaps, now we can go to the next step and source them externally. We can do this with WMTS (Web Map Tile Service), WCS (Web Coverage Service), ArcGIS REST Servers, and XYZ Tiles.</p>
-<p>Today we’re going to use an XYZ Tile from CARTODB.</p>
-<ul>
-<li>Scroll down the <code>Browser</code> panel until your see <strong>XYZ Tiles</strong></li>
-<li>Right click XYZ Tiles and select <code>New Connection...</code>
-<ul>
-<li>In <code>Name</code> type <strong>Voyager (no labels)</strong></li>
-<li>In <code>URL</code> paste:<br>
-https://a.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}<span class="citation" data-cites="2x.png">@2x.png</span></li>
-<li>Increase the Max. Zoom Level to 20
-<ul>
-<li>This value depends on what is available from the given service in different parts of the world. Increasing that value beyond 20 for this map in Brisbane will show “Map data not yet available” when you zoom in very close.</li>
-</ul></li>
-<li>Click <code>OK</code></li>
-</ul></li>
-<li>In the <code>Browser</code> panel, expand <code>XYZ Tiles</code> and double click on <code>Voyager (no labels)</code></li>
-<li>Now do the same for this <strong>Light Gray Basemap</strong> from ESRI, but set the Max. Zoom Level to 16:<br>
-https://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}</li>
-</ul>
-<p>Arrange the layers so that the <strong>Voyager (no labels)</strong> layer is under your other layers (you can hide the <strong>Light Gray Basemap</strong> and <strong>OpenStreetMap</strong> for now).</p>
+<p>Let’s start by making a map we might use in an <strong>Academic Paper</strong> or in an <strong>Article for the Public</strong>, where we want to focus their attention on our data. Unless we really need <strong>Satellite</strong> imagery, or everything on the <strong>OpenStreetMap</strong>, it is too busy and distracting.</p>
+<p>Let’s load in a new basemap.</p>
+<p>There are many ways of doing this, in the past we’ve used the <strong>QuickMapServices</strong> plugin to load in new basemaps, now we can go to the next step and source them externally. We can do this with WMTS (Web Map Tile Service), WCS (Web Coverage Service), ArcGIS REST Servers, and XYZ Tiles.</p>
+<p>Today we’re going to use the <strong>Voyager (no labels)</strong> XYZ Tile from CARTODB and <strong>Light Gray Basemap</strong> from ESRI.</p>
 <p>Isn’t that much less visually busy?!</p>
 </section>
 <section id="colours" class="level2">
